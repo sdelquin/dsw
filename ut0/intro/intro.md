@@ -16,11 +16,11 @@
 
 Los resultados de aprendizaje identifican lo que el alumnado sabrá, comprenderá y podrá hacer al final de la formación recibida en el módulo profesional.
 
-Cada resultado de aprendizaje viene definido por una serie de **criterios de evaluación**.
+Cada resultado de aprendizaje viene definido por una serie de **criterios de evaluación** y de **contenidos**.
 
 ```
 ~~~graph-easy --as=boxart
-[ RA ] -> [ CE ]
+[ RA ] -> [ CE ] -> [CONT]
 ~~~
 ```
 
