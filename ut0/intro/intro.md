@@ -177,3 +177,5 @@ Calificación de cada evaluación:
 3. Respeto
 4. Solidaridad
 5. Ilusión
+
+> ✨ La actitud no tiene nota pero... **¡se nota!**
