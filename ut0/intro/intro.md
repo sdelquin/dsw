@@ -3,6 +3,8 @@
 1. Normativa
 2. Resultados de aprendizaje / Criterios de evaluación
 3. Instrumentos de evaluación / Criterios de calificación
+4. Unidades de trabajo
+5. Actitud
 
 ---
 
@@ -156,3 +158,22 @@ Calificación de cada evaluación:
 | 1EVAL | 100%  |        |        |
 | 2EVAL | 30%   | 70% 🔒 |        |
 | 3EVAL | 20%   | 20%    | 60% 🔒 |
+
+## Unidades de trabajo
+
+- UT0: Preparación del entorno de trabajo
+- UT1: Introducción a la programación web
+- UT2: Construyendo un blog
+- UT3: Montando una web para compratir favoritos
+- UT4: Desarrollando un comercio electrónico
+- UT5: Creando una plataforma de aprendizaje online
+
+---
+
+## Actitud
+
+1. Puntualidad
+2. Compromiso
+3. Respeto
+4. Solidaridad
+5. Ilusión
