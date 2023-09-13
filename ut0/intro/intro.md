@@ -153,11 +153,14 @@ Cada resultado de aprendizaje viene definido por una serie de **criterios de eva
 
 Calificación de cada evaluación:
 
-|       | 1EVAL | 2EVAL  | 3EVAL  |
-| ----- | ----- | ------ | ------ |
-| 1EVAL | 100%  |        |        |
-| 2EVAL | 30%   | 70% 🔒 |        |
-| 3EVAL | 20%   | 20%    | 60% 🔒 |
+|       | 1EVAL | 2EVAL  |
+| ----- | ----- | ------ |
+| 1EVAL | 100%  |        |
+| 2EVAL | 30%   | 70% 🔒 |
+
+🔄 Modelo de evaluación continua con memoria y candado
+
+---
 
 ## Unidades de trabajo
 
