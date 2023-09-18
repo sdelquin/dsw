@@ -101,8 +101,7 @@ Igualmente se han preparado algunos **comandos útiles**:
 - `Ctrl-y`: copiar la selección al portapapeles.
 - `a`: copiar la selección justo debajo del cursor.
 
-## Bases de datos
+## Herramientas
 
-### sqlite3
-
-Herramienta cliente en línea de comandos para manejar bases de datos de tipo sqlite.
+- [sqlite3](https://www.sqlite.org/index.html): Herramienta cliente en línea de comandos para manejar bases de datos de tipo sqlite.
+- [just](https://github.com/casey/just): Herramienta para poder ejecutar comandos predefinidos en proyectos.
