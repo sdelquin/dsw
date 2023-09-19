@@ -1,4 +1,4 @@
-# Cositas molonas de la máquina virtual
+# Funcionalidades de la máquina virtual
 
 ## Python
 
@@ -7,6 +7,8 @@ Abrir intérprete interactivo de Python (`ipython`):
 ```console
 $ p
 ```
+
+![ipython](./images/ipython.png)
 
 ### Pyenv
 
@@ -29,6 +31,10 @@ Desactivar el entorno virtual:
 $ cd <rutal/al/proyecto>
 $ d
 ```
+
+Ejemplo:
+
+![Activar-Desactivar venv](./images/actdeact-venv.png)
 
 ## Copiar y pegar
 
@@ -58,17 +64,23 @@ Listado de **todos los ficheros con detalles y tamaños en unidades "humanas"** 
 $ ll
 ```
 
+![ll](./images/ll.png)
+
 Listado de **todos los ficheros (también ocultos) con detalles y tamaños en unidades "humanas"** ordenados de más reciente a menos reciente modificación:
 
 ```console
 $ lla
 ```
 
+![lla](./images/lla.png)
+
 Es posible **crear una carpeta y moverse a ella** (todo en uno) utilizando el siguiente comando:
 
 ```console
 $ take <nueva/ruta>
 ```
+
+![Ejemplo take](./images/take.png)
 
 ## Visual Studio Code
 
@@ -78,6 +90,8 @@ $ take <nueva/ruta>
 $ cd <ruta/al/proyecto>
 $ e
 ```
+
+> 💡 `e` es un alias para `code .`
 
 En Visual Studio Code están ya configurados los siguientes **componentes Python**:
 
@@ -94,6 +108,8 @@ El editor [Vim](https://www.vim.org/) está ya configurado con los siguientes **
 - [Ctrlp](https://github.com/kien/ctrlp.vim): Navegador de ficheros de acceso rápido.
 - [Tema PaperColor](https://github.com/NLKNguyen/papercolor-theme): Tema de color.
 
+![Vim in action](./images/vim.png)
+
 Igualmente se han preparado algunos **comandos útiles**:
 
 - `dl`: duplicar la línea actual.
@@ -103,5 +119,9 @@ Igualmente se han preparado algunos **comandos útiles**:
 
 ## Herramientas
 
+Las siguientes herramientas ya vienen preinstaladas en la máquina:
+
+- [just](https://github.com/casey/just): Herramienta para poder ejecutar comandos predefinidos en proyectos (_makefiles_).
 - [sqlite3](https://www.sqlite.org/index.html): Herramienta cliente en línea de comandos para manejar bases de datos de tipo sqlite.
-- [just](https://github.com/casey/just): Herramienta para poder ejecutar comandos predefinidos en proyectos.
+- [postgresql](https://www.postgresql.org/): Sistema gestor de bases de datos.
+- [redis](https://redis.io/): almacenamiento clave-valor en memoria.

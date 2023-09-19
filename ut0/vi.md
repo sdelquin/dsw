@@ -2,7 +2,7 @@
 
 Vi o [Vim](https://www.vim.org/) (Vi improved) es un **editor de texto para línea de comandos** con infinitas posibilidades.
 
-![Vim Logo](./images/vim.png)
+![Vim Logo](./images/vim-logo.png)
 
 ## Recursos de aprendizaje
 
