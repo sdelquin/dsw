@@ -40,3 +40,11 @@ curl http://amy/daw/2daw/dsw/setup.sh | bash -s dsw
 ```
 
 > ⚠️ Cuando nos lo solicite tendremos que poner la contraseña (ojo porque no se ve cuando la escribimos).
+
+Por último **modificamos la contraseña** que está por defecto para el usuario `alu` poniendo otra distinta QUE NO DEBEMOS OLVIDAR:
+
+```console
+passwd
+```
+
+![passwd](./images/passwd.png)
