@@ -169,6 +169,8 @@ La elección del lenguaje de programación es importante pero no decisiva. Hay q
 
 En cualquier caso, cuando hablamos de programación del lado del servidor, los lenguajes de programación tienen características que los diferencian tanto en tiempo de desarrollo, compilación y ejecución.
 
+![Lenguajes web](./images/web-langs.svg)
+
 Si nos centramos en **desarrollo web para entorno servidor** podemos citar algunas de las opciones disponibles:
 
 | Lenguaje                                                                            | Framework                                                               |
@@ -182,6 +184,11 @@ Si nos centramos en **desarrollo web para entorno servidor** podemos citar algun
 | [Python](https://www.python.org/)                                                   | [Django](https://www.djangoproject.com/)                                |
 
 > 💡 Todos los lenguajes tienen ventajas e inconvenientes. El lenguaje de programación debe ser una herramienta para solucionar el problema, no un fin en sí mismo. Explora las distintas posibilidades y trata de encontrar aquella herramienta que mejor se adapte al proyecto.
+
+Si queremos ver una muestra de lenguajes utilizados en la industria podemos echar un vistazo a [LeanMind](https://leanmind.es/es/) una empresa canaria dedicada al desarrollo de software:
+
+- [Tecnologías de desarrollo frontend en LeanMind](https://leanmind.es/es/desarrollo/frontend/)
+- [Tecnologías de desarrollo backend en LeanMind](https://leanmind.es/es/desarrollo/backend/)
 
 ## Framework web
 
@@ -197,10 +204,21 @@ La respuesta gráfica que se devuelve al usuario consiste en **integrar parte de
 
 Este mecanismo de "renderizado" de las plantillas se realiza mediante un **motor de plantillas**.
 
+Un ejemplo de plantilla:
+
+![Django Template](./images/django-template.png)
+
 ## Integración con el servidor web
 
 La comunicación entre un cliente web o navegador y un servidor web se lleva a cabo gracias al **protocolo HTTP**. En el caso de las aplicaciones web, HTTP es el vínculo de unión entre el usuario y la aplicación en sí. Cualquier introducción de información que realice el usuario se transmite mediante una petición HTTP, y el resultado que obtiene le llega por medio de una respuesta HTTP.
 
-En el lado del servidor, estas peticiones son procesadas por el servidor web. Es por tanto el servidor web el encargado de decidir cómo procesar las peticiones que recibe. Cada una de las arquitecturas que acabamos de ver tiene **una forma de integrarse con el servidor web** para ejecutar el código de la aplicación.
+En el lado del servidor, estas peticiones son procesadas por el servidor web. Es por tanto el servidor web el encargado de decidir cómo procesar las peticiones que recibe. Cada una de las arquitecturas que acabamos de ver tiene **una forma de integrarse con el servidor web** para ejecutar el código de la aplicación, derivando este procesamiento a un **servidor de aplicación**.
 
-La integración de los módulos de procesamiento con el servidor web es un objetivo claro del módulo "Despliegue de aplicaciones web" de 2º curso de Desarrollo de Aplicaciones Web.
+**Ejemplos de integración** de servidores de aplicación con servidores web:
+
+- [Servidor web Nginx](https://www.nginx.com/) con [uwsgi](https://uwsgi-docs.readthedocs.io/en/latest/) o [gunicorn](https://gunicorn.org/).
+- [Servidor web Apache](https://httpd.apache.org/) con [modphp](https://www.serverlab.ca/tutorials/linux/web-servers-linux/installing-php-for-apache-on-ubuntu/) o [tomcat](https://tomcat.apache.org/).
+
+![Webserver Integration](./images/webserver-integration.svg)
+
+> 💡 La integración de los módulos de procesamiento con el servidor web es un objetivo claro del módulo "Despliegue de aplicaciones web" de 2º curso de Desarrollo de Aplicaciones Web.
