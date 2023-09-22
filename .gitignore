@@ -3,6 +3,6 @@
 .artwork
 *.pyc
 ut0/chat_done.dat
-ut0/max_product/max_product.py
+ut0/max_product/max_product*.py
 ut0/max_product/deliveries
 ut2/blog/db.sqlite3
