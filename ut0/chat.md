@@ -8,11 +8,11 @@
 ```python
 import random
 
-chat_done = set(int(n.strip()) for n in open('chat_done.dat'))
+chat_done = set(int(n.strip()) for n in open('files/chat_done.dat'))
 if not(chat_left := set(range(1, 31)) - chat_done):
     print('END❗')
 else:
     pick = random.choice(list(chat_left))
-    open('chat_done.dat', 'a').write(f'{pick}\n')
+    open('files/chat_done.dat', 'a').write(f'{pick}\n')
     print(f'Student #{pick}')
 ```

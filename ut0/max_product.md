@@ -42,7 +42,7 @@ Hay que controlar tres posibles errores. Para cada uno de ellos se deberá eleva
 
 ## Tests
 
-Puedes descargar [los tests](./test_max_product.py) y probar tu programa con:
+Puedes descargar [los tests](./files/test_max_product.py) y probar tu programa con:
 
 ```console
 $ pytest
