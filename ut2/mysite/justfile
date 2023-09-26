@@ -5,4 +5,4 @@ migrate:
     python manage.py migrate
 
 startapp app:
-    python manage.py startapp {{app}}
+    django-admin startapp {{app}}
