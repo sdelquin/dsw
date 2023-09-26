@@ -1,8 +1,0 @@
-runserver:
-    python manage.py runserver
-
-migrate:
-    python manage.py migrate
-
-startapp app:
-    django-admin startapp {{app}}
