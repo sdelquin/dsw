@@ -8,13 +8,21 @@ Abrimos una terminal **desde la máquina real**:
 
 ![Open terminal](./images/open-terminal.png)
 
-Y ejecutamos lo siguiente:
+Construimos la máquina virtual con el siguiente comando:
 
 ```console
-curl http://amy/daw/2daw/dsw/bootstrap.sh | bash -s dsw
+curl http://amy/daw/2daw/dsw/build.sh | bash -s dsw
 ```
 
 > ⚠️ Este proceso puede durar varios minutos. ¡Paciencia!
+
+Ajutamos los parámetros de la interfaz de red con el siguiente comando:
+
+```console
+curl http://amy/daw/2daw/dsw/fixnet.sh | bash -s dsw
+```
+
+> 👆 Esto último también habría que aplicarlo en caso de **CAMBIO DE PUESTO** durante el curso.
 
 ## Arranque y configuración
 
