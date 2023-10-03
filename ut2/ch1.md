@@ -62,6 +62,21 @@ Crear el proyecto:
 
 > ⚠️ Ojo con el punto del final para indicar que se cree en la carpeta de trabajo actual.
 
+La carpeta del proyecto (_en este punto_) debería tener la siguiente estructura:
+
+```console
+.
+├── manage.py
+└── mysite
+    ├── __init__.py
+    ├── asgi.py
+    ├── settings.py
+    ├── urls.py
+    └── wsgi.py
+
+1 directory, 6 files
+```
+
 ## Justfile
 
 El fichero `justfile` (sin extensión) suele vivir en el raíz de nuestro proyecto.
@@ -94,7 +109,7 @@ migrate
 startapp app
 ```
 
-[Aquí](./mysite/justfile) tienes un `justfile` un poco más completo.
+Puedes consultar este [justfile](./mysite/justfile) que incluye muchas más "recetas".
 
 ✨ [Documentación de just](https://just.systems/man/en/)
 
