@@ -1,5 +1,11 @@
+check:
+    python manage.py check
+
 shell:
     python manage.py shell
+
+makemigrations app:
+    python manage.py makemigrations {{ app }}
 
 migrate:
     python manage.py migrate
@@ -9,3 +15,9 @@ runserver:
 
 startapp app:
     python manage.py startapp {{ app }}
+
+sql app migration_id:
+    python manage.py sqlmigrate {{ app }} {{ migration_id }}
+
+addroot:
+    python manage.py createsuperuser

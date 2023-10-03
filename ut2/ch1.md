@@ -94,6 +94,8 @@ migrate
 startapp app
 ```
 
+[Aquí](./mysite/justfile) tienes un `justfile` un poco más completo.
+
 ✨ [Documentación de just](https://just.systems/man/en/)
 
 ## Base de datos
@@ -105,8 +107,3 @@ La base de datos por defecto de un proyecto Django es `db.sqlite3`.
 ## Requerimientos
 
 Es una buena práctica crear un fichero `requirements.txt` en el raíz del proyecto con todas las dependencias que tiene nuestro proyecto. En este caso sólo tenemos Django, así que el fichero sólo tendría 1 línea con el contenido `django`.
-
-## Referencias Django
-
-- [Explicación de los ajustes de proyecto](https://docs.djangoproject.com/en/4.2/topics/settings/)
-- [Tipos de campos para modelos](https://docs.djangoproject.com/en/4.2/ref/models/fields/)
