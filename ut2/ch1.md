@@ -122,3 +122,15 @@ La base de datos por defecto de un proyecto Django es `db.sqlite3`.
 ## Requerimientos
 
 Es una buena práctica crear un fichero `requirements.txt` en el raíz del proyecto con todas las dependencias que tiene nuestro proyecto. En este caso sólo tenemos Django, así que el fichero sólo tendría 1 línea con el contenido `django`.
+
+## Ignorando autoformateado de plantillas
+
+En VSCode existe una extensión [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) que permite el autoformateado de hojas de estilo y HTML cuando guardamos el archivo. Esto no nos interesa en el caso de las **plantillas de Django**.
+
+Para deshabilitarlo basta con añadir un fichero `.prettierignore` en el raíz de nuestro proyecto con el contenido:
+
+```console
+templates
+```
+
+Con esto indicamos que se ignore el autoformateado para todo lo que cuelgue de carpetas llamadas `templates`.
