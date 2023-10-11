@@ -7,6 +7,9 @@ check:
 shell:
     python manage.py shell
 
+clean:
+    find . -name '*.pyc' -exec rm {} \;
+
 makemigrations app:
     python manage.py makemigrations {{ app }}
 
@@ -19,7 +22,7 @@ startapp app:
 sql app migration_id:
     python manage.py sqlmigrate {{ app }} {{ migration_id }}
 
-addroot:
+createsu:
     python manage.py createsuperuser
 
 dumpdata output:
