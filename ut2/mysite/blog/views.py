@@ -1,15 +1,22 @@
+from django.contrib.postgres.search import TrigramSimilarity
 from django.core.mail import send_mail
 from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
+from django.db.models import Count
 from django.http import HttpRequest, HttpResponse
 from django.shortcuts import get_object_or_404, render
 from django.views.decorators.http import require_POST
+from taggit.models import Tag
 
-from .forms import CommentForm, EmailPostForm
+from .forms import CommentForm, EmailPostForm, SearchForm
 from .models import Post
 
 
-def post_list(request: HttpRequest) -> HttpResponse:
+def post_list(request: HttpRequest, tag_slug: str = '') -> HttpResponse:
     all_posts = Post.published.all()
+    tag = ''
+    if tag_slug:
+        tag = get_object_or_404(Tag, slug=tag_slug)
+        all_posts = all_posts.filter(tags__in=[tag])
     # Pagination with 3 posts per page
     paginator = Paginator(all_posts, 3)
     page_number = request.GET.get('page', 1)
@@ -19,7 +26,7 @@ def post_list(request: HttpRequest) -> HttpResponse:
         posts = paginator.page(paginator.num_pages)
     except PageNotAnInteger:
         posts = paginator.page(1)
-    return render(request, 'blog/post/list.html', {'posts': posts})
+    return render(request, 'blog/post/list.html', dict(posts=posts, tag=tag))
 
 
 def post_detail(request: HttpRequest, year: int, month: int, day: int, post: Post) -> HttpResponse:
@@ -35,8 +42,18 @@ def post_detail(request: HttpRequest, year: int, month: int, day: int, post: Pos
     comments = post.comments.filter(active=True)
     # Form for users to comment
     form = CommentForm()
+
+    # List of similar posts
+    post_tags_ids = post.tags.values_list('id', flat=True)
+    similar_posts = Post.published.filter(tags__in=post_tags_ids).exclude(id=post.id)
+    similar_posts = similar_posts.annotate(same_tags=Count('tags')).order_by(
+        '-same_tags', '-publish'
+    )[:4]
+
     return render(
-        request, 'blog/post/detail.html', {'post': post, 'comments': comments, 'form': form}
+        request,
+        'blog/post/detail.html',
+        dict(post=post, comments=comments, form=form, similar_posts=similar_posts),
     )
 
 
@@ -78,3 +95,21 @@ def post_comment(request: HttpRequest, post_id: int) -> HttpResponse:
         return render(
             request, 'blog/post/comment.html', {'post': post, 'form': form, 'comment': comment}
         )
+
+
+def post_search(request):
+    form = SearchForm()
+    query = None
+    results = []
+    if 'query' in request.GET:
+        form = SearchForm(request.GET)
+        if form.is_valid():
+            query = form.cleaned_data['query']
+            results = (
+                Post.published.annotate(similarity=TrigramSimilarity('title', query))
+                .filter(similarity__gt=0.1)
+                .order_by('-similarity')
+            )
+    return render(
+        request, 'blog/post/search.html', {'form': form, 'query': query, 'results': results}
+    )

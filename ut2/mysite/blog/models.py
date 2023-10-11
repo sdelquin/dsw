@@ -3,6 +3,7 @@ from django.db import models
 from django.db.models.query import QuerySet
 from django.urls import reverse
 from django.utils import timezone
+from taggit.managers import TaggableManager
 
 
 class PublishedManager(models.Manager):
@@ -23,6 +24,7 @@ class Post(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
     status = models.CharField(max_length=2, choices=Status.choices, default=Status.DRAFT)
+    tags = TaggableManager()
 
     objects = models.Manager()
     published = PublishedManager()

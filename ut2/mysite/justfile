@@ -1,3 +1,6 @@
+runserver:
+    python manage.py runserver
+
 check:
     python manage.py check
 
@@ -10,9 +13,6 @@ makemigrations app:
 migrate:
     python manage.py migrate
 
-runserver:
-    python manage.py runserver
-
 startapp app:
     python manage.py startapp {{ app }}
 
@@ -21,3 +21,9 @@ sql app migration_id:
 
 addroot:
     python manage.py createsuperuser
+
+dumpdata output:
+    python manage.py dumpdata --indent=2 --output={{ output }}
+
+loaddata input:
+    python manage.py loaddata {{ input }}
