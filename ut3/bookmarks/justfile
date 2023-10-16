@@ -1,29 +1,19 @@
-runserver: launch_postgres
+runserver: _database
     python manage.py runserver
 
 check:
     python manage.py check
 
-shell: launch_postgres
+shell: _database
     python manage.py shell
-
-launch_postgres:
-    #!/usr/bin/env bash
-    # Launch Postgres.app if not running yet
-    # Currently it only works for MacOS
-    if [[ $OSTYPE == "darwin"* ]]; then
-        if [ -z $(pgrep -x postgres) ]; then
-            open /Applications/Postgres.app
-        fi
-    fi
 
 clean:
     find . -name '*.pyc' -exec rm {} \;
 
-makemigrations app: launch_postgres
+makemigrations app: _database
     python manage.py makemigrations {{ app }}
 
-migrate: launch_postgres
+migrate: _database
     python manage.py migrate
 
 startapp app:
@@ -32,11 +22,19 @@ startapp app:
 sql app migration_id:
     python manage.py sqlmigrate {{ app }} {{ migration_id }}
 
-createsu:
+createsu: _database
     python manage.py createsuperuser
 
-dumpdata output:
+dumpdata output: _database
     python manage.py dumpdata --indent=2 --output={{ output }}
 
-loaddata input:
+loaddata input: _database
     python manage.py loaddata {{ input }}
+
+_database:
+    #!/usr/bin/env bash
+    if   [[ $OSTYPE == "linux-gnu"* ]]; then
+        sudo service postgresql status &> /dev/null || sudo service postgresql start
+    elif [[ $OSTYPE == "darwin"* ]]; then
+        pgrep -x postgres || open /Applications/Postgres.app
+    fi
