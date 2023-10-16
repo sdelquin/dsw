@@ -1,19 +1,29 @@
-runserver:
+runserver: launch_postgres
     python manage.py runserver
 
 check:
     python manage.py check
 
-shell:
+shell: launch_postgres
     python manage.py shell
+
+launch_postgres:
+    #!/usr/bin/env bash
+    # Launch Postgres.app if not running yet
+    # Currently it only works for MacOS
+    if [[ $OSTYPE == "darwin"* ]]; then
+        if [ -z $(pgrep -x postgres) ]; then
+            open /Applications/Postgres.app
+        fi
+    fi
 
 clean:
     find . -name '*.pyc' -exec rm {} \;
 
-makemigrations app:
+makemigrations app: launch_postgres
     python manage.py makemigrations {{ app }}
 
-migrate:
+migrate: launch_postgres
     python manage.py migrate
 
 startapp app:
