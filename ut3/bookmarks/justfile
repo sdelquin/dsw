@@ -10,11 +10,14 @@ shell: _database
 clean:
     find . -name '*.pyc' -exec rm {} \;
 
-makemigrations app: _database
+makemigrations app="": _database
     python manage.py makemigrations {{ app }}
 
-migrate: _database
-    python manage.py migrate
+showmigrations app="": _database
+    python manage.py showmigrations {{ app }}
+
+migrate app="": _database
+    python manage.py migrate {{ app }}
 
 startapp app:
     python manage.py startapp {{ app }}
@@ -33,8 +36,10 @@ loaddata input: _database
 
 _database:
     #!/usr/bin/env bash
-    if   [[ $OSTYPE == "linux-gnu"* ]]; then
-        sudo service postgresql status &> /dev/null || sudo service postgresql start
-    elif [[ $OSTYPE == "darwin"* ]]; then
-        pgrep -x postgres || open /Applications/Postgres.app
+    if [ ! -e *.sqlite3 ]; then
+        if   [[ $OSTYPE == "linux-gnu"* ]]; then
+            sudo service postgresql status &> /dev/null || sudo service postgresql start
+        elif [[ $OSTYPE == "darwin"* ]]; then
+            pgrep -x postgres || open /Applications/Postgres.app
+        fi
     fi
