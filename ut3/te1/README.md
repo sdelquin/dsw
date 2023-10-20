@@ -4,19 +4,14 @@
 
 ![Django sticker](../../django-sticker.png)
 
-[Arranque](#arranque)  
 [Modelo entidad-relación](#modelo-entidad-relación)  
-[Tipos de transacciones](#tipos-de-transacciones)  
-[Estado de los objetos](#estado-de-los-objetos)  
-[Código de cuenta cliente](#código-de-cuenta-cliente)  
-[Código de tarjeta](#código-de-tarjeta)  
+[Tipos de objetos](#tipos-de-objetos)  
 [Transferencias](#transferencias)  
-[Compras](#compras)  
-[Simulando pagos](#simulando-pagos)  
+[Pagos](#pagos)  
 [Secciones de la web](#secciones-de-la-web)  
 [Entrega de la tarea](#entrega-de-la-tarea)
 
-## Arranque
+## Nombre del proyecto
 
 ✨ El nombre del proyecto Django será `bank`:
 
@@ -28,7 +23,9 @@ django-admin startproject bank .
 
 ![ER Banco](./images/bank.svg)
 
-## Tipos de transacciones
+## Tipos de objetos
+
+### Tipos de transacciones
 
 Habrá (al menos) 4 tipos de transacciones:
 
@@ -37,7 +34,7 @@ Habrá (al menos) 4 tipos de transacciones:
 3. Transferencias salientes
 4. Comisiones
 
-## Estado de los objetos
+### Estado de los objetos
 
 Habrá (al menos) 3 tipos de estados:
 
@@ -45,7 +42,7 @@ Habrá (al menos) 3 tipos de estados:
 2. Bloqueado.
 3. De baja.
 
-## Código de cuenta cliente
+### Código de cuenta cliente
 
 Nuestro CCC (Código de Cuenta Cliente) seguirá la siguiente expresión regular:
 
@@ -67,9 +64,9 @@ Las cuentas, dentro del mismo banco, se irán asignando de manera correlativa. P
 - `B1-0002`
 - `B1-0003`
 
-## Código de tarjeta
+### Código de tarjeta
 
-Los **códigos de las tarjetas** tendrán la siguiente estructura:
+Los **códigos de las tarjetas** tendrán la siguiente estructura y se irán asignando de manera correlativa:
 
 - `CC-0001`
 - `CC-0002`
@@ -105,11 +102,11 @@ Códigos de respuesta:
 - Si todo ha ido bien se debe devolver un [200 OK](https://docs.djangoproject.com/en/4.2/ref/request-response/#httpresponse-objects).
 - Si ha habido algún error se debe devolver un [400 Bad Request](https://docs.djangoproject.com/en/4.2/ref/request-response/#django.http.HttpResponseBadRequest) indicando en el mensaje de error la descripción de lo sucedido.
 
-## Compras
+## Pagos
 
-Sólo es posible **realizar compras usando tarjeta**.
+Sólo es posible **realizar pagos usando tarjeta**.
 
-### Protocolo de compras
+### Protocolo de pagos
 
 Supongamos que un cliente del banco 1 compra una pachanga en el comercio "Dulces Dorado" pagando con tarjeta.
 
@@ -119,12 +116,12 @@ Para que "Dulces Dorado" pueda hacer el cobro tendría que hacer una petición P
 
 Con los campos:
 
-| Campo      | Descripción                                    |
-| ---------- | ---------------------------------------------- |
-| `business` | Comercio                                       |
-| `ccc`      | Código de tarjeta cliente (_client card code_) |
-| `pin`      | Código de seguridad de la tarjeta              |
-| `amount`   | Importe                                        |
+| Campo      | Descripción                                        |
+| ---------- | -------------------------------------------------- |
+| `business` | Comercio                                           |
+| `ccc`      | Código de **tarjeta cliente** (_client card code_) |
+| `pin`      | Código de seguridad de la tarjeta                  |
+| `amount`   | Importe                                            |
 
 Códigos de respuesta:
 
@@ -132,11 +129,11 @@ Códigos de respuesta:
 - Si el código de seguridad de la tarjeta no es el correcto se debe devolver un [403 Forbidden](https://docs.djangoproject.com/en/4.2/ref/request-response/#django.http.HttpResponseForbidden).
 - Si ha habido algún otro error se debe devolver un [400 Bad Request](https://docs.djangoproject.com/en/4.2/ref/request-response/#django.http.HttpResponseBadRequest) indicando en el mensaje de error la descripción de lo sucedido.
 
-## Simulando pagos
+### Simulando pagos
 
 Para simular un pago debemos realizar **una petición POST** al banco.
 
-### Línea de comandos
+#### Línea de comandos
 
 Podemos simular un pago utilizando la herramienta de línea de comandos [curl](https://curl.se/).
 
@@ -146,7 +143,7 @@ Ejemplo de uso:
 curl -X POST -d '{"business": "Dulcería Dorado", "ccc": "B1-0001", "pin": "RF8", "amount": "7"}' http://bank1/payment
 ```
 
-### Navegador
+#### Navegador
 
 Podemos simular un pago utilizando la herramienta web [httpie.io](https://httpie.io/app)
 
@@ -156,7 +153,7 @@ Ejemplo de uso:
 
 ## Secciones de la web
 
-Habrá que implementar (al menos) las siguentes secciones de la web:
+Habrá que implementar (al menos) las siguientes secciones de la web:
 
 - Registro.
 - Login.
