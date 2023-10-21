@@ -6,8 +6,7 @@
 
 [Modelo entidad-relación](#modelo-entidad-relación)  
 [Tipos de objetos](#tipos-de-objetos)  
-[Transferencias](#transferencias)  
-[Pagos](#pagos)  
+[Transacciones](#transacciones)  
 [Secciones de la web](#secciones-de-la-web)  
 [Entrega de la tarea](#entrega-de-la-tarea)
 
@@ -78,11 +77,13 @@ Los **códigos PIN** de las tarjetas serán secuencias de 3 caracteres alfanumé
 - `3YA`
 - `99T`
 
-## Transferencias
+## Transacciones
+
+### Transferencias
 
 Podemos tener **transferencias entrantes** o **transferencias salientes**.
 
-### Protocolo de transferencias
+#### Protocolo de transferencias
 
 Supongamos que el banco 1 quiere enviar una transferencia al banco 2. Para ello, el banco 1 tendría que hacer una petición POST al banco 2 a través de la siguiente URL:
 
@@ -102,11 +103,17 @@ Códigos de respuesta:
 - Si todo ha ido bien se debe devolver un [200 OK](https://docs.djangoproject.com/en/4.2/ref/request-response/#httpresponse-objects).
 - Si ha habido algún error se debe devolver un [400 Bad Request](https://docs.djangoproject.com/en/4.2/ref/request-response/#django.http.HttpResponseBadRequest) indicando en el mensaje de error la descripción de lo sucedido.
 
-## Pagos
+#### Nómina
+
+Dado que **debe haber ingresos** en la cuenta para que sea sostenible, podemos simular el ingreso de la nómina utilizando una transferencia.
+
+Para ello podemos simular una petición POST de tipo transferencia del mismo modo que lo hacemos para [simular pagos](#simulando-pagos).
+
+### Pagos
 
 Sólo es posible **realizar pagos usando tarjeta**.
 
-### Protocolo de pagos
+#### Protocolo de pagos
 
 Supongamos que un cliente del banco 1 compra una pachanga en el comercio "Dulces Dorado" pagando con tarjeta.
 
@@ -129,11 +136,11 @@ Códigos de respuesta:
 - Si el código de seguridad de la tarjeta no es el correcto se debe devolver un [403 Forbidden](https://docs.djangoproject.com/en/4.2/ref/request-response/#django.http.HttpResponseForbidden).
 - Si ha habido algún otro error se debe devolver un [400 Bad Request](https://docs.djangoproject.com/en/4.2/ref/request-response/#django.http.HttpResponseBadRequest) indicando en el mensaje de error la descripción de lo sucedido.
 
-### Simulando pagos
+#### Simulando pagos
 
 Para simular un pago debemos realizar **una petición POST** al banco.
 
-#### Línea de comandos
+##### Línea de comandos
 
 Podemos simular un pago utilizando la herramienta de línea de comandos [curl](https://curl.se/).
 
@@ -143,13 +150,20 @@ Ejemplo de uso:
 curl -X POST -d '{"business": "Dulcería Dorado", "ccc": "B1-0001", "pin": "RF8", "amount": "7"}' http://bank1/payment
 ```
 
-#### Navegador
+##### Navegador
 
 Podemos simular un pago utilizando la herramienta web [httpie.io](https://httpie.io/app)
 
 Ejemplo de uso:
 
 ![Httpie](./images/httpie.png)
+
+### Comisiones
+
+Habrá que aplicar (al menos) las siguientes comisiones:
+
+- 5% del importe en transferencias salientes.
+- 7% del importe en pagos con tarjeta.
 
 ## Secciones de la web
 
