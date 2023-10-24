@@ -18,11 +18,13 @@
 django-admin startproject bank .
 ```
 
-🐱 El repositorio GitHub también se llamará `bank`, deberá ser **privado** y tendrán que añadir al profe (`@sdelquin`) como colaborador para que pueda ver el código.
+🐱 El repositorio GitHub también se llamará `bank`, deberá ser **privado** y habrá que añadir al profe (`@sdelquin`) como colaborador para que pueda ver el código.
 
 ## Modelo entidad-relación
 
 ![ER Banco](./images/bank.svg)
+
+> 💡 Tanto `password` como `pin` habrá que almacenarlos como un hash en la base de datos utilizando para ello el algoritmo [PBKDF2](https://docs.djangoproject.com/en/4.2/topics/auth/passwords/).
 
 ## Tipos de objetos
 
@@ -63,7 +65,7 @@ El código de cuenta cliente seguirá la siguiente expresión regular:
 
 `A\d-\d\d\d\d`
 
-Las cuentas, dentro del mismo banco, se irán asignando de manera correlativa. Por ejemplo, para el banco `B1`:
+Las cuentas, dentro del mismo banco, se irán asignando de manera correlativa. Por ejemplo, **para el banco 1**:
 
 - `A1-0001`
 - `A1-0002`
@@ -77,7 +79,7 @@ El código de tarjeta cliente seguirá la siguiente expresión regular:
 
 `C\d-\d\d\d\d`
 
-Las tarjetas, dentro del mismo, se irán asignando de manera correlativa. Por ejemplo, para el banco `B1`:
+Las tarjetas, dentro del mismo, se irán asignando de manera correlativa. Por ejemplo, **para el banco 1**:
 
 - `C1-0001`
 - `C1-0002`
@@ -113,7 +115,7 @@ Con los campos:
 | ---------- | -------------------------------------------------- |
 | `business` | Comercio                                           |
 | `ccc`      | Código de **tarjeta cliente** (_client card code_) |
-| `pin`      | Código de seguridad de la tarjeta **hasheado**     |
+| `pin`      | Código de seguridad de la tarjeta → **hasheado**   |
 | `amount`   | Importe                                            |
 
 Códigos de respuesta:
@@ -133,7 +135,7 @@ Podemos simular un pago utilizando la herramienta de línea de comandos [curl](h
 Ejemplo de uso:
 
 ```bash
-curl -X POST -d '{"business": "Dulcería Dorado", "ccc": "B1-0001", "pin": "RF8", "amount": "7"}' http://bank1/payment
+curl -X POST -d '{"business": "Dulcería Dorado", "ccc": "C1-0001", "pin": "R8K", "amount": "7"}' http://bank1/payment
 ```
 
 ##### Navegador
@@ -172,7 +174,7 @@ Códigos de respuesta:
 
 Dado que **debe haber ingresos** en la cuenta para que sea sostenible, podemos simular el ingreso de la nómina utilizando una transferencia.
 
-Para ello podemos simular una petición POST de tipo transferencia del mismo modo que hicimos para [simular pagos](#simulando-pagos).
+Para ello realizamos una petición POST de tipo transferencia del mismo modo que hicimos para [simular pagos](#simulando-pagos).
 
 ### Comisiones
 
