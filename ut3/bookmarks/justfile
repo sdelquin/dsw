@@ -1,7 +1,7 @@
-runserver: _database
+runserver: _database _redis
     python manage.py runserver
 
-runserver0: _database
+runserver0: _database _redis
     python manage.py runserver 0.0.0.0:80
 
 check:
@@ -37,6 +37,9 @@ dumpdata output: _database
 loaddata input: _database
     python manage.py loaddata {{ input }}
 
+dshell:
+    python manage.py debugsqlshell
+
 _database:
     #!/usr/bin/env bash
     if [ ! -e *.sqlite3 ]; then
@@ -45,4 +48,12 @@ _database:
         elif [[ $OSTYPE == "darwin"* ]]; then
             pgrep -x postgres || open /Applications/Postgres.app
         fi
+    fi
+
+_redis:
+    #!/usr/bin/env bash
+    if   [[ $OSTYPE == "linux-gnu"* ]]; then
+        sudo service redis status &> /dev/null || sudo service redis start
+    elif [[ $OSTYPE == "darwin"* ]]; then
+        pgrep -x redis || open /Applications/Redis.app
     fi
