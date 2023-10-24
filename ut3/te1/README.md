@@ -12,11 +12,13 @@
 
 ## Nombre del proyecto
 
-✨ El nombre del proyecto Django será `bank`:
+🐍 El nombre del proyecto Django será `bank`:
 
 ```console
 django-admin startproject bank .
 ```
+
+🐱 El repositorio GitHub también se llamará `bank`, deberá ser **privado** y tendrán que añadir al profe (`@sdelquin`) como colaborador para que pueda ver el código.
 
 ## Modelo entidad-relación
 
@@ -45,37 +47,45 @@ Habrá (al menos) 3 tipos de estados:
 
 Nuestro CCC (Código de Cuenta Cliente) seguirá la siguiente expresión regular:
 
-`B[1-7]-\d\d\d\d`
-
-`B[1-7]` indicará el banco al que hacemos referencia:
-
-- `B1`: Banco del grupo 1 → http://bank1
-- `B2`: Banco del grupo 2 → http://bank2
-- `B3`: Banco del grupo 3 → http://bank3
-- `B4`: Banco del grupo 4 → http://bank4
-- `B5`: Banco del grupo 5 → http://bank5
-- `B6`: Banco del grupo 6 → http://bank6
-- `B7`: Banco del grupo 7 → http://bank7
+`A[1-7]-\d\d\d\d`
 
 Las cuentas, dentro del mismo banco, se irán asignando de manera correlativa. Por ejemplo, para el banco `B1`:
 
-- `B1-0001`
-- `B1-0002`
-- `B1-0003`
+- `A1-0001`
+- `A1-0002`
+- `A1-0003`
+
+> 💡 "A" viene de "Account"
 
 ### Código de tarjeta
 
-Los **códigos de las tarjetas** tendrán la siguiente estructura y se irán asignando de manera correlativa:
+Los **códigos de las tarjetas** tendrán la siguiente estructura y se irán asignando de manera correlativa. Por ejemplo, para el banco `B1`:
 
-- `CC-0001`
-- `CC-0002`
-- `CC-0003`
+- `C1-0001`
+- `C1-0002`
+- `C1-0003`
+
+> 💡 "C" hace referencia a "Card"
 
 Los **códigos PIN** de las tarjetas serán secuencias de 3 caracteres alfanuméricos (dígitos y/o letras en mayúsculas). Ejemplos:
 
 - `X4B`
 - `3YA`
 - `99T`
+
+### Direcciones de los bancos
+
+Dado que los bancos serán completamente _online_, su dirección no será física sino que será su URL.
+
+| Banco   | URL          |
+| ------- | ------------ |
+| Banco 1 | http://bank1 |
+| Banco 2 | http://bank2 |
+| Banco 3 | http://bank3 |
+| Banco 4 | http://bank4 |
+| Banco 5 | http://bank5 |
+| Banco 6 | http://bank6 |
+| Banco 7 | http://bank7 |
 
 ## Transacciones
 
@@ -180,18 +190,19 @@ Habrá que implementar (al menos) las siguientes secciones de la web:
 
 ## Entrega de la tarea
 
-Se habilitará una entrega en el **Campus Virtual** donde se tendrá que subir únicamente **la URL al proyecto incluyendo el commit específico**.
+- Se habilitará una entrega en el **Campus Virtual** donde se tendrá que subir únicamente **la URL al proyecto incluyendo el commit específico**.
 
-Para ello basta con acceder en GitHub a la carpeta donde se encuentre el proyecto:
+- Para ello basta con acceder en GitHub a la carpeta donde se encuentre el proyecto:
 
-→ `https://github.com/alu/bank`
+  → `https://github.com/alu/bank`
 
-, y pulsar la tecla <kbd>y</kbd> para que la URL se nos convierta en un formato tipo:
+  , y pulsar la tecla <kbd>y</kbd> para que la URL se nos convierta en un formato tipo:
 
-→ `https://github.com/alu/bank/tree/ffaabb62206fa0c0f350dfe0a4ba370ed00b9218`
+  → `https://github.com/alu/bank/tree/ffaabb62206fa0c0f350dfe0a4ba370ed00b9218`
 
-> 💡 La parte de la url que consta de 40 caracteres es el **hash del commit** y lo identifica de manera unívoca: `ffaabb62206fa0c0f350dfe0a4ba370ed00b9218`
+  > 💡 La parte de la url que consta de 40 caracteres es el **hash del commit** y lo identifica de manera unívoca: `ffaabb62206fa0c0f350dfe0a4ba370ed00b9218`
 
-Por lo tanto, **lo único que hay que subir es la URL que incluye dicho hash**.
+- Por lo tanto, **lo único que hay que subir es la URL que incluye dicho hash**.
+- Es suficiente con que lo suba una persona del grupo.
 
-> ⚠️ El proyecto deberá estar funcional en las URLs de cada banco en la red interna del departamento: http://bank1, http://bank2, ...
+- El proyecto deberá estar funcional en las URLs de cada banco en la red interna del departamento: http://bank1, http://bank2, ...
