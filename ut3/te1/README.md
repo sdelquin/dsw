@@ -26,6 +26,20 @@ django-admin startproject bank .
 
 ## Tipos de objetos
 
+### Bancos
+
+El identificador de cada banco corresponderá con el identificador del grupo (empezando en 1).
+
+Podemos obtener la información de los bancos a través del siguiente código Python:
+
+```python
+>>> import requests
+
+>>> url = 'https://raw.githubusercontent.com/sdelquin/dsw/main/ut3/te1/files/banks.json'
+>>> response = requests.get(url)
+>>> banks = response.json()
+```
+
 ### Tipos de transacciones
 
 Habrá (al menos) 4 tipos de transacciones:
@@ -45,9 +59,9 @@ Habrá (al menos) 3 tipos de estados:
 
 ### Código de cuenta cliente
 
-Nuestro CCC (Código de Cuenta Cliente) seguirá la siguiente expresión regular:
+El código de cuenta cliente seguirá la siguiente expresión regular:
 
-`A[1-7]-\d\d\d\d`
+`A\d-\d\d\d\d`
 
 Las cuentas, dentro del mismo banco, se irán asignando de manera correlativa. Por ejemplo, para el banco `B1`:
 
@@ -59,7 +73,11 @@ Las cuentas, dentro del mismo banco, se irán asignando de manera correlativa. P
 
 ### Código de tarjeta
 
-Los **códigos de las tarjetas** tendrán la siguiente estructura y se irán asignando de manera correlativa. Por ejemplo, para el banco `B1`:
+El código de tarjeta cliente seguirá la siguiente expresión regular:
+
+`C\d-\d\d\d\d`
+
+Las tarjetas, dentro del mismo, se irán asignando de manera correlativa. Por ejemplo, para el banco `B1`:
 
 - `C1-0001`
 - `C1-0002`
@@ -67,57 +85,15 @@ Los **códigos de las tarjetas** tendrán la siguiente estructura y se irán asi
 
 > 💡 "C" hace referencia a "Card"
 
-Los **códigos PIN** de las tarjetas serán secuencias de 3 caracteres alfanuméricos (dígitos y/o letras en mayúsculas). Ejemplos:
+Los **códigos PIN** de las tarjetas serán secuencias de 3 caracteres alfanuméricos (dígitos y/o letras en mayúsculas) generados aleatoriamente. Ejemplos:
 
 - `X4B`
 - `3YA`
 - `99T`
 
-### Direcciones de los bancos
-
-Dado que los bancos serán completamente _online_, su dirección no será física sino que será su URL.
-
-| Banco   | URL          |
-| ------- | ------------ |
-| Banco 1 | http://bank1 |
-| Banco 2 | http://bank2 |
-| Banco 3 | http://bank3 |
-| Banco 4 | http://bank4 |
-| Banco 5 | http://bank5 |
-| Banco 6 | http://bank6 |
-| Banco 7 | http://bank7 |
+> ⚠️ Recuerda almacenar estos códigos de seguridad "hasheados" en la base de datos.
 
 ## Transacciones
-
-### Transferencias
-
-Podemos tener **transferencias entrantes** o **transferencias salientes**.
-
-#### Protocolo de transferencias
-
-Supongamos que el banco 1 quiere enviar una transferencia al banco 2. Para ello, el banco 1 tendría que hacer una petición POST al banco 2 a través de la siguiente URL:
-
-`http://bank2/transfer/incoming`
-
-Con los campos:
-
-| Campo     | Descripción                                      |
-| --------- | ------------------------------------------------ |
-| `sender`  | Nombre del ordenante                             |
-| `cac`     | Código de cuenta cliente (_client account code_) |
-| `concept` | Concepto                                         |
-| `amount`  | Importe                                          |
-
-Códigos de respuesta:
-
-- Si todo ha ido bien se debe devolver un [200 OK](https://docs.djangoproject.com/en/4.2/ref/request-response/#httpresponse-objects).
-- Si ha habido algún error se debe devolver un [400 Bad Request](https://docs.djangoproject.com/en/4.2/ref/request-response/#django.http.HttpResponseBadRequest) indicando en el mensaje de error la descripción de lo sucedido.
-
-#### Nómina
-
-Dado que **debe haber ingresos** en la cuenta para que sea sostenible, podemos simular el ingreso de la nómina utilizando una transferencia.
-
-Para ello podemos simular una petición POST de tipo transferencia del mismo modo que lo hacemos para [simular pagos](#simulando-pagos).
 
 ### Pagos
 
@@ -137,7 +113,7 @@ Con los campos:
 | ---------- | -------------------------------------------------- |
 | `business` | Comercio                                           |
 | `ccc`      | Código de **tarjeta cliente** (_client card code_) |
-| `pin`      | Código de seguridad de la tarjeta                  |
+| `pin`      | Código de seguridad de la tarjeta **hasheado**     |
 | `amount`   | Importe                                            |
 
 Códigos de respuesta:
@@ -167,6 +143,36 @@ Podemos simular un pago utilizando la herramienta web [httpie.io](https://httpie
 Ejemplo de uso:
 
 ![Httpie](./images/httpie.png)
+
+### Transferencias
+
+Podemos tener **transferencias entrantes** o **transferencias salientes**.
+
+#### Protocolo de transferencias
+
+Supongamos que el banco 1 quiere enviar una transferencia al banco 2. Para ello, el banco 1 tendría que hacer una petición POST al banco 2 a través de la siguiente URL:
+
+`http://bank2/transfer/incoming`
+
+Con los campos:
+
+| Campo     | Descripción                                      |
+| --------- | ------------------------------------------------ |
+| `sender`  | Nombre del ordenante                             |
+| `cac`     | Código de cuenta cliente (_client account code_) |
+| `concept` | Concepto                                         |
+| `amount`  | Importe                                          |
+
+Códigos de respuesta:
+
+- Si todo ha ido bien se debe devolver un [200 OK](https://docs.djangoproject.com/en/4.2/ref/request-response/#httpresponse-objects).
+- Si ha habido algún error se debe devolver un [400 Bad Request](https://docs.djangoproject.com/en/4.2/ref/request-response/#django.http.HttpResponseBadRequest) indicando en el mensaje de error la descripción de lo sucedido.
+
+#### Nómina
+
+Dado que **debe haber ingresos** en la cuenta para que sea sostenible, podemos simular el ingreso de la nómina utilizando una transferencia.
+
+Para ello podemos simular una petición POST de tipo transferencia del mismo modo que hicimos para [simular pagos](#simulando-pagos).
 
 ### Comisiones
 
@@ -205,4 +211,4 @@ Habrá que implementar (al menos) las siguientes secciones de la web:
 - Por lo tanto, **lo único que hay que subir es la URL que incluye dicho hash**.
 - Es suficiente con que lo suba una persona del grupo.
 
-- El proyecto deberá estar funcional en las URLs de cada banco en la red interna del departamento: http://bank1, http://bank2, ...
+- El proyecto deberá estar funcional en las URLs de cada banco (red interna del departamento).
