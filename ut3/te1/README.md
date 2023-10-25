@@ -180,8 +180,11 @@ Para ello realizamos una petición POST de tipo transferencia del mismo modo que
 
 Habrá que aplicar (al menos) las siguientes comisiones:
 
-- 5% del importe en transferencias salientes.
-- 7% del importe en pagos con tarjeta.
+|                  | $[1€-50€)$ | $[50€-500€)$ | $≥500€$ |
+| ---------------- | ---------- | ------------ | ------- |
+| Transf. saliente | 2%         | 4%           | 6%      |
+| Transf. entrante | 1%         | 2%           | 3%      |
+| Pagos            | 3%         | 5%           | 7%      |
 
 ## Secciones de la web
 
