@@ -7,6 +7,7 @@
 [Modelo entidad-relación](#modelo-entidad-relación)  
 [Tipos de objetos](#tipos-de-objetos)  
 [Transacciones](#transacciones)  
+[Comisiones](#comisiones)  
 [Secciones de la web](#secciones-de-la-web)  
 [Entrega de la tarea](#entrega-de-la-tarea)
 
@@ -176,7 +177,7 @@ Dado que **debe haber ingresos** en la cuenta para que sea sostenible, podemos s
 
 Para ello realizamos una petición POST de tipo transferencia del mismo modo que hicimos para [simular pagos](#simulando-pagos).
 
-### Comisiones
+## Comisiones
 
 Habrá que aplicar (al menos) las siguientes comisiones:
 
