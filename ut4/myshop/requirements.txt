@@ -1,0 +1,4 @@
+django
+prettyconf
+pillow
+celery

@@ -1,0 +1,101 @@
+open_cmd := if os() == "linux" { "xdg-open" } else { "open" }
+project_url := "http://127.0.0.1:8000"
+rabbitmq_url := "http://127.0.0.1:15672"
+
+
+# Run development server
+runserver: _database _rabbitmq
+    python manage.py runserver
+
+# Run development server on all interfaces at port 80
+runserver0: _database _rabbitmq
+    python manage.py runserver 0.0.0.0:80
+
+# Check whole project
+check:
+    python manage.py check
+
+# Open project in web browser
+open:
+    {{ open_cmd }} {{ project_url }}
+
+# Open python shell with django settings
+shell: _database
+    python manage.py shell
+
+# Clean all precompiled python files
+clean:
+    find . -name '*.pyc' -exec rm {} \;
+
+# Create database migrations for single app or whole project
+makemigrations app="": _database
+    python manage.py makemigrations {{ app }}
+
+# Show database migrations for single app or whole project
+showmigrations app="": _database
+    python manage.py showmigrations {{ app }}
+
+# Run pending migrations for single app or whole project
+migrate app="": _database
+    python manage.py migrate {{ app }}
+
+# Create a new app
+startapp app:
+    python manage.py startapp {{ app }}
+
+# Show SQL behind a migration for a single app
+sql app migration_id:
+    python manage.py sqlmigrate {{ app }} {{ migration_id }}
+
+# Create superuser for django admin
+createsu: _database
+    python manage.py createsuperuser
+
+# Dump database data in json format
+dumpdata output: _database
+    python manage.py dumpdata --indent=2 --output={{ output }}
+
+# Load database data from json format
+loaddata input: _database
+    python manage.py loaddata {{ input }}
+
+# Open debug python shell with django settings
+dshell:
+    python manage.py debugsqlshell
+
+# Launch celery worker
+celery: _rabbitmq
+    celery -A myshop worker -l info
+
+# Open admin dashboard for rabbitmq in web browser
+rabbitmq-admin:
+    {{ open_cmd }} {{ rabbitmq_url }}
+
+# Start database server
+_database:
+    #!/usr/bin/env bash
+    if [ ! -e *.sqlite3 ]; then
+        if   [[ $OSTYPE == "linux-gnu"* ]]; then
+            sudo service postgresql status &> /dev/null || sudo service postgresql start
+        elif [[ $OSTYPE == "darwin"* ]]; then
+            pgrep -x postgres || open /Applications/Postgres.app
+        fi
+    fi
+
+# Start redis server
+_redis:
+    #!/usr/bin/env bash
+    if   [[ $OSTYPE == "linux-gnu"* ]]; then
+        sudo service redis status &> /dev/null || sudo service redis start
+    elif [[ $OSTYPE == "darwin"* ]]; then
+        pgrep -x redis || open /Applications/Redis.app
+    fi
+
+# Start rabbitmq server
+_rabbitmq:
+    #!/usr/bin/env bash
+    if   [[ $OSTYPE == "linux-gnu"* ]]; then
+        sudo service rabbitmq-server status &> /dev/null || sudo service rabbitmq-server start
+    elif [[ $OSTYPE == "darwin"* ]]; then
+        pgrep -x rabbitmq || open /Applications/RabbitMQ.app
+    fi
