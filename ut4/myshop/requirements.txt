@@ -2,3 +2,5 @@ django
 prettyconf
 pillow
 celery
+stripe
+WeasyPrint

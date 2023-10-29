@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'shop.apps.ShopConfig',
     'cart.apps.CartConfig',
     'orders.apps.OrdersConfig',
+    'payment.apps.PaymentConfig',
 ]
 
 MIDDLEWARE = [
@@ -138,3 +139,11 @@ EMAIL_PORT = config('EMAIL_PORT', default=587, cast=int)
 EMAIL_USE_TLS = config('EMAIL_USE_TLS', default=True, cast=config.boolean)
 EMAIL_HOST_USER = config('EMAIL_HOST_USER', default='username')
 EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD', default='password')
+
+# Stripe settings
+STRIPE_PUBLISHABLE_KEY = config('STRIPE_PUBLISHABLE_KEY', default='spk')
+STRIPE_SECRET_KEY = config('STRIPE_SECRET_KEY', default='ssk')
+STRIPE_API_VERSION = config('STRIPE_API_VERSION', default='2023-10-16')
+STRIPE_WEBHOOK_SECRET = config('STRIPE_WEBHOOK_SECRET', default='sws')
+
+STATIC_ROOT = BASE_DIR / 'static'

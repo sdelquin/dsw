@@ -63,6 +63,10 @@ loaddata input: _database
 dshell:
     python manage.py debugsqlshell
 
+# Copy static assets to STATIC_ROOT
+collectstatic:
+    python manage.py collectstatic
+
 # Launch celery worker
 celery: _rabbitmq
     celery -A myshop worker -l info
@@ -70,6 +74,10 @@ celery: _rabbitmq
 # Open admin dashboard for rabbitmq in web browser
 rabbitmq-admin:
     {{ open_cmd }} {{ rabbitmq_url }}
+
+# Launch stripe-cli and forward to local webhooks
+stripe:
+    stripe listen --forward-to 127.0.0.1:8000/payment/webhook/
 
 # Start database server
 _database:
