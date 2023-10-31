@@ -50,7 +50,7 @@ Obviamente, el navegador no envía esa misma página a todos los usuarios, sino 
 
 ### Ámbito de aplicación
 
-Aunque la utilización de páginas web dinámicas parezca la mejor opción para construir un sitio web, no siempre lo es. Sin lugar a dudas, es la que más potencia y flexibilidad permite, pero **las páginas web estáticas tienen también algunas ventajas**:
+Aunque la utilización de páginas web dinámicas parezca la mejor opción para construir un sitio web, no siempre lo es. Sin lugar a dudas, es la que más potencia y flexibilidad aporta, pero **las páginas web estáticas tienen también algunas ventajas**:
 
 1. No es necesario saber ~~programar~~ tanto para crear un sitio que utilice únicamente páginas web estáticas. **"Simplemente"** habría que manejar HTML y CSS, e incluso esto no sería indispensable: se podría utilizar algún programa de diseño web para generarlas.
 
