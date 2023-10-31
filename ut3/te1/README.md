@@ -13,13 +13,20 @@
 
 ## Nombre del proyecto
 
-🐍 El nombre del proyecto Django será `bank`:
+🐍 El nombre del proyecto Django será el nombre del banco (todo en minúsculas y usando guión medio si hay que separar algo).
 
 ```console
-django-admin startproject bank .
+django-admin startproject <nombre-del-banco> .
 ```
 
-🐱 El repositorio GitHub también se llamará `bank`, deberá ser **privado** y habrá que añadir al profe (`@sdelquin`) como colaborador para que pueda ver el código.
+🐱 El repositorio GitHub tendrá el mismo nombre que el proyecto, deberá ser **privado** y habrá que añadir al profe (`@sdelquin`) como colaborador para que pueda ver el código.
+
+Ejemplos:
+
+- `yladia-bank`
+- `bankus`
+- `bank-and-roll`
+- `bankarta`
 
 ## Modelo entidad-relación
 
