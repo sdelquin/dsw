@@ -1,6 +1,7 @@
 open_cmd := if os() == "linux" { "xdg-open" } else { "open" }
 project_url := "http://127.0.0.1:8000"
 rabbitmq_url := "http://127.0.0.1:15672"
+flower_url := "http://127.0.0.1:5555"
 
 
 # Run development server
@@ -71,9 +72,17 @@ collectstatic:
 celery: _rabbitmq
     celery -A myshop worker -l info
 
+# Launch celery worker for flower (monitoring)
+flower: _rabbitmq
+    celery -A myshop flower
+
 # Open admin dashboard for rabbitmq in web browser
-rabbitmq-admin:
+rabbitmq-admin: _rabbitmq
     {{ open_cmd }} {{ rabbitmq_url }}
+
+# Open admin dashboard for flower in web browser
+flower-admin: flower
+    {{ open_cmd }} {{ flower_url }}
 
 # Launch stripe-cli and forward to local webhooks
 stripe:
@@ -86,6 +95,7 @@ _database:
         if   [[ $OSTYPE == "linux-gnu"* ]]; then
             sudo service postgresql status &> /dev/null || sudo service postgresql start
         elif [[ $OSTYPE == "darwin"* ]]; then
+
             pgrep -x postgres || open /Applications/Postgres.app
         fi
     fi
