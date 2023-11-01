@@ -1,6 +1,7 @@
 from decimal import Decimal
 
 from django.conf import settings
+
 from shop.models import Product
 
 
@@ -15,7 +16,7 @@ class Cart:
             cart = self.session[settings.CART_SESSION_ID] = {}
         self.cart = cart
 
-    def add(self, product: Product, quantity=1, override_quantity=False):
+    def add(self, product: Product, quantity: int = 1, override_quantity: bool = False) -> None:
         """
         Add a product to the cart or update its quantity.
         """
@@ -27,11 +28,11 @@ class Cart:
             self.cart[product_id]['quantity'] += quantity
         self.save()
 
-    def save(self):
+    def save(self) -> None:
         # mark the session as "modified" to make sure it gets saved
         self.session.modified = True
 
-    def remove(self, product):
+    def remove(self, product: Product) -> None:
         """
         Remove a product from the cart.
         """
@@ -43,9 +44,8 @@ class Cart:
         """
         Iterate over the items in the cart and get the products from the database.
         """
-        product_ids = self.cart.keys()
         # get the product objects and add them to the cart
-        products = Product.objects.filter(id__in=product_ids)
+        products = Product.objects.filter(id__in=self.cart.keys())
         cart = self.cart.copy()
         for product in products:
             cart[str(product.id)]['product'] = product
