@@ -32,6 +32,10 @@ clean:
 makemigrations app="": _database
     python manage.py makemigrations {{ app }}
 
+# Run both makemigrations & migrate commands
+mmigrate app="": _database
+    python manage.py makemigrations {{ app }} && python manage.py migrate {{ app }}
+
 # Show database migrations for single app or whole project
 showmigrations app="": _database
     python manage.py showmigrations {{ app }}
@@ -40,9 +44,23 @@ showmigrations app="": _database
 migrate app="": _database
     python manage.py migrate {{ app }}
 
-# Create a new app
+# Create a new app (also adding it to INSTALLED_APPS)
 startapp app:
+    #!/usr/bin/env bash
     python manage.py startapp {{ app }}
+    APP_CLASS={{ app }}
+    APP_CONFIG="{{ app }}.apps.${APP_CLASS^}Config"
+    perl -0pi -e "s/(INSTALLED_APPS *= *\[)(.*?)(\])/\1\2    '$APP_CONFIG',\n\3/smg" $(find . -name settings.py)
+
+# Delete an existing app
+deleteapp app:
+    #!/usr/bin/env bash
+    read -p 'Do you wish to delete "{{ app }}" app? ' -n 1 -r
+    echo
+    if [[ $REPLY =~ ^[Yy]$ ]]
+    then
+        rm -fr {{ app }}
+    fi
 
 # Show SQL behind a migration for a single app
 sql app migration_id:
