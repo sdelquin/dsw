@@ -5,3 +5,4 @@ celery
 stripe
 WeasyPrint
 flower
+redis

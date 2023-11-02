@@ -32,6 +32,10 @@ clean:
 makemigrations app="": _database
     python manage.py makemigrations {{ app }}
 
+# Run pending migrations for single app or whole project
+migrate app="": _database
+    python manage.py migrate {{ app }}
+
 # Run both makemigrations & migrate commands
 mmigrate app="": _database
     python manage.py makemigrations {{ app }} && python manage.py migrate {{ app }}
@@ -39,10 +43,6 @@ mmigrate app="": _database
 # Show database migrations for single app or whole project
 showmigrations app="": _database
     python manage.py showmigrations {{ app }}
-
-# Run pending migrations for single app or whole project
-migrate app="": _database
-    python manage.py migrate {{ app }}
 
 # Create a new app (also adding it to INSTALLED_APPS)
 startapp app:
