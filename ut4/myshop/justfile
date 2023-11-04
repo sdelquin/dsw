@@ -2,7 +2,14 @@ open_cmd := if os() == "linux" { "xdg-open" } else { "open" }
 project_url := "http://127.0.0.1:8000"
 rabbitmq_url := "http://127.0.0.1:15672"
 flower_url := "http://127.0.0.1:5555"
+gitignore_file := ".gitignore"
+gitignore_contents := "*.pyc\n.venv\ndb.sqlite3\n.env\n/media\n/static"
+req_file := "requirements.txt"
+req_contents := "django"
 
+# Make a Python virtualenv
+mkvenv: _mkignore _mkreq
+    python -m venv .venv --prompt $(dirname "$0")
 
 # Run development server
 runserver: _database _rabbitmq
@@ -105,6 +112,24 @@ flower-admin: flower
 # Launch stripe-cli and forward to local webhooks
 stripe:
     stripe listen --forward-to 127.0.0.1:8000/payment/webhook/
+
+# Make a .gitignore file
+_mkignore:
+    #!/usr/bin/env bash
+    if [ -f "{{ gitignore_file }}" ]; then
+        echo '{{ gitignore_file }} already exists!'
+    else
+        echo '{{ gitignore_contents }}' > {{ gitignore_file }}
+    fi
+
+# Make a requirements.txt file
+_mkreq:
+    #!/usr/bin/env bash
+    if [ -f "{{ req_file }}" ]; then
+        echo '{{ req_file }} already exists!'
+    else
+        echo '{{ req_contents }}' > {{ req_file }}
+    fi
 
 # Start database server
 _database:
