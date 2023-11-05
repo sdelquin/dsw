@@ -4,6 +4,7 @@
 
 ![Django sticker](../../django-sticker.png)
 
+[Puesta en marcha](#puesta-en-marcha)  
 [Modelo entidad-relación](#modelo-entidad-relación)  
 [Tipos de objetos](#tipos-de-objetos)  
 [Transacciones](#transacciones)  
@@ -11,22 +12,27 @@
 [Secciones de la web](#secciones-de-la-web)  
 [Entrega de la tarea](#entrega-de-la-tarea)
 
-## Nombre del proyecto
+## Puesta en marcha
 
-🐍 El nombre del proyecto Django será el nombre del banco (todo en minúsculas y usando guión medio si hay que separar algo).
+### 🐱 Repositorio
+
+Requisitos del repositorio GitHub del proyecto:
+
+- El nombre será el nombre del banco (todo en minúsculas y usando guión medio si hay que separar algo). Ejemplos:
+  - `yladia-bank`
+  - `bankus`
+  - `bank-and-roll`
+  - `bankarta`
+- El repositorio debe ser **privado**.
+- Habrá que añadir al profe (`@sdelquin`) como colaborador para que pueda ver el código.
+
+### 🐍 Proyecto Django
+
+El nombre del proyecto Django será `bank`:
 
 ```console
-django-admin startproject <nombre-del-banco> .
+django-admin startproject bank .
 ```
-
-🐱 El repositorio GitHub tendrá el mismo nombre que el proyecto, deberá ser **privado** y habrá que añadir al profe (`@sdelquin`) como colaborador para que pueda ver el código.
-
-Ejemplos:
-
-- `yladia-bank`
-- `bankus`
-- `bank-and-roll`
-- `bankarta`
 
 ## Modelo entidad-relación
 
