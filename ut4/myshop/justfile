@@ -9,6 +9,7 @@ req_contents := "django"
 
 alias mm := mmigrate
 alias sh := shell
+alias doc := djangodoc
 
 # Make a Python virtualenv
 mkvenv: _mkignore _mkreq
