@@ -116,6 +116,18 @@ flower-admin: flower
 stripe:
     stripe listen --forward-to 127.0.0.1:8000/payment/webhook/
 
+# Open Django documentation for query
+djangodoc query:
+    #!/usr/bin/env bash
+    if [ -z $VIRTUALENV ]; then
+        DJANGO_VERSION=$(python -m django --version)
+    else
+        DJANGO_VERSION=$(source .venv/bin/activate && python -m django --version)
+    fi
+    DJANGO_MAJOR_VERSION=$(echo $DJANGO_VERSION | perl -ne 's/(\d.\d).*/\1/; print')
+    QUERY_URL="https://docs.djangoproject.com/en/${DJANGO_MAJOR_VERSION}/search/?q={{ query }}"
+    {{ open_cmd }} $QUERY_URL
+
 # Make a .gitignore file
 _mkignore:
     #!/usr/bin/env bash
