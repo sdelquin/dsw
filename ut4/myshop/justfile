@@ -7,6 +7,9 @@ gitignore_contents := "*.pyc\n.venv\ndb.sqlite3\n.env\n/media\n/static"
 req_file := "requirements.txt"
 req_contents := "django"
 
+alias mm := mmigrate
+alias sh := shell
+
 # Make a Python virtualenv
 mkvenv: _mkignore _mkreq
     python -m venv .venv --prompt $(dirname "$0")
