@@ -11,13 +11,13 @@ alias mm := mmigrate
 alias sh := shell
 alias doc := djangodoc
 
-# Make a Python virtualenv
-mkvenv: _mkignore _mkreq
-    python -m venv .venv --prompt $(dirname "$0")
-
 # Run development server
 runserver: _database _rabbitmq
     python manage.py runserver
+
+# Make a Python virtualenv
+mkvenv: _mkignore _mkreq
+    python -m venv .venv --prompt $(dirname "$0")
 
 # Run development server on all interfaces at port 80
 runserver0: _database _rabbitmq
