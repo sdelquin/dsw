@@ -43,12 +43,7 @@ class Order(models.Model):
         if not self.stripe_id:
             # no payment associated
             return ''
-        if '_test_' in settings.STRIPE_SECRET_KEY:
-            # Stripe path for test payments
-            path = '/test/'
-        else:
-            # Stripe path for real payments
-            path = '/'
+        path = '/test/' if '_test_' in settings.STRIPE_SECRET_KEY else '/'
         return f'https://dashboard.stripe.com{path}payments/{self.stripe_id}'
 
     def get_total_cost_before_discount(self):

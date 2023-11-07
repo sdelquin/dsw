@@ -10,9 +10,8 @@ from .models import Order, OrderItem
 
 
 def order_payment(obj):
-    url = obj.get_stripe_url()
     if obj.stripe_id:
-        html = f'<a href="{url}" target="_blank">{obj.stripe_id}</a>'
+        html = f'<a href="{obj.get_stripe_url()}" target="_blank">{obj.stripe_id}</a>'
         return mark_safe(html)
     return ''
 
