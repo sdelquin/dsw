@@ -129,7 +129,7 @@ Con los campos:
 | ---------- | -------------------------------------------------- |
 | `business` | Comercio                                           |
 | `ccc`      | Código de **tarjeta cliente** (_client card code_) |
-| `pin`      | Código de seguridad de la tarjeta → **hasheado**   |
+| `pin`      | Código de seguridad de la tarjeta                  |
 | `amount`   | Importe                                            |
 
 Códigos de respuesta:
@@ -142,9 +142,7 @@ Códigos de respuesta:
 
 Para simular un pago debemos realizar **una petición POST** al banco.
 
-##### Línea de comandos
-
-Podemos simular un pago utilizando la herramienta de línea de comandos [curl](https://curl.se/).
+Una herramienta poderosa para realizar peticiones HTTP desde línea de comandos es [curl](https://curl.se/).
 
 Ejemplo de uso:
 
@@ -152,13 +150,21 @@ Ejemplo de uso:
 curl -X POST -d '{"business": "Dulcería Dorado", "ccc": "C1-0001", "pin": "R8K", "amount": "7"}' http://bank1/payment
 ```
 
-##### Navegador
+Esta petición envía un _payload_ en formato `json` que deberemos procesar en la vista correspondiente. Nuestra vista de Django deberá tener la siguiente forma:
 
-Podemos simular un pago utilizando la herramienta web [httpie.io](https://httpie.io/app)
+```python
+from django.views.decorators.csrf import csrf_exempt
+...
+...
+@csrf_exempt
+def transfer(request):
+    data = json.loads(request.body)
+    # En data tendremos un diccionario con los datos enviados
+    ...
+    return HttpResponse()
+```
 
-Ejemplo de uso:
-
-![Httpie](./images/httpie.png)
+> 💡 `@csrf_exempt` es un decorador que deja exenta a la vista de comprobar el CSRF token. **No es una buena práctica en general** pero nos resuelve el problema puntual de la petición HTTP externa.
 
 ### Transferencias
 
@@ -183,6 +189,10 @@ Códigos de respuesta:
 
 - Si todo ha ido bien se debe devolver un [200 OK](https://docs.djangoproject.com/en/4.2/ref/request-response/#httpresponse-objects).
 - Si ha habido algún error se debe devolver un [400 Bad Request](https://docs.djangoproject.com/en/4.2/ref/request-response/#django.http.HttpResponseBadRequest) indicando en el mensaje de error la descripción de lo sucedido.
+
+#### Simulando transferencias
+
+Para simular una transferencia podemos usar el mismo procedimiento que [hemos visto anteriormente con los pagos](#simulando-pagos) a través de **una petición POST** al banco correspondiente.
 
 #### Nómina
 
