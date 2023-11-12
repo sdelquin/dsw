@@ -166,6 +166,14 @@ def transfer(request):
 
 > 💡 `@csrf_exempt` es un decorador que deja exenta a la vista de comprobar el CSRF token. **No es una buena práctica en general** pero nos resuelve el problema puntual de la petición HTTP externa.
 
+#### Peticiones HTTP en VSCode
+
+Una extensión interesante que nos permite integrar _HTTP requests_ en VSCode es [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client).
+
+Su uso es muy sencillo ya que nos aparece una ventana en la que podemos especificar URL y parámetros de la petición HTTP.
+
+![Thunder Client](./images/thunderclient.jpg)
+
 ### Transferencias
 
 Podemos tener **transferencias entrantes** o **transferencias salientes**.
