@@ -178,6 +178,7 @@ airports
 - La [documentación de Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/) te ayudará con las plantillas.
 - Ojo a `breadcrumbs.html` que se modifica con el cambio de sección y además muestra la ciudad de búsqueda si se da el caso.
 - El "title" de cada página también se modifica.
+- Ojo con el formateado de fechas que es importante. Puedes consultar [en este enlace](https://docs.djangoproject.com/en/4.2/ref/templates/builtins/#date) las posibles opciones de filtro.
 
 #### Paginación
 
