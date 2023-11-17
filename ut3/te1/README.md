@@ -36,6 +36,8 @@ django-admin startproject bank .
 
 ## Modelo entidad-relación
 
+Se deberá tener (al menos) los siguientes modelos en la base de datos:
+
 ![ER Banco](./images/bank.svg)
 
 > 💡 Tanto `password` como `pin` habrá que almacenarlos como un hash en la base de datos utilizando para ello el algoritmo [PBKDF2](https://docs.djangoproject.com/en/4.2/topics/auth/passwords/).
@@ -56,14 +58,37 @@ Podemos obtener la información de los bancos a través del siguiente código Py
 >>> banks = response.json()
 ```
 
+#### Levantar servidor para aceptar peticiones "externas"
+
+Para que nuestro banco pueda aceptar peticiones externas (básicamente [transferencias entrantes](#simulando-transferencias)) debemos realizar una serie de pasos:
+
+1. Establecer los valores adecuados para la variable `ALLOWED_HOSTS`. Dentro de `settings.py` añadir lo siguiente:
+
+```python
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', default=[], cast=config.list)
+```
+
+2. Añadir los posibles hosts en `.env`. Si estamos hablando del banco `dsw.pc10.aula109` tendríamos lo siguiente:
+
+```console
+ALLOWED_HOSTS=dsw.pc10.aula109,127.0.0.1,localhost
+```
+
+3. Levantar el servidor de desarrollo escuchando en todas las interfaces:
+
+```console
+python manage.py runserver 0.0.0.0
+```
+
+> 💡 Esto hará que podamos acceder al banco a través de: `http://dsw.pc10.aula109:8000`
+
 ### Tipos de transacciones
 
-Habrá (al menos) 4 tipos de transacciones:
+Habrá (al menos) 3 tipos de transacciones:
 
 1. Compras
 2. Transferencias entrantes
 3. Transferencias salientes
-4. Comisiones
 
 ### Estado de los objetos
 
@@ -121,7 +146,7 @@ Supongamos que un cliente del banco 1 compra una pachanga en el comercio "Dulces
 
 Para que "Dulces Dorado" pueda hacer el cobro tendría que hacer una petición POST a la siguiente URL:
 
-`http://bank1/payment`
+`http://<host-bank1>:8000/payment/`
 
 Con los campos:
 
@@ -147,7 +172,7 @@ Una herramienta poderosa para realizar peticiones HTTP desde línea de comandos 
 Ejemplo de uso:
 
 ```bash
-curl -X POST -d '{"business": "Dulcería Dorado", "ccc": "C1-0001", "pin": "R8K", "amount": "7"}' http://bank1/payment
+curl -X POST -d '{"business": "Dulcería Dorado", "ccc": "C1-0001", "pin": "R8K", "amount": "7"}' http://<host-bank1>:8000/payment/
 ```
 
 Esta petición envía un _payload_ en formato `json` que deberemos procesar en la vista correspondiente. Nuestra vista de Django deberá tener la siguiente forma:
@@ -182,7 +207,7 @@ Podemos tener **transferencias entrantes** o **transferencias salientes**.
 
 Supongamos que el banco 1 quiere enviar una transferencia al banco 2. Para ello, el banco 1 tendría que hacer una petición POST al banco 2 a través de la siguiente URL:
 
-`http://bank2/transfer/incoming`
+`http://<host-bank2>:8000/transfer/incoming/`
 
 Con los campos:
 
@@ -218,18 +243,20 @@ Habrá que aplicar (al menos) las siguientes comisiones:
 | Transf. entrante | 1%         | 2%           | 3%      |
 | Pagos            | 3%         | 5%           | 7%      |
 
-## Secciones de la web
+## Funcionalidades
 
-Habrá que implementar (al menos) las siguientes secciones de la web:
+Habrá que implementar (al menos) las siguientes funcionalidades en el proyecto:
 
-- Registro.
-- Login.
-- Edición del perfil.
-- Solicitud/Gestión de cuentas cliente.
-- Solicitud/Gestión de tarjetas.
-- Solicitud/Gestión de transferencias.
-- Visualización de movimientos (transacciones).
-- Procesamiento de pagos.
+- Registro de usuario
+- Login
+- Edición del perfil de usuario
+- Alta/Edición/Baja de cuenta
+- Alta/Edición/Baja de tarjeta
+- Envío de transferencias
+- Recepción de transferencias
+- Recepción de pagos
+- Aplicación de comisiones
+- Visualización de transacciones
 
 ## Entrega de la tarea
 
