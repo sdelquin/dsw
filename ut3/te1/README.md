@@ -40,7 +40,8 @@ Se deberá tener (al menos) los siguientes modelos en la base de datos:
 
 ![ER Banco](./images/bank.svg)
 
-> 💡 Tanto `password` como `pin` habrá que almacenarlos como un hash en la base de datos utilizando para ello el algoritmo [PBKDF2](https://docs.djangoproject.com/en/4.2/topics/auth/passwords/).
+- Utilizar una base de datos `sqlite3`.
+- Tanto `password` como `pin` habrá que almacenarlos como un hash en la base de datos utilizando para ello el algoritmo [PBKDF2](https://docs.djangoproject.com/en/4.2/topics/auth/passwords/).
 
 ## Tipos de objetos
 
@@ -258,21 +259,34 @@ Habrá que implementar (al menos) las siguientes funcionalidades en el proyecto:
 - Aplicación de comisiones
 - Visualización de transacciones
 
+## Recetas
+
+Incluir un fichero `justfile` con, al menos, las siguientes recetas:
+
+```makefile
+dockup:
+    docker compose up
+
+clean:
+    #!/usr/bin/env bash
+    find . -name '__pycache__' -not -path "./.venv/*" -prune -exec rm -rf {} \;
+    find . -name '*.pyc' -not -path "./.venv/*" -exec rm {} \;
+    find . -name '.DS_Store' -not -path "./.venv/*" -exec rm {} \;
+    rm -rf .mypy_cache
+
+zip: clean
+    #!/usr/bin/env bash
+    rm -f {{ project_name }}.zip
+    zip -r {{ project_name }}.zip . -x .env .venv/**\*
+```
+
+## Docker
+
+1. Incluir los requerimientos del proyecto en `requirements.txt`.
+2. Incluir los ficheros `Dockerfile` y `docker-compose.yaml` según [las indicaciones correspondientes](../../ut0/docker.md).
+
 ## Entrega de la tarea
 
-- Se habilitará una entrega en el **Campus Virtual** donde se tendrá que subir únicamente **la URL al proyecto incluyendo el commit específico**.
-
-- Para ello basta con acceder en GitHub a la carpeta donde se encuentre el proyecto:
-
-  → `https://github.com/alu/bank`
-
-  , y pulsar la tecla <kbd>y</kbd> para que la URL se nos convierta en un formato tipo:
-
-  → `https://github.com/alu/bank/tree/ffaabb62206fa0c0f350dfe0a4ba370ed00b9218`
-
-  > 💡 La parte de la url que consta de 40 caracteres es el **hash del commit** y lo identifica de manera unívoca: `ffaabb62206fa0c0f350dfe0a4ba370ed00b9218`
-
-- Por lo tanto, **lo único que hay que subir es la URL que incluye dicho hash**.
-- Es suficiente con que lo suba una persona del grupo.
-
-- El proyecto deberá estar funcional en las URLs de cada banco (red interna del departamento).
+1. Comprimir el proyecto con: `just zip`
+2. Se habilitará una entrega en el **Campus Virtual** donde se tendrá que subir el proyecto comprimido.
+3. Es suficiente con que lo suba una persona del grupo.
