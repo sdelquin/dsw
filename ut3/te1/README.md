@@ -261,24 +261,11 @@ Habrá que implementar (al menos) las siguientes funcionalidades en el proyecto:
 
 ## Recetas
 
-Incluir un fichero `justfile` con, al menos, las siguientes recetas:
+Incluir un fichero [justfile](../../ut0/justfile) con (al menos) las siguientes recetas:
 
-```makefile
-dockup:
-    docker compose up
-
-clean:
-    #!/usr/bin/env bash
-    find . -name '__pycache__' -not -path "./.venv/*" -prune -exec rm -rf {} \;
-    find . -name '*.pyc' -not -path "./.venv/*" -exec rm {} \;
-    find . -name '.DS_Store' -not -path "./.venv/*" -exec rm {} \;
-    rm -rf .mypy_cache
-
-zip: clean
-    #!/usr/bin/env bash
-    rm -f {{ project_name }}.zip
-    zip -r {{ project_name }}.zip . -x .env .venv/**\*
-```
+- `dockup`
+- `clean`
+- `zip`
 
 ## Docker
 
