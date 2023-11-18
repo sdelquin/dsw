@@ -259,7 +259,9 @@ Habrá que implementar (al menos) las siguientes funcionalidades en el proyecto:
 - Aplicación de comisiones
 - Visualización de transacciones
 
-## Recetas
+## Entrega de la tarea
+
+### Recetas
 
 Incluir un fichero [justfile](../../ut0/justfile) con (al menos) las siguientes recetas:
 
@@ -267,12 +269,12 @@ Incluir un fichero [justfile](../../ut0/justfile) con (al menos) las siguientes 
 - `clean`
 - `zip`
 
-## Docker
+### Docker
 
 1. Incluir los requerimientos del proyecto en `requirements.txt`.
 2. Incluir los ficheros `Dockerfile` y `docker-compose.yaml` según [las indicaciones correspondientes](../../ut0/docker.md).
 
-## Entrega de la tarea
+### Instrucciones de subida
 
 1. Comprimir el proyecto con: `just zip`
 2. Se habilitará una entrega en el **Campus Virtual** donde se tendrá que subir el proyecto comprimido.
