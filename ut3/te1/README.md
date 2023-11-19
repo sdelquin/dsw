@@ -23,8 +23,7 @@ Requisitos del repositorio GitHub del proyecto:
   - `bankus`
   - `bank-and-roll`
   - `bankarta`
-- El repositorio debe ser **privado**.
-- Habrá que añadir al profe (`@sdelquin`) como colaborador para que pueda ver el código.
+- El repositorio deberá ser **privado**.
 
 ### 🐍 Proyecto Django
 
@@ -127,7 +126,7 @@ Las tarjetas, dentro del mismo, se irán asignando de manera correlativa. Por ej
 
 > 💡 "C" hace referencia a "Card"
 
-Los **códigos PIN** de las tarjetas serán secuencias de 3 caracteres alfanuméricos (dígitos y/o letras en mayúsculas) generados aleatoriamente. Ejemplos:
+Los **códigos PIN** de las tarjetas serán secuencias de 3 caracteres alfanuméricos (dígitos y/o letras en mayúsculas) generados **aleatoriamente**. Ejemplos:
 
 - `X4B`
 - `3YA`
