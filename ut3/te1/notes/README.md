@@ -2,7 +2,7 @@
 
 ### TAREA EVALUABLE
 
-![Django sticker](../../django-sticker.png)
+![Django sticker](../../../django-sticker.png)
 
 [Puesta en marcha](#puesta-en-marcha)  
 [Modelo entidad-relación](#modelo-entidad-relación)  
@@ -48,7 +48,7 @@ Se deberá tener (al menos) los siguientes modelos en la base de datos:
 
 El identificador de cada banco corresponderá con el identificador del grupo (empezando en 1).
 
-Podemos obtener la información de los bancos a través del siguiente código Python:
+Podemos obtener la [información de los bancos](./files/banks.json) a través del siguiente código Python:
 
 ```python
 >>> import requests
@@ -146,7 +146,7 @@ Supongamos que un cliente del banco 1 compra una pachanga en el comercio "Dulces
 
 Para que "Dulces Dorado" pueda hacer el cobro tendría que hacer una petición POST a la siguiente URL:
 
-`http://<host-bank1>:8000/payment/`
+`http://<url-bank1>/payment/`
 
 Con los campos:
 
@@ -172,7 +172,7 @@ Una herramienta poderosa para realizar peticiones HTTP desde línea de comandos 
 Ejemplo de uso:
 
 ```bash
-curl -X POST -d '{"business": "Dulcería Dorado", "ccc": "C1-0001", "pin": "R8K", "amount": "7"}' http://<host-bank1>:8000/payment/
+curl -X POST -d '{"business": "Dulcería Dorado", "ccc": "C1-0001", "pin": "R8K", "amount": "7"}' http://<url-bank1>/payment/
 ```
 
 Esta petición envía un _payload_ en formato `json` que deberemos procesar en la vista correspondiente. Nuestra vista de Django deberá tener la siguiente forma:
@@ -207,7 +207,7 @@ Podemos tener **transferencias entrantes** o **transferencias salientes**.
 
 Supongamos que el banco 1 quiere enviar una transferencia al banco 2. Para ello, el banco 1 tendría que hacer una petición POST al banco 2 a través de la siguiente URL:
 
-`http://<host-bank2>:8000/transfer/incoming/`
+`http://<url-bank2>/transfer/incoming/`
 
 Con los campos:
 
