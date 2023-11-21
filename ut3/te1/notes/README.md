@@ -225,9 +225,13 @@ Códigos de respuesta:
 - Si todo ha ido bien se debe devolver un [200 OK](https://docs.djangoproject.com/en/4.2/ref/request-response/#httpresponse-objects).
 - Si ha habido algún error se debe devolver un [400 Bad Request](https://docs.djangoproject.com/en/4.2/ref/request-response/#django.http.HttpResponseBadRequest) indicando en el mensaje de error la descripción de lo sucedido.
 
-#### Simulando transferencias
+#### Simulando transferencias entrantes
 
-Para simular una transferencia podemos usar el mismo procedimiento que [hemos visto anteriormente con los pagos](#simulando-pagos) a través de **una petición POST** al banco correspondiente.
+Para simular una transferencia entrante podemos usar el mismo procedimiento que [hemos visto anteriormente con los pagos](#simulando-pagos) a través de **una petición POST** al banco correspondiente.
+
+#### Probando transferencias salientes
+
+El **Banco 0 (Test Bank)** está disponible para probar una transferencia saliente. Simplemente debemos usar un CAC de dicho banco, que básicamente es cualquiera que empiece por su código: `A0-0001`, `A0-0921`, `A0-1773`, etc.
 
 #### Nómina
 
