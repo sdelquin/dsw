@@ -6,3 +6,5 @@ stripe
 WeasyPrint
 flower
 redis
+django-rosetta
+django-parler

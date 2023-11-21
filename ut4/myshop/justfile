@@ -129,6 +129,14 @@ djangodoc query:
     QUERY_URL="https://docs.djangoproject.com/en/${DJANGO_MAJOR_VERSION}/search/?q={{ query }}"
     {{ open_cmd }} $QUERY_URL
 
+# Add messages to be translated
+makemessages:
+    django-admin makemessages --all
+
+# Compile messages already translated
+compilemessages:
+    django-admin compilemessages
+
 # Make a .gitignore file
 _mkignore:
     #!/usr/bin/env bash
