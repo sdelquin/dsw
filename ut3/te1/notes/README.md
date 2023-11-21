@@ -178,6 +178,8 @@ curl -X POST -d '{"business": "Dulcería Dorado", "ccc": "C1-0001", "pin": "R8K"
 Esta petición envía un _payload_ en formato `json` que deberemos procesar en la vista correspondiente. Nuestra vista de Django deberá tener la siguiente forma:
 
 ```python
+import json
+
 from django.views.decorators.csrf import csrf_exempt
 ...
 ...
@@ -242,6 +244,8 @@ Habrá que aplicar (al menos) las siguientes comisiones:
 | Transf. saliente | 2%         | 4%           | 6%      |
 | Transf. entrante | 1%         | 2%           | 3%      |
 | Pagos            | 3%         | 5%           | 7%      |
+
+> 💡 Las comisiones deben de aparecer claramente en el listado de transacciones para que el cliente sea informado.
 
 ## Funcionalidades
 
