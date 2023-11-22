@@ -1,5 +1,6 @@
 import json
 import re
+from decimal import Decimal, InvalidOperation
 
 from django.http import HttpResponseBadRequest
 from django.shortcuts import HttpResponse
@@ -19,4 +20,8 @@ def incoming_transfer(request):
             return HttpResponseBadRequest(f'Field "{field}" has no value')
     if not re.fullmatch(rf'A{BANK_ID}-\d{{4}}', cac := data['cac']):
         return HttpResponseBadRequest(f'CAC "{cac}" does not exist in our bank')
+    try:
+        Decimal(amount := data['amount'])
+    except InvalidOperation:
+        return HttpResponseBadRequest(f'Invalid value "{amount}" for field "amount"')
     return HttpResponse('✅ Transfer successfully processed')
