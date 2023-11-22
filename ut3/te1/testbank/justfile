@@ -1,2 +1,5 @@
 run:
     python manage.py runserver localhost:7000
+
+sh:
+    python manage.py shell
