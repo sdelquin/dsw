@@ -146,7 +146,7 @@ mkreq:
 [private]
 database:
     #!/usr/bin/env bash
-    if [ ! -e *.sqlite3 ]; then
+    if [[ $(grep -i postgres $(find . -name settings.py)) ]]; then
         if   [[ $OSTYPE == "linux-gnu"* ]]; then
             sudo service postgresql status &> /dev/null || sudo service postgresql start
         elif [[ $OSTYPE == "darwin"* ]]; then
