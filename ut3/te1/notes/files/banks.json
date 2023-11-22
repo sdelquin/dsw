@@ -2,7 +2,7 @@
   {
     "id": 0,
     "name": "Test Bank",
-    "url": "http://testbank.dsw.iespto.sdelquin.me"
+    "url": "https://testbank.dsw.iespto.sdelquin.me"
   },
   { "id": 1, "name": "Bankoo", "url": "http://dsw.pc10.aula109:8000" },
   { "id": 2, "name": "Bank ODPCS", "url": "http://dsw.pc04.aula109:8000" },
