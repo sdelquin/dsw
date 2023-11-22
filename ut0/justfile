@@ -86,8 +86,8 @@ su: database
     python manage.py createsuperuser
 
 # Dump database data in json format
-dumpdata output=(project_name + ".json"): database
-    python manage.py dumpdata --indent=2 --output={{ output }}
+dumpdata app="" output=(project_name + ".json"): database
+    python manage.py dumpdata {{ app }} --indent=2 --output={{ output }}
 
 # Load database data from json format
 loaddata input: database
