@@ -8,3 +8,4 @@ flower
 redis
 django-rosetta
 django-parler
+django-localflavor
