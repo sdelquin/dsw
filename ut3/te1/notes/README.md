@@ -53,7 +53,7 @@ Podemos obtener la [información de los bancos](./files/banks.json) a través de
 ```python
 >>> import requests
 
->>> url = 'https://raw.githubusercontent.com/sdelquin/dsw/main/ut3/te1/files/banks.json'
+>>> url = 'https://raw.githubusercontent.com/sdelquin/dsw/main/ut3/te1/notes/files/banks.json'
 >>> response = requests.get(url)
 >>> banks = response.json()
 ```
