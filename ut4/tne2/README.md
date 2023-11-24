@@ -7,6 +7,7 @@
 [Objetivo](#objetivo)  
 [Nombre del proyecto](#nombre-del-proyecto)  
 [Esquema de la base de datos](#esquema-de-la-base-de-datos)  
+[Aplicaciones](#aplicaciones)  
 [Mockups del proyecto](#mockups-del-proyecto)
 
 ## Objetivo
@@ -15,16 +16,26 @@ El objetivo de esta tarea es crear una aplicación web para **desplegar encuesta
 
 ## Nombre del proyecto
 
-El proyecto se debe llamar `polls`.
+El proyecto se debe llamar `analytika`.
 
 ## Esquema de la base de datos
 
-![Base de datos de encuestas](./images/polls-db.svg)
+![Base de datos de encuestas](./images/analytika-db.svg)
 
-Notas:
+| Tabla    | Clave ajena       |
+| -------- | ----------------- |
+| `Vote`   | `poll → Poll`     |
+| `Vote`   | `choice → Choice` |
+| `Choice` | `poll → Poll`     |
 
-- Es necesario añadir un campo `choices` de tipo [ManyToManyField](https://docs.djangoproject.com/en/4.2/topics/db/examples/many_to_many/) en la tabla `Poll`.
+## Aplicaciones
+
+Habrá 3 aplicaciones:
+
+1. `polls` (con su modelo `Poll`)
+2. `choices` (con su modelo `Choice`)
+3. `votes` (con su modelo `Vote`)
 
 ## Mockups del proyecto
 
-![Mockups](./images/polls-mockups.svg)
+![Mockups](./images/analytika-mockups.svg)
