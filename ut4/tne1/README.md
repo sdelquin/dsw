@@ -4,9 +4,19 @@
 
 ![Django sticker](../../django-sticker.png)
 
+[Objetivo](#objetivo)  
+[Nombre del proyecto](#nombre-del-proyecto)  
+[Esquema de la base de datos](#esquema-de-la-base-de-datos)  
+[Mockups del proyecto](#mockups-del-proyecto)  
+[Aclaraciones](#aclaraciones)
+
 ## Objetivo
 
 El objetivo de esta tarea es crear una aplicación web para consultar información relacionada con el programa de televisión [Operación Triunfo](<https://es.wikipedia.org/wiki/Operaci%C3%B3n_Triunfo_(Espa%C3%B1a)>) en su **edición 2023**.
+
+## Nombre del proyecto
+
+El proyecto se debe llamar `ot`.
 
 ## Esquema de la base de datos
 
@@ -24,5 +34,4 @@ Notas:
 
 ## Aclaraciones
 
-- El diseño de la base de datos es libre.
-- Intenta que la búsqueda pueda abarcar varios campos (no sólo nombre de la persona).
+- Intenta que la búsqueda pueda abarcar varios campos (no sólo nombre de la persona) incluyendo estilo musical.
