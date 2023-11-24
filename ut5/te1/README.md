@@ -4,8 +4,8 @@
 
 ![Django sticker](../../django-sticker.png)
 
-[Entrega de la tarea](#entrega-de-la-tarea)  
-[Nuevas funcionalidades](#nuevas-funcionalidades)
+[Nuevas funcionalidades](#nuevas-funcionalidades)  
+[Entrega de la tarea](#entrega-de-la-tarea)
 
 ## Nuevas funcionalidades
 
