@@ -12,7 +12,7 @@ alias doc := djangodoc
 alias run := runserver
 
 # Run development server
-runserver: database
+runserver: database redis
     python manage.py runserver
 
 # Make a Python virtualenv
@@ -20,7 +20,7 @@ mkvenv: mkignore mkreq
     python -m venv .venv --prompt {{ project_name }}
 
 # Run development server on all interfaces at port 80
-runserver0: database
+runserver0: database redis
     python manage.py runserver 0.0.0.0:80
 
 # Check whole project
@@ -152,4 +152,24 @@ database:
         elif [[ $OSTYPE == "darwin"* ]]; then
             pgrep -x postgres || open /Applications/Postgres.app
         fi
+    fi
+
+# Memcached service
+[private]
+memcached:
+    #!/usr/bin/env bash
+    if   [[ $OSTYPE == "linux-gnu"* ]]; then
+        sudo service memcached status &> /dev/null || sudo service memcached start
+    elif [[ $OSTYPE == "darwin"* ]]; then
+        pgrep -x memcached || brew services start memcached
+    fi
+
+# Start redis server
+[private]
+redis:
+    #!/usr/bin/env bash
+    if   [[ $OSTYPE == "linux-gnu"* ]]; then
+        sudo service redis status &> /dev/null || sudo service redis start
+    elif [[ $OSTYPE == "darwin"* ]]; then
+        pgrep -x redis || open /Applications/Redis.app
     fi
