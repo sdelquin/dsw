@@ -40,7 +40,7 @@ inventory
 ## Interfaz administrativa
 
 - Trata de trabajar lo máximo posible en la interfaz administrativa de manera que sea cómodo gestionar productos, artículos y ubicaciones ([CRUD](https://es.wikipedia.org/wiki/CRUD)).
-- Para producto y artículo, si no se especifica un código al crear un nuevo objeto, este se deberá generar de manera aleatoria como un _string_ alfanumérico de longitud 6.
+- Para producto y artículo, si no se especifica un código al crear un nuevo objeto, este se deberá generar de manera aleatoria como un _string_ alfanumérico de longitud 6 (_obviamente no se puede repetir_).
 - Utiliza [inlines](https://docs.djangoproject.com/en/5.0/ref/contrib/admin/#inlinemodeladmin-objects) sobre productos/artículos.
 
 ## Aclaraciones
