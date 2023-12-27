@@ -1,6 +1,6 @@
 open_cmd := if os() == "linux" { "xdg-open" } else { "open" }
 project_url := "http://localhost:8000"
-project_name := `basename $(dirname $(realpath $0))`
+project_name := `basename $(dirname $(realpath ./justfile))`
 gitignore_file := ".gitignore"
 gitignore_contents := "*.pyc\n.venv\ndb.sqlite3\n.env\n/media\n/static"
 req_file := "requirements.txt"
