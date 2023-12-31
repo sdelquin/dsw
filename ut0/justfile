@@ -153,3 +153,23 @@ database:
             pgrep -x postgres || open /Applications/Postgres.app
         fi
     fi
+
+# Memcached service
+[private]
+memcached:
+    #!/usr/bin/env bash
+    if   [[ $OSTYPE == "linux-gnu"* ]]; then
+        sudo service memcached status &> /dev/null || sudo service memcached start
+    elif [[ $OSTYPE == "darwin"* ]]; then
+        pgrep -x memcached > /dev/null || brew services start memcached
+    fi
+
+# Start redis server
+[private]
+redis:
+    #!/usr/bin/env bash
+    if   [[ $OSTYPE == "linux-gnu"* ]]; then
+        sudo service redis status &> /dev/null || sudo service redis start
+    elif [[ $OSTYPE == "darwin"* ]]; then
+        pgrep -x Redis > /dev/null || open /Applications/Redis.app
+    fi
