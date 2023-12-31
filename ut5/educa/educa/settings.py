@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 
 from django.urls import reverse_lazy
+from prettyconf import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -23,12 +24,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-th8c(2$2=8y&u=*l81%2vqxmcvb^z#8uyofxq_a!b83(23!6km'
-
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -60,6 +55,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'courses.middleware.subdomain_course_middleware',
 ]
 
 ROOT_URLCONF = 'educa.urls'
@@ -171,3 +167,13 @@ CHANNEL_LAYERS = {
         },
     },
 }
+
+DEBUG = config('DEBUG', default='False', cast=config.boolean)
+
+ADMINS = config(
+    'ADMINS',
+    default='',
+    cast=lambda value: [tuple(v.split(':')) for v in value.split(',')] if value else [],
+)
+
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='*', cast=config.list)
