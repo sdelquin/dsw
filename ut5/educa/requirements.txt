@@ -8,3 +8,5 @@ redis
 django-redisboard
 djangorestframework
 requests
+channels
+channels-redis

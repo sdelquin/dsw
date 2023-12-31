@@ -161,7 +161,7 @@ memcached:
     if   [[ $OSTYPE == "linux-gnu"* ]]; then
         sudo service memcached status &> /dev/null || sudo service memcached start
     elif [[ $OSTYPE == "darwin"* ]]; then
-        pgrep -x memcached || brew services start memcached
+        pgrep -x memcached > /dev/null || brew services start memcached
     fi
 
 # Start redis server
@@ -171,5 +171,5 @@ redis:
     if   [[ $OSTYPE == "linux-gnu"* ]]; then
         sudo service redis status &> /dev/null || sudo service redis start
     elif [[ $OSTYPE == "darwin"* ]]; then
-        pgrep -x redis || open /Applications/Redis.app
+        pgrep -x Redis > /dev/null || open /Applications/Redis.app
     fi
