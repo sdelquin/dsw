@@ -102,7 +102,7 @@ collectstatic:
     python manage.py collectstatic
 
 # Open Django documentation for query
-djangodoc query: check_venv
+djangodoc query: check-venv
     #!/usr/bin/env bash
     DJANGO_VERSION=$(python -m django --version)
     DJANGO_MAJOR_VERSION=$(echo $DJANGO_VERSION | perl -ne 's/(\d.\d).*/\1/; print')
@@ -116,7 +116,7 @@ zip: clean
     zip -r {{ project_name }}.zip . -x .env .venv/**\* .git/**\*
 
 # Install Python requirements
-pipi: check_venv
+pipi: check-venv
     python -m pip install -r requirements.txt
 
 # Launch project through Docker
@@ -125,7 +125,7 @@ dockup:
 
 # Check if virtualenv is active
 [private]
-check_venv:
+check-venv:
     #!/usr/bin/env bash
     if [ -z $VIRTUAL_ENV ] && [[ $(pyenv version-name) =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
         echo You must activate a virtualenv!
