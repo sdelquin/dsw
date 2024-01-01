@@ -21,6 +21,25 @@ Se deberá implementar la descarga de un justificante en PDF cuando una transfer
 
 Se deberá internacionalizar la web del banco permitiendo elegir entre idioma español o idioma inglés.
 
+### API
+
+Se deberá implementar una API REST con los siguientes puntos de entrada:
+
+| Ruta                      | Descripción                                          |
+| ------------------------- | ---------------------------------------------------- |
+| `/api/accounts/`          | Listado de cuentas _(del cliente autenticado)_       |
+| `/api/accounts/<pk>/`     | Detalle de cuenta                                    |
+| `/api/transactions/`      | Listado de transacciones _(del cliente autenticado)_ |
+| `/api/transactions/<pk>/` | Detalle de transacción                               |
+| `/api/cards/`             | Listado de tarjetas _(del cliente autenticado)_      |
+| `/api/cards/<pk>/`        | Detalle de tarjeta                                   |
+
+Notas:
+
+- Sólo podrá acceder cada cliente a sus datos bancarios a través de la API previa autenticación.
+- Todos los accesos serán únicamente a través de método GET.
+- El formato de respuesta de todas las rutas será `json`.
+
 ## Entrega de la tarea
 
 ### Recetas
@@ -40,4 +59,5 @@ Incluir un fichero [justfile](../../ut0/justfile) con (al menos) las siguientes 
 
 1. Comprimir el proyecto con: `just zip`
 2. Se habilitará una entrega en el **Campus Virtual** donde se tendrá que subir el proyecto comprimido.
-3. Es suficiente con que lo suba una persona del grupo.
+3. Incluir en el texto de entrada de la entrega las **credenciales de administración y de usuario "habitual"**.
+4. Es suficiente con que lo suba una persona del grupo.
