@@ -113,7 +113,7 @@ djangodoc query: check-venv
 zip: clean
     #!/usr/bin/env bash
     rm -f {{ project_name }}.zip
-    zip -r {{ project_name }}.zip . -x .env .venv/**\* .git/**\*
+    zip -r {{ project_name }}.zip . -x .env .venv/\* .git/\*
 
 # Install Python requirements
 pipi: check-venv
