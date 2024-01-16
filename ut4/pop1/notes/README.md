@@ -87,6 +87,8 @@ import markdown
 markdown.markdown(text, extensions=['extra'])
 ```
 
+> 💡 Sólo es necesario renderizar el atributo `contents` del documento.
+
 Aquí tienes un documento de ejemplo con todas las funcionalidades Markdown: http://sdelquin/documents/b4c762d7-7fb7-4812-a767-5b8cfad4d5e4/edit/
 
 ## Interfaz administrativa
