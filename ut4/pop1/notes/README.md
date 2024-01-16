@@ -77,6 +77,8 @@ Debes completar **los archivos indicados a continuación** para que el proyecto 
 - `documents/templates/documents/render.html`
 - `documents/forms.py`
 
+> ⚠️ No debes modificar nada del resto de código proporcionado.
+
 ## Markdown
 
 Para pasar contenido _Markdown_ a _HTML_ usamos:
@@ -107,6 +109,8 @@ just zip
 ```
 
 Esto generará un fichero `mkedit.zip` que será el que debas añadir a la entrega de CAMPUS.
+
+> ⚠️ No modifiques el nombre del fichero.
 
 ## Evaluación
 
