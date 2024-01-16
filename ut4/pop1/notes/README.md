@@ -40,7 +40,7 @@ unzip /tmp/mkedit.zip -d ~/mkedit
 Accedemos a la carpeta del proyecto:
 
 ```console
-cd ~mkedit
+cd ~/mkedit
 ```
 
 Creamos el entorno virtual:
