@@ -1,6 +1,6 @@
 # Mayor número siguiente
 
-Vamos a **desengrasar los conocimientos de Python** con el siguiente ejercicio.
+Vamos a **seguir desengrasando los conocimientos de Python** con el siguiente ejercicio.
 
 Dado un número entero positivo _n_ calcula el mayor número siguiente a _n_ reordenando los dígitos de _n_.
 
