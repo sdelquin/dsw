@@ -30,17 +30,25 @@ En el caso de que los dígitos no puedan ser reordenados para obtener un número
 ## Notas
 
 - El fichero se debe llamar `fnbn.py`
+- Haz uso de cualquier librería/paquete Python que creas que te puede ayudar. Es posible que [itertools](https://docs.python.org/3/library/itertools.html) tenga lo que estás buscando 😜.
 - Utiliza el enfoque que creas que mejor se adapta al problema (versión iterativa, recursiva, orientado a objetos, ...)
 - Escribe todas las funciones auxiliares que creas necesarias.
-- Haz uso de cualquier librería/paquete Python que creas que te puede ayudar.
 - Presta atención a la calidad del código, nomenclatura de variables y eficiencia.
 
 ## Tests
 
-Puedes descargar [los tests](./files/test_fnbn.py) y probar tu programa con:
+1. Abre una terminal y accede a la carpeta donde tengas tu solución.
+
+2. Ejecuta lo siguiente para descargar los tests:
 
 ```console
-$ pytest
+curl -LO https://raw.githubusercontent.com/sdelquin/dsw/main/ut0/files/test_fnbn.py
+```
+
+3. Lanza los tests mediante el siguiente comando:
+
+```console
+pytest
 ```
 
 > ⚠️ Es necesario tener el paquete pytest instalado: `pip install pytest`
