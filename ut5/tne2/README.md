@@ -66,6 +66,7 @@ A tener en cuenta:
 - Aprovecha el paquete [csv](https://docs.python.org/3/library/csv.html) de la librería estándar de Python para extraer la información de los ficheros .csv
 - El fichero `Stats.csv` sólo se va a usar para extraer ganador y perdedor de cada uno de los partidos.
 - El campo `duration` de `Match` corresponde a `match_minutes` de `Match.csv`.
+- El campo `birthdate` de `Player` corresponde a `birthday` de `Player.csv`.
 
 ## Puntos de entrada API
 
