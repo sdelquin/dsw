@@ -64,6 +64,7 @@ A tener en cuenta:
 - El procesamiento se realizará desde la url `/loaders/kaggle/`
 - Habrá que implementar un formulario con 3 campos de tipo [FileField](https://docs.djangoproject.com/en/5.0/ref/forms/fields/#filefield) para subir los 3 ficheros de datos y procesarlos.
 - Aprovecha el paquete [csv](https://docs.python.org/3/library/csv.html) de la librería estándar de Python para extraer la información de los ficheros .csv
+- [Esta respuesta](https://stackoverflow.com/a/46251769) en StackOverflow te puede ayudar a procesar los ficheros subidos y tratarlos como .csv
 - El fichero `Stats.csv` sólo se va a usar para extraer ganador y perdedor de cada uno de los partidos.
 - El campo `duration` de `Match` corresponde a `match_minutes` de `Match.csv`.
 - El campo `birthdate` de `Player` corresponde a `birthday` de `Player.csv`.
