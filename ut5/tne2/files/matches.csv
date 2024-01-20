@@ -1,0 +1,499 @@
+match_id,tournament,date,round,duration
+m_2019_A_0,Australian Open,2019-01-14,1st Round,173
+m_2019_A_1,Australian Open,2019-01-14,1st Round,162
+m_2019_A_2,Australian Open,2019-01-14,1st Round,175
+m_2019_A_3,Australian Open,2019-01-14,1st Round,164
+m_2019_A_4,Australian Open,2019-01-14,1st Round,131
+m_2019_A_5,Australian Open,2019-01-14,1st Round,121
+m_2019_A_7,Australian Open,2019-01-14,1st Round,177
+m_2019_A_8,Australian Open,2019-01-14,1st Round,153
+m_2019_A_9,Australian Open,2019-01-14,1st Round,112
+m_2019_A_10,Australian Open,2019-01-14,1st Round,135
+m_2019_A_11,Australian Open,2019-01-14,1st Round,184
+m_2019_A_12,Australian Open,2019-01-14,1st Round,178
+m_2019_A_13,Australian Open,2019-01-14,1st Round,107
+m_2019_A_14,Australian Open,2019-01-14,1st Round,155
+m_2019_A_15,Australian Open,2019-01-14,1st Round,183
+m_2019_A_16,Australian Open,2019-01-14,1st Round,151
+m_2019_A_17,Australian Open,2019-01-14,1st Round,118
+m_2019_A_18,Australian Open,2019-01-14,1st Round,154
+m_2019_A_19,Australian Open,2019-01-14,1st Round,150
+m_2019_A_20,Australian Open,2019-01-14,1st Round,163
+m_2019_A_21,Australian Open,2019-01-14,1st Round,102
+m_2019_A_22,Australian Open,2019-01-14,1st Round,112
+m_2019_A_24,Australian Open,2019-01-14,1st Round,141
+m_2019_A_25,Australian Open,2019-01-14,1st Round,85
+m_2019_A_26,Australian Open,2019-01-14,1st Round,192
+m_2019_A_27,Australian Open,2019-01-14,1st Round,157
+m_2019_A_28,Australian Open,2019-01-14,1st Round,124
+m_2019_A_29,Australian Open,2019-01-14,1st Round,249
+m_2019_A_30,Australian Open,2019-01-14,1st Round,123
+m_2019_A_31,Australian Open,2019-01-14,1st Round,117
+m_2019_A_32,Australian Open,2019-01-15,1st Round,144
+m_2019_A_33,Australian Open,2019-01-15,1st Round,195
+m_2019_A_34,Australian Open,2019-01-15,1st Round,192
+m_2019_A_35,Australian Open,2019-01-15,1st Round,168
+m_2019_A_38,Australian Open,2019-01-15,1st Round,99
+m_2019_A_39,Australian Open,2019-01-15,1st Round,107
+m_2019_A_40,Australian Open,2019-01-15,1st Round,186
+m_2019_A_41,Australian Open,2019-01-15,1st Round,121
+m_2019_A_42,Australian Open,2019-01-15,1st Round,217
+m_2019_A_43,Australian Open,2019-01-15,1st Round,133
+m_2019_A_44,Australian Open,2019-01-15,1st Round,241
+m_2019_A_45,Australian Open,2019-01-15,1st Round,227
+m_2019_A_46,Australian Open,2019-01-15,1st Round,177
+m_2019_A_47,Australian Open,2019-01-15,1st Round,127
+m_2019_A_48,Australian Open,2019-01-15,1st Round,115
+m_2019_A_49,Australian Open,2019-01-15,1st Round,88
+m_2019_A_50,Australian Open,2019-01-15,1st Round,115
+m_2019_A_51,Australian Open,2019-01-15,1st Round,92
+m_2019_A_52,Australian Open,2019-01-15,1st Round,105
+m_2019_A_53,Australian Open,2019-01-15,1st Round,105
+m_2019_A_54,Australian Open,2019-01-15,1st Round,120
+m_2019_A_56,Australian Open,2019-01-15,1st Round,244
+m_2019_A_57,Australian Open,2019-01-15,1st Round,164
+m_2019_A_58,Australian Open,2019-01-15,1st Round,119
+m_2019_A_59,Australian Open,2019-01-15,1st Round,60
+m_2019_A_60,Australian Open,2019-01-15,1st Round,99
+m_2019_A_61,Australian Open,2019-01-15,1st Round,123
+m_2019_A_62,Australian Open,2019-01-15,1st Round,116
+m_2019_A_63,Australian Open,2019-01-15,1st Round,222
+m_2019_A_64,Australian Open,2019-01-16,2nd Round,230
+m_2019_A_65,Australian Open,2019-01-16,2nd Round,174
+m_2019_A_66,Australian Open,2019-01-16,2nd Round,160
+m_2019_A_67,Australian Open,2019-01-16,2nd Round,114
+m_2019_A_68,Australian Open,2019-01-16,2nd Round,79
+m_2019_A_69,Australian Open,2019-01-16,2nd Round,217
+m_2019_A_70,Australian Open,2019-01-16,2nd Round,179
+m_2019_A_71,Australian Open,2019-01-16,2nd Round,148
+m_2019_A_72,Australian Open,2019-01-16,2nd Round,155
+m_2019_A_73,Australian Open,2019-01-16,2nd Round,204
+m_2019_A_74,Australian Open,2019-01-16,2nd Round,122
+m_2019_A_75,Australian Open,2019-01-16,2nd Round,212
+m_2019_A_76,Australian Open,2019-01-16,2nd Round,228
+m_2019_A_77,Australian Open,2019-01-16,2nd Round,169
+m_2019_A_78,Australian Open,2019-01-16,2nd Round,232
+m_2019_A_79,Australian Open,2019-01-16,2nd Round,116
+m_2019_A_80,Australian Open,2019-01-17,2nd Round,228
+m_2019_A_81,Australian Open,2019-01-17,2nd Round,241
+m_2019_A_82,Australian Open,2019-01-17,2nd Round,258
+m_2019_A_83,Australian Open,2019-01-17,2nd Round,136
+m_2019_A_84,Australian Open,2019-01-17,2nd Round,136
+m_2019_A_85,Australian Open,2019-01-17,2nd Round,143
+m_2019_A_87,Australian Open,2019-01-17,2nd Round,172
+m_2019_A_88,Australian Open,2019-01-17,2nd Round,162
+m_2019_A_89,Australian Open,2019-01-17,2nd Round,244
+m_2019_A_90,Australian Open,2019-01-17,2nd Round,202
+m_2019_A_91,Australian Open,2019-01-17,2nd Round,128
+m_2019_A_92,Australian Open,2019-01-17,2nd Round,104
+m_2019_A_93,Australian Open,2019-01-17,2nd Round,91
+m_2019_A_94,Australian Open,2019-01-17,2nd Round,226
+m_2019_A_96,Australian Open,2019-01-18,3rd Round,174
+m_2019_A_97,Australian Open,2019-01-18,3rd Round,180
+m_2019_A_98,Australian Open,2019-01-18,3rd Round,88
+m_2019_A_99,Australian Open,2019-01-18,3rd Round,197
+m_2019_A_100,Australian Open,2019-01-18,3rd Round,127
+m_2019_A_101,Australian Open,2019-01-18,3rd Round,128
+m_2019_A_102,Australian Open,2019-01-18,3rd Round,142
+m_2019_A_103,Australian Open,2019-01-18,3rd Round,258
+m_2019_A_104,Australian Open,2019-01-19,3rd Round,121
+m_2019_A_105,Australian Open,2019-01-19,3rd Round,126
+m_2019_A_106,Australian Open,2019-01-19,3rd Round,150
+m_2019_A_108,Australian Open,2019-01-19,3rd Round,142
+m_2019_A_109,Australian Open,2019-01-19,3rd Round,163
+m_2019_A_110,Australian Open,2019-01-19,3rd Round,112
+m_2019_A_111,Australian Open,2019-01-19,3rd Round,223
+m_2019_A_112,Australian Open,2019-01-20,4th Round,219
+m_2019_A_113,Australian Open,2019-01-20,4th Round,125
+m_2019_A_114,Australian Open,2019-01-20,4th Round,238
+m_2019_A_115,Australian Open,2019-01-20,4th Round,225
+m_2019_A_116,Australian Open,2019-01-21,4th Round,119
+m_2019_A_117,Australian Open,2019-01-21,4th Round,195
+m_2019_A_118,Australian Open,2019-01-21,4th Round,305
+m_2019_A_119,Australian Open,2019-01-21,4th Round,195
+m_2019_A_120,Australian Open,2019-01-22,Quarterfinals,195
+m_2019_A_121,Australian Open,2019-01-22,Quarterfinals,107
+m_2019_A_122,Australian Open,2019-01-23,Quarterfinals,182
+m_2019_A_123,Australian Open,2019-01-23,Quarterfinals,52
+m_2019_A_124,Australian Open,2019-01-24,Semifinals,106
+m_2019_A_125,Australian Open,2019-01-25,Semifinals,83
+m_2019_A_126,Australian Open,2019-01-27,The Final,124
+m_2019_F_0,French Open,2019-05-26,1st Round,130
+m_2019_F_1,French Open,2019-05-26,1st Round,172
+m_2019_F_2,French Open,2019-05-26,1st Round,133
+m_2019_F_3,French Open,2019-05-26,1st Round,208
+m_2019_F_4,French Open,2019-05-26,1st Round,182
+m_2019_F_5,French Open,2019-05-26,1st Round,108
+m_2019_F_6,French Open,2019-05-26,1st Round,127
+m_2019_F_7,French Open,2019-05-26,1st Round,119
+m_2019_F_8,French Open,2019-05-26,1st Round,198
+m_2019_F_9,French Open,2019-05-26,1st Round,101
+m_2019_F_10,French Open,2019-05-26,1st Round,75
+m_2019_F_11,French Open,2019-05-26,1st Round,221
+m_2019_F_12,French Open,2019-05-26,1st Round,133
+m_2019_F_13,French Open,2019-05-26,1st Round,186
+m_2019_F_14,French Open,2019-05-26,1st Round,129
+m_2019_F_15,French Open,2019-05-26,1st Round,84
+m_2019_F_16,French Open,2019-05-27,1st Round,88
+m_2019_F_17,French Open,2019-05-27,1st Round,193
+m_2019_F_18,French Open,2019-05-27,1st Round,102
+m_2019_F_19,French Open,2019-05-27,1st Round,102
+m_2019_F_20,French Open,2019-05-27,1st Round,234
+m_2019_F_21,French Open,2019-05-27,1st Round,173
+m_2019_F_22,French Open,2019-05-27,1st Round,137
+m_2019_F_23,French Open,2019-05-27,1st Round,186
+m_2019_F_24,French Open,2019-05-27,1st Round,167
+m_2019_F_25,French Open,2019-05-27,1st Round,99
+m_2019_F_26,French Open,2019-05-27,1st Round,114
+m_2019_F_27,French Open,2019-05-27,1st Round,117
+m_2019_F_28,French Open,2019-05-27,1st Round,171
+m_2019_F_29,French Open,2019-05-27,1st Round,178
+m_2019_F_30,French Open,2019-05-27,1st Round,125
+m_2019_F_31,French Open,2019-05-27,1st Round,142
+m_2019_F_32,French Open,2019-05-27,1st Round,123
+m_2019_F_33,French Open,2019-05-27,1st Round,141
+m_2019_F_34,French Open,2019-05-27,1st Round,185
+m_2019_F_35,French Open,2019-05-27,1st Round,96
+m_2019_F_36,French Open,2019-05-27,1st Round,149
+m_2019_F_37,French Open,2019-05-27,1st Round,138
+m_2019_F_38,French Open,2019-05-27,1st Round,177
+m_2019_F_39,French Open,2019-05-27,1st Round,154
+m_2019_F_40,French Open,2019-05-27,1st Round,94
+m_2019_F_41,French Open,2019-05-27,1st Round,130
+m_2019_F_42,French Open,2019-05-27,1st Round,151
+m_2019_F_43,French Open,2019-05-28,1st Round,141
+m_2019_F_44,French Open,2019-05-28,1st Round,82
+m_2019_F_45,French Open,2019-05-28,1st Round,156
+m_2019_F_46,French Open,2019-05-28,1st Round,127
+m_2019_F_47,French Open,2019-05-28,1st Round,248
+m_2019_F_48,French Open,2019-05-28,1st Round,188
+m_2019_F_49,French Open,2019-05-28,1st Round,84
+m_2019_F_50,French Open,2019-05-28,1st Round,125
+m_2019_F_51,French Open,2019-05-28,1st Round,125
+m_2019_F_52,French Open,2019-05-28,1st Round,242
+m_2019_F_53,French Open,2019-05-28,1st Round,186
+m_2019_F_54,French Open,2019-05-28,1st Round,102
+m_2019_F_55,French Open,2019-05-28,1st Round,128
+m_2019_F_56,French Open,2019-05-28,1st Round,226
+m_2019_F_57,French Open,2019-05-28,1st Round,97
+m_2019_F_58,French Open,2019-05-28,1st Round,116
+m_2019_F_59,French Open,2019-05-28,1st Round,205
+m_2019_F_60,French Open,2019-05-28,1st Round,150
+m_2019_F_61,French Open,2019-05-28,1st Round,179
+m_2019_F_62,French Open,2019-05-28,1st Round,224
+m_2019_F_63,French Open,2019-05-28,1st Round,101
+m_2019_F_64,French Open,2019-05-29,2nd Round,169
+m_2019_F_65,French Open,2019-05-29,2nd Round,151
+m_2019_F_66,French Open,2019-05-29,2nd Round,129
+m_2019_F_67,French Open,2019-05-29,2nd Round,109
+m_2019_F_68,French Open,2019-05-29,2nd Round,182
+m_2019_F_69,French Open,2019-05-29,2nd Round,134
+m_2019_F_70,French Open,2019-05-29,2nd Round,135
+m_2019_F_71,French Open,2019-05-29,2nd Round,255
+m_2019_F_72,French Open,2019-05-29,2nd Round,121
+m_2019_F_73,French Open,2019-05-29,2nd Round,141
+m_2019_F_74,French Open,2019-05-29,2nd Round,263
+m_2019_F_75,French Open,2019-05-29,2nd Round,100
+m_2019_F_76,French Open,2019-05-29,2nd Round,96
+m_2019_F_77,French Open,2019-05-29,2nd Round,273
+m_2019_F_78,French Open,2019-05-29,2nd Round,112
+m_2019_F_79,French Open,2019-05-30,2nd Round,106
+m_2019_F_80,French Open,2019-05-30,2nd Round,150
+m_2019_F_81,French Open,2019-05-30,2nd Round,138
+m_2019_F_82,French Open,2019-05-30,2nd Round,187
+m_2019_F_83,French Open,2019-05-30,2nd Round,119
+m_2019_F_84,French Open,2019-05-30,2nd Round,93
+m_2019_F_85,French Open,2019-05-30,2nd Round,226
+m_2019_F_86,French Open,2019-05-30,2nd Round,98
+m_2019_F_87,French Open,2019-05-30,2nd Round,194
+m_2019_F_88,French Open,2019-05-30,2nd Round,151
+m_2019_F_89,French Open,2019-05-30,2nd Round,226
+m_2019_F_90,French Open,2019-05-30,2nd Round,103
+m_2019_F_91,French Open,2019-05-30,2nd Round,125
+m_2019_F_92,French Open,2019-05-30,2nd Round,88
+m_2019_F_93,French Open,2019-05-30,2nd Round,165
+m_2019_F_94,French Open,2019-05-30,2nd Round,144
+m_2019_F_95,French Open,2019-05-31,2nd Round,247
+m_2019_F_96,French Open,2019-05-31,3rd Round,266
+m_2019_F_97,French Open,2019-05-31,3rd Round,123
+m_2019_F_98,French Open,2019-05-31,3rd Round,131
+m_2019_F_99,French Open,2019-05-31,3rd Round,207
+m_2019_F_100,French Open,2019-05-31,3rd Round,208
+m_2019_F_101,French Open,2019-05-31,3rd Round,169
+m_2019_F_102,French Open,2019-01-06,3rd Round,190
+m_2019_F_103,French Open,2019-01-06,3rd Round,183
+m_2019_F_104,French Open,2019-01-06,3rd Round,214
+m_2019_F_105,French Open,2019-01-06,3rd Round,262
+m_2019_F_106,French Open,2019-01-06,3rd Round,196
+m_2019_F_107,French Open,2019-01-06,3rd Round,124
+m_2019_F_108,French Open,2019-01-06,3rd Round,156
+m_2019_F_109,French Open,2019-01-06,3rd Round,120
+m_2019_F_110,French Open,2019-01-06,3rd Round,121
+m_2019_F_111,French Open,2019-01-06,3rd Round,101
+m_2019_F_112,French Open,2019-02-06,4th Round,102
+m_2019_F_113,French Open,2019-02-06,4th Round,309
+m_2019_F_114,French Open,2019-02-06,4th Round,133
+m_2019_F_115,French Open,2019-03-06,4th Round,235
+m_2019_F_116,French Open,2019-03-06,4th Round,93
+m_2019_F_117,French Open,2019-03-06,4th Round,108
+m_2019_F_118,French Open,2019-03-06,4th Round,175
+m_2019_F_119,French Open,2019-03-06,4th Round,189
+m_2019_F_120,French Open,2019-04-06,Quarterfinals,215
+m_2019_F_121,French Open,2019-04-06,Quarterfinals,111
+m_2019_F_122,French Open,2019-06-06,Quarterfinals,129
+m_2019_F_123,French Open,2019-06-06,Quarterfinals,107
+m_2019_F_124,French Open,2019-07-06,Semifinals,145
+m_2019_F_125,French Open,2019-08-06,Semifinals,253
+m_2019_F_126,French Open,2019-09-06,The Final,181
+m_2019_U_0,US Open,2019-08-26,1st Round,111
+m_2019_U_1,US Open,2019-08-26,1st Round,213
+m_2019_U_2,US Open,2019-08-26,1st Round,165
+m_2019_U_3,US Open,2019-08-26,1st Round,107
+m_2019_U_4,US Open,2019-08-26,1st Round,147
+m_2019_U_5,US Open,2019-08-26,1st Round,221
+m_2019_U_6,US Open,2019-08-26,1st Round,47
+m_2019_U_7,US Open,2019-08-26,1st Round,185
+m_2019_U_8,US Open,2019-08-26,1st Round,182
+m_2019_U_9,US Open,2019-08-26,1st Round,85
+m_2019_U_10,US Open,2019-08-26,1st Round,171
+m_2019_U_11,US Open,2019-08-26,1st Round,175
+m_2019_U_12,US Open,2019-08-26,1st Round,260
+m_2019_U_13,US Open,2019-08-26,1st Round,112
+m_2019_U_14,US Open,2019-08-26,1st Round,118
+m_2019_U_15,US Open,2019-08-26,1st Round,162
+m_2019_U_16,US Open,2019-08-26,1st Round,144
+m_2019_U_17,US Open,2019-08-26,1st Round,168
+m_2019_U_18,US Open,2019-08-26,1st Round,241
+m_2019_U_19,US Open,2019-08-26,1st Round,214
+m_2019_U_20,US Open,2019-08-26,1st Round,164
+m_2019_U_21,US Open,2019-08-26,1st Round,128
+m_2019_U_22,US Open,2019-08-26,1st Round,115
+m_2019_U_23,US Open,2019-08-26,1st Round,193
+m_2019_U_24,US Open,2019-08-26,1st Round,138
+m_2019_U_25,US Open,2019-08-26,1st Round,193
+m_2019_U_26,US Open,2019-08-26,1st Round,138
+m_2019_U_27,US Open,2019-08-26,1st Round,164
+m_2019_U_28,US Open,2019-08-26,1st Round,220
+m_2019_U_29,US Open,2019-08-27,1st Round,169
+m_2019_U_30,US Open,2019-08-27,1st Round,256
+m_2019_U_31,US Open,2019-08-27,1st Round,150
+m_2019_U_32,US Open,2019-08-27,1st Round,124
+m_2019_U_33,US Open,2019-08-27,1st Round,163
+m_2019_U_34,US Open,2019-08-27,1st Round,259
+m_2019_U_35,US Open,2019-08-27,1st Round,199
+m_2019_U_36,US Open,2019-08-27,1st Round,141
+m_2019_U_37,US Open,2019-08-27,1st Round,234
+m_2019_U_38,US Open,2019-08-27,1st Round,194
+m_2019_U_39,US Open,2019-08-27,1st Round,129
+m_2019_U_40,US Open,2019-08-27,1st Round,142
+m_2019_U_41,US Open,2019-08-27,1st Round,125
+m_2019_U_42,US Open,2019-08-27,1st Round,261
+m_2019_U_43,US Open,2019-08-27,1st Round,118
+m_2019_U_44,US Open,2019-08-27,1st Round,190
+m_2019_U_45,US Open,2019-08-27,1st Round,177
+m_2019_U_46,US Open,2019-08-27,1st Round,125
+m_2019_U_47,US Open,2019-08-27,1st Round,235
+m_2019_U_48,US Open,2019-08-27,1st Round,143
+m_2019_U_49,US Open,2019-08-27,1st Round,217
+m_2019_U_50,US Open,2019-08-27,1st Round,255
+m_2019_U_51,US Open,2019-08-27,1st Round,231
+m_2019_U_52,US Open,2019-08-27,1st Round,228
+m_2019_U_53,US Open,2019-08-27,1st Round,119
+m_2019_U_54,US Open,2019-08-27,1st Round,137
+m_2019_U_55,US Open,2019-08-27,1st Round,108
+m_2019_U_56,US Open,2019-08-27,1st Round,160
+m_2019_U_57,US Open,2019-08-27,1st Round,64
+m_2019_U_58,US Open,2019-08-27,1st Round,214
+m_2019_U_59,US Open,2019-08-27,1st Round,98
+m_2019_U_60,US Open,2019-08-28,1st Round,232
+m_2019_U_61,US Open,2019-08-28,1st Round,133
+m_2019_U_62,US Open,2019-08-28,1st Round,128
+m_2019_U_63,US Open,2019-08-28,1st Round,122
+m_2019_U_65,US Open,2019-08-28,2nd Round,164
+m_2019_U_66,US Open,2019-08-28,2nd Round,142
+m_2019_U_67,US Open,2019-08-29,2nd Round,135
+m_2019_U_68,US Open,2019-08-29,2nd Round,148
+m_2019_U_69,US Open,2019-08-29,2nd Round,86
+m_2019_U_70,US Open,2019-08-29,2nd Round,141
+m_2019_U_71,US Open,2019-08-29,2nd Round,197
+m_2019_U_72,US Open,2019-08-29,2nd Round,190
+m_2019_U_73,US Open,2019-08-29,2nd Round,161
+m_2019_U_74,US Open,2019-08-29,2nd Round,189
+m_2019_U_75,US Open,2019-08-29,2nd Round,288
+m_2019_U_76,US Open,2019-08-29,2nd Round,243
+m_2019_U_77,US Open,2019-08-29,2nd Round,162
+m_2019_U_78,US Open,2019-08-29,2nd Round,164
+m_2019_U_79,US Open,2019-08-29,2nd Round,163
+m_2019_U_80,US Open,2019-08-29,2nd Round,177
+m_2019_U_81,US Open,2019-08-29,2nd Round,185
+m_2019_U_82,US Open,2019-08-29,2nd Round,184
+m_2019_U_83,US Open,2019-08-29,2nd Round,135
+m_2019_U_84,US Open,2019-08-29,2nd Round,155
+m_2019_U_85,US Open,2019-08-29,2nd Round,220
+m_2019_U_86,US Open,2019-08-29,2nd Round,115
+m_2019_U_87,US Open,2019-08-29,2nd Round,0
+m_2019_U_88,US Open,2019-08-29,2nd Round,41
+m_2019_U_89,US Open,2019-08-29,2nd Round,98
+m_2019_U_90,US Open,2019-08-29,2nd Round,118
+m_2019_U_91,US Open,2019-08-29,2nd Round,169
+m_2019_U_92,US Open,2019-08-29,2nd Round,83
+m_2019_U_93,US Open,2019-08-30,2nd Round,202
+m_2019_U_95,US Open,2019-08-30,2nd Round,178
+m_2019_U_96,US Open,2019-08-30,3rd Round,170
+m_2019_U_97,US Open,2019-08-30,3rd Round,80
+m_2019_U_98,US Open,2019-08-30,3rd Round,193
+m_2019_U_99,US Open,2019-08-30,3rd Round,178
+m_2019_U_100,US Open,2019-08-30,3rd Round,137
+m_2019_U_101,US Open,2019-08-30,3rd Round,160
+m_2019_U_102,US Open,2019-08-31,3rd Round,199
+m_2019_U_103,US Open,2019-08-31,3rd Round,123
+m_2019_U_104,US Open,2019-08-31,3rd Round,119
+m_2019_U_105,US Open,2019-08-31,3rd Round,119
+m_2019_U_106,US Open,2019-08-31,3rd Round,216
+m_2019_U_107,US Open,2019-08-31,3rd Round,199
+m_2019_U_108,US Open,2019-08-31,3rd Round,215
+m_2019_U_109,US Open,2019-08-31,3rd Round,115
+m_2019_U_110,US Open,2019-01-09,3rd Round,214
+m_2019_U_111,US Open,2019-01-09,3rd Round,111
+m_2019_U_112,US Open,2019-01-09,4th Round,79
+m_2019_U_113,US Open,2019-01-09,4th Round,125
+m_2019_U_114,US Open,2019-01-09,4th Round,152
+m_2019_U_115,US Open,2019-02-09,4th Round,106
+m_2019_U_116,US Open,2019-02-09,4th Round,188
+m_2019_U_117,US Open,2019-02-09,4th Round,131
+m_2019_U_118,US Open,2019-02-09,4th Round,86
+m_2019_U_119,US Open,2019-03-09,4th Round,169
+m_2019_U_120,US Open,2019-03-09,Quarterfinals,154
+m_2019_U_121,US Open,2019-04-09,Quarterfinals,192
+m_2019_U_122,US Open,2019-04-09,Quarterfinals,237
+m_2019_U_123,US Open,2019-05-09,Quarterfinals,167
+m_2019_U_124,US Open,2019-06-09,Semifinals,158
+m_2019_U_125,US Open,2019-07-09,Semifinals,155
+m_2019_U_126,US Open,2019-08-09,The Final,290
+m_2019_W_0,Wimbledon,2019-01-07,1st Round,236
+m_2019_W_1,Wimbledon,2019-01-07,1st Round,106
+m_2019_W_2,Wimbledon,2019-01-07,1st Round,94
+m_2019_W_3,Wimbledon,2019-01-07,1st Round,90
+m_2019_W_4,Wimbledon,2019-01-07,1st Round,108
+m_2019_W_5,Wimbledon,2019-01-07,1st Round,87
+m_2019_W_6,Wimbledon,2019-01-07,1st Round,137
+m_2019_W_7,Wimbledon,2019-01-07,1st Round,187
+m_2019_W_8,Wimbledon,2019-01-07,1st Round,110
+m_2019_W_9,Wimbledon,2019-01-07,1st Round,100
+m_2019_W_10,Wimbledon,2019-01-07,1st Round,143
+m_2019_W_11,Wimbledon,2019-01-07,1st Round,167
+m_2019_W_12,Wimbledon,2019-01-07,1st Round,123
+m_2019_W_13,Wimbledon,2019-01-07,1st Round,81
+m_2019_W_14,Wimbledon,2019-01-07,1st Round,203
+m_2019_W_15,Wimbledon,2019-01-07,1st Round,174
+m_2019_W_16,Wimbledon,2019-01-07,1st Round,186
+m_2019_W_17,Wimbledon,2019-01-07,1st Round,101
+m_2019_W_18,Wimbledon,2019-01-07,1st Round,112
+m_2019_W_19,Wimbledon,2019-01-07,1st Round,151
+m_2019_W_20,Wimbledon,2019-01-07,1st Round,154
+m_2019_W_21,Wimbledon,2019-01-07,1st Round,108
+m_2019_W_22,Wimbledon,2019-01-07,1st Round,128
+m_2019_W_23,Wimbledon,2019-01-07,1st Round,168
+m_2019_W_24,Wimbledon,2019-01-07,1st Round,198
+m_2019_W_25,Wimbledon,2019-01-07,1st Round,139
+m_2019_W_26,Wimbledon,2019-01-07,1st Round,108
+m_2019_W_27,Wimbledon,2019-01-07,1st Round,178
+m_2019_W_28,Wimbledon,2019-01-07,1st Round,135
+m_2019_W_29,Wimbledon,2019-01-07,1st Round,156
+m_2019_W_30,Wimbledon,2019-01-07,1st Round,110
+m_2019_W_31,Wimbledon,2019-01-07,1st Round,124
+m_2019_W_32,Wimbledon,2019-02-07,1st Round,122
+m_2019_W_33,Wimbledon,2019-02-07,1st Round,134
+m_2019_W_34,Wimbledon,2019-02-07,1st Round,130
+m_2019_W_35,Wimbledon,2019-02-07,1st Round,208
+m_2019_W_36,Wimbledon,2019-02-07,1st Round,112
+m_2019_W_37,Wimbledon,2019-02-07,1st Round,206
+m_2019_W_38,Wimbledon,2019-02-07,1st Round,116
+m_2019_W_39,Wimbledon,2019-02-07,1st Round,176
+m_2019_W_40,Wimbledon,2019-02-07,1st Round,149
+m_2019_W_41,Wimbledon,2019-02-07,1st Round,152
+m_2019_W_42,Wimbledon,2019-02-07,1st Round,124
+m_2019_W_43,Wimbledon,2019-02-07,1st Round,174
+m_2019_W_44,Wimbledon,2019-02-07,1st Round,155
+m_2019_W_45,Wimbledon,2019-02-07,1st Round,164
+m_2019_W_46,Wimbledon,2019-02-07,1st Round,111
+m_2019_W_47,Wimbledon,2019-02-07,1st Round,131
+m_2019_W_48,Wimbledon,2019-02-07,1st Round,58
+m_2019_W_49,Wimbledon,2019-02-07,1st Round,88
+m_2019_W_50,Wimbledon,2019-02-07,1st Round,94
+m_2019_W_51,Wimbledon,2019-02-07,1st Round,129
+m_2019_W_52,Wimbledon,2019-02-07,1st Round,128
+m_2019_W_53,Wimbledon,2019-02-07,1st Round,121
+m_2019_W_54,Wimbledon,2019-02-07,1st Round,99
+m_2019_W_55,Wimbledon,2019-02-07,1st Round,203
+m_2019_W_56,Wimbledon,2019-02-07,1st Round,117
+m_2019_W_57,Wimbledon,2019-02-07,1st Round,111
+m_2019_W_58,Wimbledon,2019-02-07,1st Round,184
+m_2019_W_59,Wimbledon,2019-02-07,1st Round,168
+m_2019_W_60,Wimbledon,2019-02-07,1st Round,154
+m_2019_W_61,Wimbledon,2019-02-07,1st Round,118
+m_2019_W_62,Wimbledon,2019-02-07,1st Round,136
+m_2019_W_63,Wimbledon,2019-02-07,1st Round,108
+m_2019_W_64,Wimbledon,2019-03-07,2nd Round,177
+m_2019_W_65,Wimbledon,2019-03-07,2nd Round,92
+m_2019_W_66,Wimbledon,2019-03-07,2nd Round,193
+m_2019_W_67,Wimbledon,2019-03-07,2nd Round,187
+m_2019_W_68,Wimbledon,2019-03-07,2nd Round,151
+m_2019_W_69,Wimbledon,2019-03-07,2nd Round,101
+m_2019_W_70,Wimbledon,2019-03-07,2nd Round,175
+m_2019_W_71,Wimbledon,2019-03-07,2nd Round,153
+m_2019_W_72,Wimbledon,2019-03-07,2nd Round,93
+m_2019_W_73,Wimbledon,2019-03-07,2nd Round,223
+m_2019_W_74,Wimbledon,2019-03-07,2nd Round,164
+m_2019_W_75,Wimbledon,2019-03-07,2nd Round,217
+m_2019_W_76,Wimbledon,2019-03-07,2nd Round,159
+m_2019_W_77,Wimbledon,2019-03-07,2nd Round,182
+m_2019_W_78,Wimbledon,2019-03-07,2nd Round,179
+m_2019_W_79,Wimbledon,2019-03-07,2nd Round,93
+m_2019_W_80,Wimbledon,2019-04-07,2nd Round,201
+m_2019_W_81,Wimbledon,2019-04-07,2nd Round,127
+m_2019_W_82,Wimbledon,2019-04-07,2nd Round,95
+m_2019_W_83,Wimbledon,2019-04-07,2nd Round,135
+m_2019_W_84,Wimbledon,2019-04-07,2nd Round,146
+m_2019_W_85,Wimbledon,2019-04-07,2nd Round,185
+m_2019_W_86,Wimbledon,2019-04-07,2nd Round,108
+m_2019_W_87,Wimbledon,2019-04-07,2nd Round,132
+m_2019_W_88,Wimbledon,2019-04-07,2nd Round,106
+m_2019_W_89,Wimbledon,2019-04-07,2nd Round,96
+m_2019_W_90,Wimbledon,2019-04-07,2nd Round,97
+m_2019_W_91,Wimbledon,2019-04-07,2nd Round,228
+m_2019_W_92,Wimbledon,2019-04-07,2nd Round,218
+m_2019_W_93,Wimbledon,2019-04-07,2nd Round,184
+m_2019_W_94,Wimbledon,2019-04-07,2nd Round,102
+m_2019_W_95,Wimbledon,2019-04-07,2nd Round,113
+m_2019_W_96,Wimbledon,2019-05-07,3rd Round,102
+m_2019_W_97,Wimbledon,2019-05-07,3rd Round,165
+m_2019_W_98,Wimbledon,2019-05-07,3rd Round,113
+m_2019_W_99,Wimbledon,2019-05-07,3rd Round,154
+m_2019_W_100,Wimbledon,2019-05-07,3rd Round,211
+m_2019_W_101,Wimbledon,2019-05-07,3rd Round,180
+m_2019_W_102,Wimbledon,2019-05-07,3rd Round,139
+m_2019_W_103,Wimbledon,2019-05-07,3rd Round,130
+m_2019_W_104,Wimbledon,2019-06-07,3rd Round,110
+m_2019_W_105,Wimbledon,2019-06-07,3rd Round,113
+m_2019_W_106,Wimbledon,2019-06-07,3rd Round,148
+m_2019_W_107,Wimbledon,2019-06-07,3rd Round,198
+m_2019_W_108,Wimbledon,2019-06-07,3rd Round,259
+m_2019_W_109,Wimbledon,2019-06-07,3rd Round,108
+m_2019_W_110,Wimbledon,2019-06-07,3rd Round,126
+m_2019_W_111,Wimbledon,2019-06-07,3rd Round,236
+m_2019_W_112,Wimbledon,2019-08-07,4th Round,179
+m_2019_W_113,Wimbledon,2019-08-07,4th Round,105
+m_2019_W_114,Wimbledon,2019-08-07,4th Round,112
+m_2019_W_115,Wimbledon,2019-08-07,4th Round,177
+m_2019_W_116,Wimbledon,2019-08-07,4th Round,102
+m_2019_W_117,Wimbledon,2019-08-07,4th Round,222
+m_2019_W_118,Wimbledon,2019-08-07,4th Round,163
+m_2019_W_119,Wimbledon,2019-08-07,4th Round,74
+m_2019_W_120,Wimbledon,2019-10-07,Quarterfinals,117
+m_2019_W_121,Wimbledon,2019-10-07,Quarterfinals,187
+m_2019_W_122,Wimbledon,2019-10-07,Quarterfinals,156
+m_2019_W_123,Wimbledon,2019-10-07,Quarterfinals,127
+m_2019_W_124,Wimbledon,2019-12-07,Semifinals,169
+m_2019_W_125,Wimbledon,2019-12-07,Semifinals,182
+m_2019_W_126,Wimbledon,2019-07-14,The Final,297

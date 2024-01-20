@@ -45,15 +45,21 @@ A tener en cuenta:
 
 ## Origen de datos
 
-Los datos se pueden descargar desde [este archivo comprimido](./files/atp-data.zip).
+Los datos provienen de [Kaggle](https://www.kaggle.com/datasets/tbrownlow3/atp-tennis?select=Stats.csv) pero se ha hecho un filtrado de los mismos con [este script en R](./datatrim.R) para dejar los ficheros preparados para su tratamiento en el proyecto, dejando únicamente datos del año 2019.
 
-Contiene los siguientes ficheros:
+Los ficheros de datos son los siguientes:
 
-- `Match.csv` → estadísticas de partidos de tenis.
-- `Player.csv` → estadísticas de jugadores de tenis.
-- `Stats.csv` → ganadores y perderos de partidos de tenis.
+- [matches.csv](./files/matches.csv) → estadísticas de partidos de tenis.
+- [players.csv](./files/players.csv) → estadísticas de jugadores de tenis.
+- [stats.csv](./files/stats.csv) → ganadores y perdedores de partidos de tenis.
 
-→ Fuente: [Kaggle](https://www.kaggle.com/datasets/tbrownlow3/atp-tennis?select=Stats.csv).
+Estando en la carpeta correspondiente, puedes **descargar los ficheros** con los siguientes comandos:
+
+```console
+curl -LO https://raw.githubusercontent.com/sdelquin/dsw/main/ut5/tne2/files/matches.csv
+curl -LO https://raw.githubusercontent.com/sdelquin/dsw/main/ut5/tne2/files/players.csv
+curl -LO https://raw.githubusercontent.com/sdelquin/dsw/main/ut5/tne2/files/stats.csv
+```
 
 ### Carga de datos
 
@@ -61,13 +67,12 @@ Será necesario cargar los ficheros .csv en la base de datos utilizando herramie
 
 A tener en cuenta:
 
-- El procesamiento se realizará desde la url `/loaders/kaggle/`
-- Habrá que implementar un formulario con 3 campos de tipo [FileField](https://docs.djangoproject.com/en/5.0/ref/forms/fields/#filefield) para subir los 3 ficheros de datos y procesarlos.
+- El procesamiento se realizará desde la **url** `/loaders/kaggle/`
+- Esta vista sólo debe estar accesible para **usuarios administradores**.
+- Habrá que implementar un **formulario con 3 campos** de tipo [FileField](https://docs.djangoproject.com/en/5.0/ref/forms/fields/#filefield) para subir los 3 ficheros de datos y procesarlos.
 - Aprovecha el paquete [csv](https://docs.python.org/3/library/csv.html) de la librería estándar de Python para extraer la información de los ficheros .csv
 - [Esta respuesta](https://stackoverflow.com/a/46251769) en StackOverflow te puede ayudar a procesar los ficheros subidos y tratarlos como .csv
-- El fichero `Stats.csv` sólo se va a usar para extraer ganador y perdedor de cada uno de los partidos.
-- El campo `duration` de `Match` corresponde a `match_minutes` de `Match.csv`.
-- El campo `birthdate` de `Player` corresponde a `birthday` de `Player.csv`.
+- El fichero `stats.csv` sólo se va a usar para extraer ganador y perdedor de cada uno de los partidos.
 
 ## Puntos de entrada API
 

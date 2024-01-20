@@ -1,0 +1,188 @@
+player_id,name,hand,country,birthdate
+atp_100644,Alexander Zverev,R,GER,1997-04-20
+atp_103333,Ivo Karlovic,R,CRO,1979-02-28
+atp_103819,Roger Federer,R,SUI,1981-08-08
+atp_103852,Feliciano Lopez,L,ESP,1981-09-20
+atp_103893,Paolo Lorenzi,R,ITA,1981-12-15
+atp_103917,Nicolas Mahut,R,FRA,1982-01-21
+atp_104198,Guillermo Garcia Lopez,R,ESP,1983-06-04
+atp_104259,Philipp Kohlschreiber,R,GER,1983-10-16
+atp_104269,Fernando Verdasco,L,ESP,1983-11-15
+atp_104291,Malek Jaziri,R,TUN,1984-01-20
+atp_104312,Andreas Seppi,R,ITA,1984-02-21
+atp_104327,Steve Darcis,R,BEL,1984-03-13
+atp_104386,Janko Tipsarevic,R,SRB,1984-06-22
+atp_104468,Gilles Simon,R,FRA,1984-12-27
+atp_104527,Stan Wawrinka,R,SUI,1985-03-28
+atp_104542,Jo Wilfried Tsonga,R,FRA,1985-04-17
+atp_104545,John Isner,R,USA,1985-04-26
+atp_104563,Luca Vanni,R,ITA,1985-06-04
+atp_104571,Marcos Baghdatis,R,CYP,1985-06-17
+atp_104586,Lukas Rosol,R,CZE,1985-07-24
+atp_104607,Tomas Berdych,R,CZE,1985-09-17
+atp_104620,Simone Bolelli,R,ITA,1985-10-08
+atp_104655,Pablo Cuevas,R,URU,1986-01-01
+atp_104660,Sergiy Stakhovsky,R,UKR,1986-01-06
+atp_104665,Pablo Andujar,R,ESP,1986-01-23
+atp_104678,Viktor Troicki,R,SRB,1986-02-10
+atp_104719,Marcel Granollers,R,ESP,1986-04-12
+atp_104731,Kevin Anderson,R,RSA,1986-05-18
+atp_104735,Tobias Kamke,R,GER,1986-05-21
+atp_104745,Rafael Nadal,L,ESP,1986-06-03
+atp_104755,Richard Gasquet,R,FRA,1986-06-18
+atp_104792,Gael Monfils,R,FRA,1986-09-01
+atp_104797,Denis Istomin,R,UZB,1986-09-07
+atp_104810,Zhe Li,R,CHN,1986-09-20
+atp_104868,James Ward,R,GBR,1987-02-09
+atp_104871,Jeremy Chardy,R,FRA,1987-02-12
+atp_104898,Robin Haase,R,NED,1987-04-06
+atp_104918,Andy Murray,R,GBR,1987-05-15
+atp_104919,Leonardo Mayer,R,ARG,1987-05-15
+atp_104925,Novak Djokovic,R,SRB,1987-05-22
+atp_104926,Fabio Fognini,R,ITA,1987-05-24
+atp_104999,Mischa Zverev,L,GER,1987-08-22
+atp_105023,Sam Querrey,R,USA,1987-10-07
+atp_105051,Matthew Ebden,R,AUS,1987-11-26
+atp_105053,Santiago Giraldo,R,COL,1987-11-27
+atp_105062,Mikhail Kukushkin,R,KAZ,1987-12-26
+atp_105063,Andrea Arnaboldi,L,ITA,1987-12-27
+atp_105074,Ruben Bemelmans,L,BEL,1988-01-14
+atp_105077,Albert Ramos,L,ESP,1988-01-17
+atp_105138,Roberto Bautista Agut,R,ESP,1988-04-14
+atp_105147,Tatsuma Ito,R,JPN,1988-05-18
+atp_105155,Pedro Sousa,R,POR,1988-05-27
+atp_105163,Gleb Sakharov,R,FRA,1988-06-10
+atp_105173,Adrian Mannarino,L,FRA,1988-06-29
+atp_105208,Ernests Gulbis,R,LAT,1988-08-30
+atp_105216,Yuichi Sugita,R,JPN,1988-09-18
+atp_105223,Juan Martin Del Potro,R,ARG,1988-09-23
+atp_105227,Marin Cilic,R,CRO,1988-09-28
+atp_105311,Joao Sousa,R,POR,1989-03-30
+atp_105332,Benoit Paire,R,FRA,1989-05-08
+atp_105341,Thomas Fabbiano,R,ITA,1989-05-26
+atp_105357,John Millman,R,AUS,1989-06-14
+atp_105373,Martin Klizan,L,SVK,1989-07-11
+atp_105376,Peter Gojowczyk,R,GER,1989-07-15
+atp_105379,Aljaz Bedene,R,SLO,1989-07-18
+atp_105430,Radu Albot,R,MDA,1989-11-11
+atp_105432,Prajnesh Gunneswaran,L,IND,1989-11-12
+atp_105449,Steve Johnson,R,USA,1989-12-24
+atp_105453,Kei Nishikori,R,JPN,1989-12-29
+atp_105477,Marco Trungelliti,R,ARG,1990-01-31
+atp_105526,Jan Lennard Struff,R,GER,1990-04-25
+atp_105539,Evgeny Donskoy,R,RUS,1990-05-09
+atp_105550,Guido Pella,L,ARG,1990-05-17
+atp_105554,Daniel Evans,R,GBR,1990-05-23
+atp_105575,Ricardas Berankis,R,LTU,1990-06-21
+atp_105577,Vasek Pospisil,R,CAN,1990-06-23
+atp_105583,Dusan Lajovic,R,SRB,1990-06-30
+atp_105614,Bradley Klahn,L,USA,1990-08-20
+atp_105641,Blaz Rola,L,SLO,1990-10-05
+atp_105643,Federico Delbonis,L,ARG,1990-10-05
+atp_105649,Cedrik Marcel Stebe,L,GER,1990-10-09
+atp_105657,Marius Copil,R,ROU,1990-10-17
+atp_105676,David Goffin,R,BEL,1990-12-07
+atp_105683,Milos Raonic,R,CAN,1990-12-27
+atp_105732,Pierre Hugues Herbert,R,FRA,1991-03-18
+atp_105777,Grigor Dimitrov,R,BUL,1991-05-16
+atp_105806,Mirza Basic,R,BIH,1991-07-12
+atp_105807,Pablo Carreno Busta,R,ESP,1991-07-12
+atp_105815,Tennys Sandgren,R,USA,1991-07-22
+atp_105819,Guido Andreozzi,R,ARG,1991-08-05
+atp_105870,Yannick Hanfmann,U,GER,1991-11-13
+atp_105882,Stefano Travaglia,U,ITA,1991-12-18
+atp_105902,James Duckworth,R,AUS,1992-01-21
+atp_105916,Marton Fucsovics,R,HUN,1992-02-08
+atp_105932,Nikoloz Basilashvili,R,RUS,1992-02-23
+atp_105936,Filip Krajinovic,R,SRB,1992-02-27
+atp_105967,Henri Laaksonen,R,SUI,1992-03-31
+atp_105992,Ryan Harrison,R,USA,1992-05-07
+atp_106000,Damir Dzumhur,R,BIH,1992-05-20
+atp_106034,Yasutaka Uchiyama,R,JPN,1992-08-05
+atp_106043,Diego Sebastian Schwartzman,R,ARG,1992-08-16
+atp_106045,Denis Kudla,R,USA,1992-08-17
+atp_106058,Jack Sock,R,USA,1992-09-24
+atp_106065,Marco Cecchinato,R,ITA,1992-09-30
+atp_106071,Bernard Tomic,R,AUS,1992-10-21
+atp_106072,Alexey Vatutin,U,RUS,1992-10-27
+atp_106075,Jozef Kovalik,R,SVK,1992-11-04
+atp_106078,Egor Gerasimov,R,BLR,1992-11-11
+atp_106099,Salvatore Caruso,R,ITA,1992-12-15
+atp_106109,Alex Bolt,L,AUS,1993-01-05
+atp_106121,Taro Daniel,R,JPN,1993-01-27
+atp_106148,Roberto Carballes Baena,R,ESP,1993-03-23
+atp_106186,Jason Kubler,R,AUS,1993-05-19
+atp_106198,Hugo Dellien,R,BOL,1993-06-16
+atp_106210,Jiri Vesely,L,CZE,1993-07-10
+atp_106214,Oscar Otte,R,GER,1993-07-16
+atp_106216,Bjorn Fratangelo,R,USA,1993-07-19
+atp_106218,Marcos Giron,R,USA,1993-07-24
+atp_106228,Juan Ignacio Londero,R,ARG,1993-08-15
+atp_106233,Dominic Thiem,R,AUT,1993-09-03
+atp_106283,Mitchell Krueger,R,USA,1994-01-12
+atp_106293,Kimmer Coppejans,R,BEL,1994-02-07
+atp_106296,Gregoire Barrere,R,FRA,1994-02-16
+atp_106298,Lucas Pouille,R,FRA,1994-02-23
+atp_106329,Thiago Monteiro,L,BRA,1994-05-31
+atp_106378,Kyle Edmund,R,GBR,1995-01-08
+atp_106401,Nick Kyrgios,R,AUS,1995-04-27
+atp_106415,Yoshihito Nishioka,L,JPN,1995-09-27
+atp_106421,Daniil Medvedev,R,RUS,1996-02-11
+atp_106423,Thanasi Kokkinakis,R,AUS,1996-04-10
+atp_106426,Christian Garin,R,CHI,1996-05-30
+atp_106432,Borna Coric,R,CRO,1996-11-14
+atp_109739,Maximilian Marterer,L,GER,1995-06-15
+atp_110602,Dennis Novak,R,AUT,1993-08-28
+atp_111153,Christopher Eubanks,R,USA,1996-05-05
+atp_111202,Hyeon Chung,R,KOR,1996-05-19
+atp_111442,Jordan Thompson,R,AUS,1994-04-20
+atp_111456,Mackenzie Mcdonald,R,USA,1995-04-16
+atp_111460,Quentin Halys,R,FRA,1996-10-26
+atp_111511,Noah Rubin,R,USA,1996-02-21
+atp_111513,Laslo Djere,R,SRB,1995-06-02
+atp_111575,Karen Khachanov,R,RUS,1996-05-21
+atp_111576,Sumit Nagal,R,IND,1997-08-16
+atp_111581,Michael Mmoh,R,USA,1998-01-10
+atp_111790,Brayden Schnur,R,CAN,1995-07-04
+atp_111794,Kamil Majchrzak,R,POL,1996-01-13
+atp_111797,Nicolas Jarry,R,CHI,1995-10-11
+atp_111815,Cameron Norrie,L,GBR,1995-08-23
+atp_117360,Marc Polmans,U,AUS,1997-05-02
+atp_120424,Yannick Maden,U,GER,1989-10-28
+atp_122330,Alexander Bublik,R,RUS,1997-06-17
+atp_124014,Ernesto Escobedo,R,USA,1996-07-04
+atp_124079,Pedro Martinez Portero,R,ESP,1997-04-26
+atp_124186,Alexandre Muller,U,FRA,1997-02-01
+atp_124187,Reilly Opelka,U,USA,1997-08-28
+atp_125802,Ilya Ivashka,R,BLR,1994-02-24
+atp_126094,Andrey Rublev,R,RUS,1997-10-20
+atp_126125,Maxime Janvier,U,FRA,1996-10-18
+atp_126156,Antonie Hoang,R,FRA,1995-11-04
+atp_126203,Taylor Harry Fritz,R,USA,1997-10-28
+atp_126205,Tommy Paul,R,USA,1997-05-17
+atp_126207,Frances Tiafoe,R,USA,1998-01-20
+atp_126610,Matteo Berrettini,U,ITA,1996-04-12
+atp_126652,Jay Clarke,R,GBR,1998-07-27
+atp_126774,Stefanos Tsitsipas,R,GRE,1998-08-12
+atp_126952,Soon Woo Kwon,R,KOR,1997-12-02
+atp_128034,Hubert Hurkacz,R,POL,1997-02-11
+atp_132283,Lorenzo Sonego,R,ITA,1995-05-11
+atp_133430,Denis Shapovalov,L,CAN,1999-04-15
+atp_134770,Casper Ruud,R,NOR,1998-12-22
+atp_136440,Dominik Koepfer,L,GER,1994-04-29
+atp_144707,Mikael Ymer,R,SWE,1998-09-09
+atp_144719,Jaume Munar,U,ESP,1997-05-05
+atp_144750,Lloyd George Muirhead Harris,R,RSA,1997-02-24
+atp_144895,Corentin Moutet,L,FRA,1999-04-19
+atp_200000,Felix Auger Aliassime,R,CAN,2000-08-08
+atp_200005,Ugo Humbert,L,FRA,1998-06-26
+atp_200175,Miomir Kecmanovic,R,SRB,1999-08-31
+atp_200221,Alejandro Davidovich Fokina,U,ESP,1999-06-05
+atp_200282,Alex De Minaur,R,AUS,1999-02-17
+atp_200484,Rudolf Molleker,R,GER,2000-10-26
+atp_200611,Elliot Benchetrit,U,FRA,1998-10-02
+atp_200615,Alexei Popyrin,U,AUS,1999-08-05
+atp_202385,Jenson Brooksby,U,USA,2000-10-26
+atp_206173,Jannik Sinner,U,ITA,2001-08-16
+atp_206703,Paul Jubb,R,GBR,1999-10-31
+atp_208260,Zachary Svajda,U,USA,2002-11-29
