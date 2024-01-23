@@ -73,6 +73,7 @@ A tener en cuenta:
 - Aprovecha el paquete [csv](https://docs.python.org/3/library/csv.html) de la librería estándar de Python para extraer la información de los ficheros .csv
 - [Esta respuesta](https://stackoverflow.com/a/46251769) en StackOverflow te puede ayudar a procesar los ficheros subidos y tratarlos como .csv
 - El fichero `stats.csv` sólo se va a usar para extraer ganador y perdedor de cada uno de los partidos.
+- El campo `duration` de `players.csv` indica la duración del partido **en minutos**.
 
 ## Puntos de entrada API
 

@@ -32,6 +32,9 @@ players <- read_csv('files/full_players.csv') |>
     country,
     birthdate = birthday
   ) |>
+  mutate(
+    hand = ifelse(hand == 'U', sample(c('R', 'L')), hand)
+  ) |>
   drop_na()
 
 matches |>
