@@ -74,6 +74,7 @@ A tener en cuenta:
 - [Esta respuesta](https://stackoverflow.com/a/46251769) en StackOverflow te puede ayudar a procesar los ficheros subidos y tratarlos como .csv
 - El fichero `stats.csv` sólo se va a usar para extraer ganador y perdedor de cada uno de los partidos.
 - El campo `duration` de `players.csv` indica la duración del partido **en minutos**.
+- Los campos `player_id` y `match_id` no deben ser los identificadores en la base de datos de Django. Usaremos las claves primarias `id` que autogenera Django.
 
 ## Puntos de entrada API
 
