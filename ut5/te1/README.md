@@ -38,6 +38,7 @@ Notas:
 
 - Sólo podrá acceder cada cliente a sus datos bancarios a través de la API previa autenticación.
 - Todos los accesos serán únicamente a través de método GET.
+- Usar [SessionAuthentication](https://www.django-rest-framework.org/api-guide/authentication/#sessionauthentication) como backend de autenticación de la API.
 - El formato de respuesta de todas las rutas será `json`.
 
 ## Entrega de la tarea
