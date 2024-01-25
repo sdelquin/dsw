@@ -123,6 +123,10 @@ pipi: check_venv
 dockup:
     docker compose up
 
+# Stop Docker process
+dockdown:
+    docker compose down
+
 # Check if virtualenv is active
 [private]
 check_venv:

@@ -273,6 +273,7 @@ Habrá que implementar (al menos) las siguientes funcionalidades en el proyecto:
 Incluir un fichero [justfile](../../ut0/justfile) con (al menos) las siguientes recetas:
 
 - `dockup`
+- `dockdown`
 - `clean`
 - `zip`
 
