@@ -1,0 +1,50 @@
+[
+  {
+    "model": "events.event",
+    "pk": 5,
+    "fields": {
+      "name": "Wedding of Brian and Kathy",
+      "date": "2024-04-18",
+      "description": "Esse excepteur nisi est quis sed nulla, eiusmod. Est quis sed nulla. Sed nulla eiusmod culpa, ea eiusmod anim. Culpa ea eiusmod anim. Eiusmod anim eiusmod id reprehenderit sint velit. Eiusmod id reprehenderit sint velit amet. Reprehenderit, sint velit amet anim cupidatat eu. Amet anim cupidatat eu eu commodo. Cupidatat eu eu, commodo occaecat ipsum. Commodo, occaecat ipsum id proident.\r\n\r\nExcepteur, nisi est quis sed nulla. Quis sed nulla eiusmod. Nulla eiusmod, culpa ea eiusmod anim eiusmod. Ea eiusmod anim eiusmod id reprehenderit. Anim eiusmod id reprehenderit, sint velit.",
+      "important": true,
+      "created": "2024-01-28T10:30:14.469Z",
+      "updated": "2024-01-28T13:33:31.974Z"
+    }
+  },
+  {
+    "model": "events.event",
+    "pk": 6,
+    "fields": {
+      "name": "School activity for Marty",
+      "date": "2024-03-20",
+      "description": "Occaecat voluptate est commodo esse officia magna excepteur. Est commodo esse officia magna excepteur, non. Officia magna excepteur non, tempor consequat amet. Non tempor consequat amet aliquip occaecat cupidatat excepteur. Consequat amet aliquip occaecat cupidatat excepteur. Aliquip occaecat cupidatat excepteur qui labore. Cupidatat excepteur qui labore veniam enim.",
+      "important": false,
+      "created": "2024-01-28T15:35:33.355Z",
+      "updated": "2024-01-28T15:35:33.355Z"
+    }
+  },
+  {
+    "model": "events.event",
+    "pk": 7,
+    "fields": {
+      "name": "Travel to Rome",
+      "date": "2024-05-17",
+      "description": "Ut anim esse enim. Esse, enim non pariatur culpa non ullamco excepteur. Pariatur culpa non ullamco. Non ullamco excepteur dolore ad, anim et. Dolore, ad anim et. Et adipiscing, ea nulla excepteur voluptate est. Nulla excepteur voluptate est elit reprehenderit duis, lorem. Est elit reprehenderit duis lorem, est. Duis lorem est esse laboris sed.\r\n\r\nAnim esse enim non pariatur. Enim non pariatur culpa. Pariatur culpa non ullamco. Non ullamco excepteur dolore ad, anim et. Dolore, ad anim et. Et adipiscing, ea nulla excepteur voluptate est. Nulla excepteur voluptate est elit reprehenderit duis, lorem. Est elit reprehenderit duis lorem, est. Duis lorem est esse laboris sed. Est esse, laboris sed magna magna eu laboris.",
+      "important": false,
+      "created": "2024-01-28T15:37:30.065Z",
+      "updated": "2024-01-28T15:37:30.065Z"
+    }
+  },
+  {
+    "model": "events.event",
+    "pk": 8,
+    "fields": {
+      "name": "Arrival of new laptop",
+      "date": "2024-04-03",
+      "description": "Magna, nisi lorem reprehenderit nostrud est sint. Reprehenderit nostrud est sint aute magna. Est sint aute magna id laboris fugiat. Aute magna id laboris fugiat elit incididunt irure. Id, laboris fugiat elit incididunt irure officia. Elit incididunt irure officia esse consectetur fugiat. Irure officia esse consectetur fugiat id officia. Esse consectetur fugiat id. Fugiat, id officia sunt.\r\n\r\nNisi lorem reprehenderit nostrud est sint. Reprehenderit nostrud est sint aute magna. Est sint aute magna id laboris fugiat. Aute magna id laboris fugiat elit incididunt irure. Id, laboris fugiat elit incididunt irure officia.",
+      "important": true,
+      "created": "2024-01-28T15:38:04.935Z",
+      "updated": "2024-01-28T15:38:04.935Z"
+    }
+  }
+]

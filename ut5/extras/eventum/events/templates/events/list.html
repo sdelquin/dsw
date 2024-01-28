@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block contents %}
+
+{% if events %}
+  <table class="table table-hover mb-5">
+    <thead>
+      <th>Event</th>
+      <th>Date</th>
+      <th></th>
+    </thead>
+    <tbody>
+      {% for event in events %}
+        <tr>
+          <td><a href="{{ event.get_absolute_url }}">{{ event.name }}</a></td>
+          <td>{{ event.date|date:"D d M Y" }}</td>
+          <td class="text-warning">
+            {% if event.important %}
+              <i class="bi bi-lightning-charge"></i>
+              important!
+            {% endif %}
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% else %}
+  <div class="alert alert-primary">
+    <i class="bi bi-handbag"></i>
+    No events yet!
+  </div>
+{% endif %}
+
+<a href="{% url 'events:add' %}" class="btn btn-primary">
+  <i class="bi bi-plus-circle-fill"></i>
+  Add new event
+</a>
+
+{% endblock %}

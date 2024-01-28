@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block heading %}{{ event }}{% endblock %}
+
+{% block contents %}
+
+<div class="col-6">
+  <table class="table table-bordered">
+    <tbody>
+      <tr>
+        <th>Date</th>
+        <td>{{ event.date }}</td>
+      </tr>
+      <tr>
+        <th>Description</th>
+        <td>{{ event.description|linebreaks }}</td>
+      </tr>
+      <tr>
+        <th>Time until</th>
+        <td>{{ event.date|timeuntil }}</td>
+      </tr>
+      <tr>
+        <th>Status</th>
+        <td>
+          {% if event.important %}
+            <div class="text-warning">
+              <i class="bi bi-lightning-charge"></i>
+              This event is important!
+            </div>
+          {% else %}
+            <i class="bi bi-compass"></i>
+            This event is not so important
+          {% endif %}</td>
+      </tr>
+      <tr>
+        <th>Created</th>
+        <td>{{ event.created }}</td>
+      </tr>
+      <tr>
+        <th>Updated</th>
+        <td>{{ event.updated }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<a class="icon-link icon-link-hover mt-2" href="{% url 'events:list' %}">
+  Back to event list
+  <i class="bi bi-arrow-90deg-left"></i>
+</a>
+
+{% endblock %}
