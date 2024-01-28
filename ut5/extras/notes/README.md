@@ -89,6 +89,8 @@ Ejemplo:
 
 Esta herramienta [Django Compressor](https://django-compressor.readthedocs.io/en/stable/) nos permite evitar la caché sobre los ficheros JS/CSS mediante una sencilla sintaxis. Hace que en producción tengamos _hashes_ en la ruta a los "assets".
 
+Esta funcionalidad sólo se activa cuando `DEBUG = False`, es decir, cuando estamos en un **entorno de producción**.
+
 Ejemplo:
 
 - [requirements.txt](../eventum/requirements.txt#L5)
