@@ -1,19 +1,24 @@
 # Extras
 
-En esta sección se detallan algunas funcionalidades extra de Django que no se han visto hasta el momento y que pueden resultar de interés para el desarrollo de proyectos.
+En esta sección se detallan algunas **funcionalidades extra** de Django (incluyendo proyectos externos) que no se han visto hasta el momento y que pueden resultar de interés para el desarrollo de proyectos.
 
 [Conversores personalizados en URLs](#conversores-personalizados-en-urls)  
 [Crispy Forms](#crispy-forms)  
 [Personalización de widgets](#personalización-de-widgets)  
 [Testing en Django](#testing-en-django)  
 [Django Browser Reload](#django-browser-reload)  
-[Redirección lambda](#redirección-lambda)
+[Redirección lambda](#redirección-lambda)  
+[Django Compressor](#django-compressor)
 
 ## Contexto
 
-Para la explicación de las distintas funcionalidades vamos a trabajar sobre un proyecto de gestión de eventos [Eventum](../eventum/) con una única tabla:
+Para la explicación de las distintas funcionalidades vamos a trabajar sobre un proyecto de **gestión de eventos** denominado [Eventum](../eventum/) y desarrollado para esta sección.
 
-![Eventum Database](./images/db-eventum.svg)
+![Eventum Logo](./images/eventum-logo.png)
+
+La base de datos es muy sencilla. Vamos a trabajar con una única tabla:
+
+![Eventum Database](./images/eventum-db.svg)
 
 ## Conversores personalizados en URLs
 
@@ -79,3 +84,13 @@ Un ~~recurso~~ truco para realizar esta redirección es utilizar una **función 
 Ejemplo:
 
 - [eventum/urls.py](../eventum/eventum/urls.py#L23)
+
+## Django Compressor
+
+Esta herramienta [Django Compressor](https://django-compressor.readthedocs.io/en/stable/) nos permite evitar la caché sobre los ficheros JS/CSS mediante una sencilla sintaxis. Hace que en producción tengamos _hashes_ en la ruta a los "assets".
+
+Ejemplo:
+
+- [requirements.txt](../eventum/requirements.txt#L5)
+- [eventum/settings.py](../eventum/eventum/settings.py#L41)
+- [events/templates/base.html](../eventum/events/templates/base.html#L12-L14)
