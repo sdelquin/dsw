@@ -5,11 +5,13 @@ En esta sección se detallan algunas funcionalidades extra de Django que no se h
 [Conversores personalizados en URLs](#conversores-personalizados-en-urls)  
 [Crispy Forms](#crispy-forms)  
 [Personalización de widgets](#personalización-de-widgets)  
-[Testing en Django](#testing-en-django)
+[Testing en Django](#testing-en-django)  
+[Django Browser Reload](#django-browser-reload)  
+[Redirección lambda](#redirección-lambda)
 
 ## Contexto
 
-Para la explicación de las distintas funcionalidades vamos a trabajar sobre un proyecto de gestión de eventos **Eventum** con una única tabla:
+Para la explicación de las distintas funcionalidades vamos a trabajar sobre un proyecto de gestión de eventos [Eventum](../eventum/) con una única tabla:
 
 ![Eventum Database](./images/db-eventum.svg)
 
@@ -20,7 +22,7 @@ Django permite crear [conversores personalizados en URLs](https://docs.djangopro
 Ejemplo:
 
 - [events/converters.py](../eventum/events/converters.py)
-- [events/urls.py](../eventum/events/urls.py)
+- [events/urls.py](../eventum/events/urls.py#L12)
 
 ## Crispy Forms
 
@@ -30,8 +32,9 @@ Uno de los más destacados es [Django Crispy Forms](https://django-crispy-forms.
 
 Ejemplo:
 
-- [events/templates/events/add.html](../eventum/events/templates/events/add.html)
-- [eventum/settings.py](../eventum/eventum/settings.py)
+- [requirements.txt](../eventum/requirements.txt#L3)
+- [events/templates/events/add.html](../eventum/events/templates/events/add.html#L10)
+- [eventum/settings.py](../eventum/eventum/settings.py#L130-L131)
 
 ## Personalización de widgets
 
@@ -51,6 +54,28 @@ Existe un proyecto que proporciona estas mismas herramientas pero con las ventaj
 
 Ejemplo:
 
-- [events/tests/](../eventum/tests/)
-- [eventum/settings.py](../eventum/eventum/settings.py)
+- [requirements.txt](../eventum/requirements.txt#L4)
 - [eventum/pytest.ini](../eventum/pytest.ini)
+- [events/tests/](../eventum/tests/)
+
+## Django Browser Reload
+
+El hecho de tener que recargar el navegador cada vez que modificamos algo de nuestro proyecto Django puede llegar a ser una tarea pesada.
+
+Para ayudarnos en esta tarea surge el proyecto [django-browser-reload](https://github.com/adamchainz/django-browser-reload) que detecta los cambios que realizamos en el código y recarga la página que estamos visualizando en el navegador.
+
+Ejemplo:
+
+- [requirements.txt](../eventum/requirements.txt#L2)
+- [eventum/settings.py](../eventum/eventum/settings.py#L40)
+- [eventum/urls.py](../eventum/eventum/urls.py#L25)
+
+## Redirección lambda
+
+Es muy habitual que en un proyecto Django tengamos que hacer una redirección de la página inicial a alguna vista de la aplicación principal.
+
+Un ~~recurso~~ truco para realizar esta redirección es utilizar una **función lambda** directamente en el "path" de las URLs.
+
+Ejemplo:
+
+- [eventum/urls.py](../eventum/eventum/urls.py#L23)
