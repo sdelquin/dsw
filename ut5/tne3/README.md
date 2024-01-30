@@ -37,7 +37,7 @@ No necesitaremos ningún modelo específico en la base de datos ya que no vamos 
 
 - Se recomienda hacer esta tarea por parejas para poder probar cómodamente el funcionamiento del chat.
 - No será necesario realizar un registro de usuario. Daremos de alta a los usuarios a través de la interfaz administrativa.
-- Aprovecha para trabajar un poco más la parte CSS del chat.
+- Puedes aprovechar la función [bulk_create()](https://docs.djangoproject.com/en/5.0/ref/models/querysets/#bulk-create) que proporciona Django para inserción de filas por lotes, con la mejora de rendimiento que eso conlleva.
 
 ## Posibles mejoras
 
