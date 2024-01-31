@@ -154,7 +154,7 @@ database:
         if   [[ $OSTYPE == "linux-gnu"* ]]; then
             sudo service postgresql status &> /dev/null || sudo service postgresql start
         elif [[ $OSTYPE == "darwin"* ]]; then
-            pgrep -x postgres || open /Applications/Postgres.app
+            pgrep -x postgres &> /dev/null || (open /Applications/Postgres.app && sleep 1)
         fi
     fi
 
