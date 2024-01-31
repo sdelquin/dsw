@@ -152,7 +152,7 @@ database:
     #!/usr/bin/env bash
     if [[ $(grep -i postgres $(find . -name settings.py)) ]]; then
         if   [[ $OSTYPE == "linux-gnu"* ]]; then
-            sudo service postgresql status &> /dev/null || sudo service postgresql start
+            pgrep -x postgres &> /dev/null || sudo service postgresql start
         elif [[ $OSTYPE == "darwin"* ]]; then
             pgrep -x postgres &> /dev/null || (open /Applications/Postgres.app && sleep 1)
         fi
@@ -163,7 +163,7 @@ database:
 memcached:
     #!/usr/bin/env bash
     if   [[ $OSTYPE == "linux-gnu"* ]]; then
-        sudo service memcached status &> /dev/null || sudo service memcached start
+        pgrep -x memcached &> /dev/null || sudo service memcached start
     elif [[ $OSTYPE == "darwin"* ]]; then
         pgrep -x memcached > /dev/null || brew services start memcached
     fi
@@ -173,7 +173,7 @@ memcached:
 redis:
     #!/usr/bin/env bash
     if   [[ $OSTYPE == "linux-gnu"* ]]; then
-        sudo service redis status &> /dev/null || sudo service redis start
+        pgrep -x redis &> /dev/null || sudo service redis start
     elif [[ $OSTYPE == "darwin"* ]]; then
         pgrep -x Redis > /dev/null || open /Applications/Redis.app
     fi
