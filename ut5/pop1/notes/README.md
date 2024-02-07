@@ -9,7 +9,6 @@ El objetivo de esta prueba es demostrar los conocimientos adquiridos hasta el mo
 [Modelo entidad-relación](#modelo-entidad-relación)  
 [Preparación del entorno de trabajo](#preparación-del-entorno-de-trabajo)  
 [Tu tarea](#tu-tarea)  
-[Markdown](#markdown)  
 [Entrega](#entrega)  
 [Evaluación](#evaluación)
 
@@ -99,16 +98,24 @@ Debes completar **los archivos indicados a continuación** para que el proyecto 
 
 > ⚠️ No debes modificar nada del resto de código proporcionado.
 
+### API
+
+- La API se debe implementar usando **Router** (Django Rest Framework) para generar las URLs.
+- Las URLs de la API que deben funcionar son las siguientes:
+  - `/api/`
+  - `/api/products/`
+  - `/api/products/<pk>`
+
+### Interfaz administrativa
+
+- La interfaz administrativa debe funcionar bajo `/admin`.
+- Puedes consultar la interfaz administrativa usando las credenciales de superusuario:
+  - Usuario: `admin`
+  - Contraseña: `admin`
+
 ### Un pedido de ejemplo
 
 Puedes ver un pedido de ejemplo usando [este enlace](http://sdelquin/orders/order/IIFW).
-
-## Interfaz administrativa
-
-Puedes consultar la interfaz administrativa usando las credenciales de superusuario:
-
-- Usuario: `admin`
-- Contraseña: `admin`
 
 ## Entrega
 
