@@ -40,6 +40,7 @@ Notas:
 - Todos los accesos serán únicamente a través de método GET.
 - Usar [SessionAuthentication](https://www.django-rest-framework.org/api-guide/authentication/#sessionauthentication) como backend de autenticación de la API.
 - El formato de respuesta de todas las rutas será `json`.
+- Las URLs de la API deben estar **fuera de la internacionalización**, es decir, **no se debe redirigir a** `/es/api/`.
 
 ## Entrega de la tarea
 
