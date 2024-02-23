@@ -35,6 +35,10 @@ open:
 shell: database
     python manage.py shell
 
+# Open database shell
+dbshell: database
+    python manage.py dbshell
+
 # Clean all precompiled python files
 clean:
     #!/usr/bin/env bash
@@ -154,7 +158,7 @@ database:
         if   [[ $OSTYPE == "linux-gnu"* ]]; then
             pgrep -x postgres &> /dev/null || sudo service postgresql start
         elif [[ $OSTYPE == "darwin"* ]]; then
-            pgrep -x postgres &> /dev/null || (open /Applications/Postgres.app && sleep 1)
+            pgrep -x postgres &> /dev/null || (open /Applications/Postgres.app && sleep 2)
         fi
     fi
 

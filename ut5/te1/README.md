@@ -53,7 +53,7 @@ Notas:
 
 ### Recetas
 
-Incluir un fichero [justfile](../../ut0/justfile) con (al menos) las siguientes recetas:
+Incluir un fichero [justfile](../../ut0/files/justfile) con (al menos) las siguientes recetas:
 
 - `dockup`
 - `dockdown`
