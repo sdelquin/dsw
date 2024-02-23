@@ -43,6 +43,7 @@ Se deberá implementar una API REST con los siguientes puntos de entrada:
 Notas:
 
 - Sólo podrá acceder cada cliente a sus datos bancarios a través de la API previa autenticación.
+- Será necesario mostrar el `id` (_clave primaria_) de cada objeto de la API.
 - Todos los accesos serán únicamente a través de método GET.
 - Usar [SessionAuthentication](https://www.django-rest-framework.org/api-guide/authentication/#sessionauthentication) como backend de autenticación de la API.
 - El formato de respuesta de todas las rutas será `json`.
