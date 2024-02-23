@@ -13,13 +13,19 @@
 
 Se deberá implementar la descarga de transacciones de una cuenta en formato CSV desde la interfaz de usuario.
 
+> 💡 Las comisiones aplicadas también deben aparecer en el listado.
+
 ### Justificante PDF de transferencia saliente
 
 Se deberá implementar la descarga de un justificante en PDF cuando una transferencia saliente se realice de forma satisfactoria.
 
+> 💡 La comisión aplicada también debe aparecer en el listado.
+
 ### Internacionalización de la web
 
 Se deberá internacionalizar la web del banco permitiendo elegir entre idioma español o idioma inglés.
+
+> 💡 Si se cambia el idioma estando en una página concreta, deberíamos ver la página en cuestión traducida, no llevarnos al inicio.
 
 ### API
 
