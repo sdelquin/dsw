@@ -32,11 +32,11 @@ open:
     {{ open_cmd }} {{ project_url }}
 
 # Open python shell with django settings
-shell: database
+sh: database
     python manage.py shell
 
 # Open database shell
-dbshell: database
+dbsh: database
     python manage.py dbshell
 
 # Clean all precompiled python files
