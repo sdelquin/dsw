@@ -73,13 +73,7 @@ startapp app:
 
 # Delete an existing app
 deleteapp app:
-    #!/usr/bin/env bash
-    read -p 'Do you wish to delete "{{ app }}" app? ' -n 1 -r
-    echo
-    if [[ $REPLY =~ ^[Yy]$ ]]
-    then
-        rm -fr {{ app }}
-    fi
+    echo 'Read this! https://docs.djangoproject.com/en/dev/howto/delete-app/'
 
 # Show SQL behind a migration for a single app
 sql app migration_id:
