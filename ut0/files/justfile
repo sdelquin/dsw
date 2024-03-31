@@ -125,6 +125,10 @@ dockup:
 dockdown:
     docker compose down
 
+# Grab version of installed Python package
+@req package:
+    pip freeze | grep -i {{ package }}
+
 # Check if virtualenv is active
 [private]
 check-venv:
