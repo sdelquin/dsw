@@ -69,7 +69,7 @@ startapp app:
     python manage.py startapp {{ app }}
     APP_CLASS={{ app }}
     APP_CONFIG="{{ app }}.apps.${APP_CLASS^}Config"
-    perl -0pi -e "s/(INSTALLED_APPS *= *\[)(.*?)(\])/\1\2    '$APP_CONFIG',\n\3/smg" $(find . -name settings.py)
+    perl -0pi -e "s/(INSTALLED_APPS *= *\[)(.*?)(\])/\1\2    '$APP_CONFIG',\n\3/sg" $(find . -name settings.py)
 
 # Delete an existing app
 deleteapp app:
