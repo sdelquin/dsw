@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nanobits</title>
+</head>
+<body>
+  <h1>Nanobits: the ultimate tech blog!</h1>
+  <p>Check out our great posts below...<p>
+  <p>Total posts: <strong>{{ num_posts }}</strong> post{{ num_posts|pluralize }}</p>
+  {% for post in posts %}
+    <h2>{{ post.title }}</h2>
+    <div class="post-date">{{ post.created_at }}</div>
+    <p>{{ post.content|truncatewords:20 }} <a href="{% url 'blog:post_detail' post.slug %}">[Read more]</a></p>
+  {% endfor %}
+</body>
+</html>
