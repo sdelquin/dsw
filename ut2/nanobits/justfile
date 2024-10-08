@@ -2,7 +2,7 @@
 # https://github.com/casey/just
 
 # Run development server.
-runserver:
+runserver: kill-runservers
     ./manage.py runserver
 
 # Open a Django interactive shell.
@@ -57,3 +57,12 @@ db:
 # Show sqlite DB schema for given table
 @schema table:
     sqlite3 db.sqlite3 '.schema --indent {{ table }}'
+
+# Kill existent Django "runservers"
+[unix]
+kill-runservers:
+    #!/usr/bin/env bash
+    for pid in $(ps aux | grep '[Pp]ython.*manage.py runserver' | awk '{ print $2 }')
+    do
+        kill -9 $pid
+    done
