@@ -13,9 +13,13 @@ sh:
 check:
     ./manage.py check
 
+alias mm := mmigrate
+
 # Generate migrations
 mmigrate app="":
     ./manage.py makemigrations {{ app }}
+
+alias m := migrate
 
 # Migrate models
 migrate app="":

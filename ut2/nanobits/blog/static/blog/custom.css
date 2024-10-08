@@ -1,0 +1,15 @@
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h2 {
+  color: rgb(101, 118, 201);
+}
+
+div.post-date {
+  display: inline-block;
+  background-color: grey;
+  color: white;
+  font-size: small;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+}
