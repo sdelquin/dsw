@@ -13,3 +13,25 @@ div.post-date {
   padding: 0.2rem;
   border-radius: 0.2rem;
 }
+
+form {
+  ul.errorlist {
+    color: tomato;
+  }
+}
+
+/* https://stackoverflow.com/a/8357227 */
+.button {
+  display: inline-block;
+  background: #4e9caf;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #33545d;
+  }
+}

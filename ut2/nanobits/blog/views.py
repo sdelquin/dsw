@@ -1,6 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import redirect, render
+from django.utils.text import slugify
 
-from blog.models import Post
+from .forms import AddPostForm
+from .models import Post
 
 
 def home(request):
@@ -16,3 +18,15 @@ def home(request):
 def post_detail(request, post_slug: str):
     post = Post.objects.get(slug=post_slug)
     return render(request, 'blog/posts/detail.html', dict(post=post))
+
+
+def add_post(request):
+    if request.method == 'GET':
+        form = AddPostForm()
+    else:
+        if (form := AddPostForm(data=request.POST)).is_valid():
+            post = form.save(commit=False)
+            post.slug = slugify(post.title)
+            post.save()
+            return redirect('blog:home')
+    return render(request, 'blog/post/add.html', dict(form=form))
