@@ -1,37 +1,5 @@
-html {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-h2 {
-  color: rgb(101, 118, 201);
-}
-
-div.post-date {
-  display: inline-block;
-  background-color: grey;
-  color: white;
-  font-size: small;
-  padding: 0.2rem;
-  border-radius: 0.2rem;
-}
-
 form {
   ul.errorlist {
     color: tomato;
-  }
-}
-
-/* https://stackoverflow.com/a/8357227 */
-.button {
-  display: inline-block;
-  background: #4e9caf;
-  padding: 10px;
-  text-align: center;
-  border-radius: 5px;
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-
-  &:hover {
-    background-color: #33545d;
   }
 }
