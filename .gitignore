@@ -7,11 +7,6 @@
 .RData
 .Rhistory
 ut0/files/intro_done.dat
-ut3/pop1/notes/files/travel
-ut3/pop1/travel
-ut4/pop1/notes/files/mkedit
-ut4/pop1/mkedit
-ut5/pop1/notes/files/guachihome
-ut5/pop1/guachihome
-ut5/pop2/notes/files/favplaces
-ut5/pop2/favplaces
+ut*/pop*/*
+ut*/te*/*
+# Para resetear borrar de aquí para abajo

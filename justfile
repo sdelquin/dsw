@@ -3,3 +3,7 @@
 @intro:
     truncate -s 0 ut0/files/intro_done.dat
     cd ut0 && slides intro.md
+
+# Renderizar (y expandir) el howto para todas las POP
+expand-howto:
+    python management/howto.py
