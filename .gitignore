@@ -9,5 +9,6 @@
 sandbox
 ut0/files/intro_done.dat
 ut*/pop*/*
-ut*/te*/*
+ut*/tep*/*
 # Para resetear borrar de aquí para abajo
+!ut2/tep2.1/*.md
