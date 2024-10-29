@@ -6,6 +6,7 @@
 .env
 .RData
 .Rhistory
+sandbox
 ut0/files/intro_done.dat
 ut*/pop*/*
 ut*/te*/*
