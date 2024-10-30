@@ -32,7 +32,7 @@ code .
 - Crea un fichero `.zip` con el contenido del ejercicio:
 
 ```console
-cd ~/dsw/{{ ut }}/{{ pop }} && pypas zip'
+cd ~/dsw/{{ ut }}/{{ pop }} && pypas zip
 ```
 
 - Abre un navegador **en la máquina virtual** y accede a la entrega de la actividad **en el aula virtual de Desarrollo web en entorno servidor**.
