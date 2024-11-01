@@ -1,7 +1,0 @@
-django
-prettyconf
-Pillow
-requests
-easy-thumbnails
-django-debug-toolbar
-redis

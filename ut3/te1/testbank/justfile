@@ -1,8 +1,0 @@
-run:
-    python manage.py runserver
-
-sh:
-    python manage.py shell
-
-test:
-    pytest
