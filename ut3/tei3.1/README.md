@@ -42,6 +42,7 @@ Algunos ejemplos de sitios web de empresas de desarrollo de software:
 ## Entrega
 
 - Construir el proyecto final y comprimirlo (.zip) para entregarlo en el aula virtual CAMPUS.
+- Sólo es necesario que una persona del grupo suba la tarea.
 
 ## Evaluación
 
