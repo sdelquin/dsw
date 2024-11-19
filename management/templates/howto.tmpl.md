@@ -14,6 +14,12 @@ mkdir -p ~/dsw/{{ ut }}/{{ pop }} && cd ~/dsw/{{ ut }}/{{ pop }}
 pypas get <ejercicio>
 ```
 
+- Accede a la carpeta del ejercicio:
+
+```console
+cd <ejercicio>
+```
+
 - Abre _Visual Studio Code_ para empezar a trabajar:
 
 ```console
