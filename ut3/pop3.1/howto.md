@@ -29,10 +29,10 @@ code .
 
 ## Al finalizar
 
-- Crea un fichero `.zip` con el contenido del ejercicio:
+- Desde la carpeta del ejercicio, crea un fichero `.zip` con su contenido:
 
 ```console
-cd ~/dsw/ut3/pop3.1 && pypas zip
+pypas zip
 ```
 
 - Abre un navegador **en la máquina virtual** y accede a la entrega de la actividad **en el aula virtual de Desarrollo web en entorno servidor**.
