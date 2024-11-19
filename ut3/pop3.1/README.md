@@ -1,4 +1,4 @@
-# POP3.1: SchedIt
+# POP3.1: Sched It
 
 ### PRUEBA OBJETIVA PRÁCTICA
 
