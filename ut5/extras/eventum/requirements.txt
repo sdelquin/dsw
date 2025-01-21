@@ -1,5 +1,0 @@
-django
-django_browser_reload
-crispy_bootstrap5
-pytest-django
-django-compressor
