@@ -28,4 +28,4 @@ reset:
 
 # Renderizar (y expandir) el howto para todas las POP
 expand-howto:
-    python management/howto.py
+    uv run python management/howto.py
