@@ -4,10 +4,27 @@ date: "DD/MM/YYYY"
 paging: "%d/%d"
 ---
 
+```<!-- uvx art text DSW   https://github.com/sepandhaghighi/art -->
+ ____   ____  __        __
+|  _ \ / ___| \ \      / /
+| | | |\___ \  \ \ /\ / /
+| |_| | ___) |  \ V  V /
+|____/ |____/    \_/\_/
+
+ ____   ____      _    __        __
+|___ \ |  _ \    / \   \ \      / /
+  __) || | | |  / _ \   \ \ /\ / /
+ / __/ | |_| | / ___ \   \ V  V /
+|_____||____/ /_/   \_\   \_/\_/
+```
+
+---
+
 # Algo sobre mi 👨‍💻
 
 - Sergio Delgado Quintero.
 - Estudié **Ingeniería Informática** en la _Universidad de La Laguna_.
+- Catedrático de Enseñanza Secundaria especialidad en Informática.
 - Casi 20 años programando (y enseñando) Python.
 - Cofundador de https://pythoncanarias.es
 - Muchos proyectos desarrollados 🏃‍♂️
@@ -48,7 +65,7 @@ Tareas evaluables [TE] (40%) 👫
     Tareas evaluables: Proyectos [TEP] (70%)
 ```
 
-**POP/TEI** → 70% TESTS + 30% CÓDIGO
+**POP/TEP** → 70% TESTS + 30% CÓDIGO
 
 ---
 
@@ -84,11 +101,11 @@ Por curso...
 
 # Unidades de trabajo
 
-- **UT1**: Introducción a la programación web.
-- **UT2**: Django básico.
-- **UT3**: Django intermedio.
-- **UT4**: Django avanzado.
-- **UT5**: Django especializado.
+- **UT1**: Introducción a la programación web (T1)
+- **UT2**: Django básico (T1)
+- **UT3**: Django intermedio (T1)
+- **UT4**: Django avanzado (T2)
+- **UT5**: Django especializado (T2)
 
 ---
 
@@ -108,12 +125,27 @@ Por curso...
 
 ---
 
+# Entregables
+
+| UT  | POT | POP | TEI | TEP |
+| --- | --- | --- | --- | --- |
+| UT1 | ✅  |     |     |     |
+| UT2 | ✅  | ✅  |     | ✅  |
+| UT3 | ✅  | ✅  | ✅  | ✅  |
+| UT4 | ✅  | ✅  | ✅  | ✅  |
+| UT5 | ✅  | ✅  |     | ✅  |
+
+---
+
 # Material
 
 **Material obligatorio:**
 
 - Cuaderno 📔
 - Bolígrafo ✍️
+
+**Material «recomendado»:**
+
 - Disco duro externo USB 💾
 
 ---
@@ -143,13 +175,29 @@ Por curso...
 
 ---
 
+# IA
+
+**IA** significa Inteligencia Artificial...
+
+```<!-- uvx art text IA swapland   https://github.com/sepandhaghighi/art -->
+ ________      ________
+/_______/\    /_______/\
+\__.::._\/    \::: _  \ \
+   \::\ \      \::(_)  \ \
+   _\::\ \__    \:: __  \ \
+  /__\::\__/\    \:.\ \  \ \
+  \________\/     \__\/\__\/
+```
+
+---
+
 # Algo sobre ti 👋
 
-1. ¿Qué lenguajes de programación has manejado?
-2. ¿Dónde te ves al acabar el ciclo?
-3. ¿Cuál es tu hobby?
-4. ¿Cuál es tu artista/grupo favorito de música?
-5. ¿Cómo quieres que te llamen?
+1. ¿Cómo te llamas? ¿Cómo quieres que te llamen?
+2. ¿Qué lenguajes de programación has manejado?
+3. ¿Dónde te ves al acabar el ciclo?
+4. ¿Cuál es tu hobby?
+5. ¿Cuál es tu artista/grupo favorito de música?
 
 ---
 
@@ -159,7 +207,7 @@ Por curso...
 import random
 
 intro_done = set(int(n.strip()) for n in open('intro_done.dat'))
-if not(intro_left := set(range(1, 31)) - intro_done):
+if not(intro_left := set(range(1, 28)) - intro_done):
     print('END❗')
 else:
     pick = random.choice(list(intro_left))
