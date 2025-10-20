@@ -5,7 +5,7 @@
 - Trabaja en la carpeta adecuada:
 
 ```console
-mkdir -p ~/dsw/{{ ut }}/{{ pop }} && cd ~/dsw/{{ ut }}/{{ pop }}
+mkdir -p ~/dsw/ut2/pop2.1 && cd ~/dsw/ut2/pop2.1
 ```
 
 - Mira el ejercicio del examen y crea la estructura del proyecto:
