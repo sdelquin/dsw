@@ -28,7 +28,7 @@ code .
 
 ## Durante la prueba
 
-- Sólo puedes consultar la documentación de [aprendepython.es](https://aprendepython.es) y [djangoproject.com](https://docs.djangoproject.com).
+- Sólo puedes consultar la documentación de [aprendepython.es](https://aprendepython.es).
 - Utiliza únicamente recursos que hayamos visto en clase hasta el momento.
 - Puedes mostrar la descripción del ejercicio con `pypas doc`
 - Puedes comprobar tu ejercicio contra los casos de prueba con `pypas test`
