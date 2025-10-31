@@ -36,6 +36,17 @@ Algunos ejemplos de sitios web de empresas de desarrollo de software:
 | https://www.codethink.co.uk/  | https://www.ebury.es/           |
 | https://www.codurance.com/es/ | https://www.eventbrite.es/      |
 
+## Deshabilitar modo blog
+
+Aunque Pelican está inicialmente enfocado más a páginas tipo «blog», para esta actividad sería más conveniente deshabilitarlo.
+
+Por defecto, Pelican genera:
+
+- `content/articles` → Publicaciones de blog.
+- `content/pages` → Páginas estáticas.
+
+Si eliminas la parte de artículos, y te quedas sólo con `pages`, ya tienes un sitio web estático genérico.
+
 ## Entrega
 
 - Construir el proyecto final y comprimirlo (.zip) para entregarlo en el aula virtual CAMPUS.
@@ -43,4 +54,5 @@ Algunos ejemplos de sitios web de empresas de desarrollo de software:
 
 ## Evaluación
 
+- En la fecha indicada el grupo deberá hacer una presentación de su proyecto en clase.
 - Se llevará a cabo una coevaluación por parte del propio alumnado de clase que valorará el proyecto teniendo en cuenta los aspectos anteriormente indicados.
