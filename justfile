@@ -7,6 +7,12 @@ intro:
 clean-intro:
     rm -f *.aux *.fdb_latexmk *.fls *.log *.nav *.out *.snm *.synctex.gz *.toc *.pdf
 
+# Compilar las diapositivas de presentación del módulo
+[working-directory('ut0/intro')]
+build-intro: clean-intro
+    pdflatex -interaction=nonstopmode slides.tex
+    pdflatex -interaction=nonstopmode slides.tex
+
 # Limpiar todas las pruebas de git
 [confirm('¿Limpiar todas las pruebas de git? [y/n]')]
 clear:
