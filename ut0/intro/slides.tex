@@ -1,0 +1,262 @@
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{pifont}
+\usepackage{graphicx}
+
+\setbeamertemplate{navigation symbols}{}
+
+\usetheme{Berlin}
+\usefonttheme{professionalfonts}
+
+\newcommand{\link}[2][]{%
+  \href{#1}{\textcolor{blue}{\underline{\smash{#2}}}}%
+}
+
+\title{Desarrollo web en entorno servidor}
+\subtitle{Desarrollo de Aplicaciones Web}
+\author{Sergio Delgado Quintero}
+\institute{IES Puerto de la Cruz - Telesforo Bravo}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}{Tabla de Contenidos}
+    \tableofcontents
+\end{frame}
+
+\section{El profe}
+\begin{frame}{Algo sobre mi}
+    \begin{itemize}
+        \item Sergio Delgado Quintero.
+        \item Estudié \textbf{Ingeniería Informática} en la \textit{Universidad de La Laguna}.
+        \item Catedrático de Enseñanza Secundaria especialidad en Informática.
+        \item Casi 20 años programando (y enseñando) \textbf{Python}.
+        \item Cofundador de \link[https://pythoncanarias.es]{Python Canarias}.
+        \item Muchos proyectos desarrollados.
+        \item Contacto: \texttt{sdelqui@gobiernodecanarias.org}
+    \end{itemize}
+\end{frame}
+
+\section{El módulo}
+\begin{frame}{Módulo: Desarrollo web en entorno servidor}
+    \begin{itemize}
+        \item Segundo curso del CFGS Desarrollo de Aplicaciones Web.
+        \item 7 horas semanales.
+        \item Lenguaje de programación: \textbf{Python}.
+        \item Aula virtual CAMPUS: \link[https://peq.es/dsw]{peq.es/dsw}
+        \item Contenidos: \link[https://peq.es/django]{peq.es/django}
+        \item Máquina virtual: \textbf{VirtualBox}.
+    \end{itemize}
+\end{frame}
+
+\section{Sistema de evaluación}
+\begin{frame}{Instrumentos de evaluación}
+    \begin{itemize}
+        \item Pruebas objetivas [PO] (\textbf{60\%})
+        \begin{itemize}
+            \item Pruebas objetivas teóricas [POT] (\textbf{25\%})
+            \item Pruebas objetivas prácticas [POP] (\textbf{75\%})\footnote{Es necesario superar para realizar media.}
+        \end{itemize}
+        \item Tareas evaluables [TE] (\textbf{40\%})\footnote{Se realizará por grupos.}
+        \begin{itemize}
+            \item Tareas evaluables: Ejercicios [TEE] (\textbf{50\%})
+            \item Tareas evaluables: Proyectos [TEP] (\textbf{50\%})
+        \end{itemize}
+    \end{itemize}
+
+    \fbox{\tiny POP/TEP \ding{43} $0.7 * \text{tests} + 0.3 * \text{código}$}
+
+    \begin{block}{\tiny{Cálculo de la nota}}
+        \vspace{-2em}
+        \begin{align*}
+        N_{ev} =\ & 0.60 * (0.25 * POT + 0.75 * POP) +\\
+                & 0.40 * (0.5 * TEE + 0.5 * TEP)
+        \end{align*}
+        \vspace{-2em}
+    \end{block}
+
+\end{frame}
+
+\begin{frame}{Criterios de calificación}
+    \begin{tabular}{|l|l|l|l|}
+        \hline
+        & 1ª Evaluación & 2ª Evaluación & 3ª Evaluación\\
+        \hline
+        1ª Evaluación & 100\% & - & -\\
+        \hline
+        2ª Evaluación & 30\%  & 70\% & -\\
+        \hline
+    \end{tabular}\\[1em]
+
+    \begin{block}{\tiny{Cálculo de la nota}}
+        \vspace{-1.5em}
+        \begin{align*}
+            N_1 &= N_{ev}\\
+            N_2 &= 0.3 * N_1 + 0.7 * N_{ev}
+        \end{align*}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Resultados de aprendizaje}
+    \framesubtitle{$[RA1-RA3]$}
+    \begin{itemize}
+        \item \textbf{RA1}: Selecciona las arquitecturas y tecnologías de programación web en entorno servidor, analizando sus capacidades y características propias.
+        \item \textbf{RA2}: Escribe sentencias ejecutables por un servidor web reconociendo y aplicando procedimientos de integración del código en lenguajes de marcas.
+        \item \textbf{RA3}: Escribe bloques de sentencias embebidos en lenguajes de marcas, seleccionando y utilizando las estructuras de programación.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Resultados de aprendizaje}
+    \framesubtitle{$[RA4-RA6]$}
+    \begin{itemize}
+        \item \textbf{RA4}: Desarrolla aplicaciones web embebidas en lenguajes de marcas analizando e incorporando funcionalidades según especificaciones.
+        \item \textbf{RA5}: Desarrolla aplicaciones web identificando y aplicando mecanismos para separar el código de presentación de la lógica de negocio.
+        \item \textbf{RA6}: Desarrolla aplicaciones web de acceso a almacenes de datos, aplicando medidas para mantener la seguridad y la integridad de la información.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Resultados de aprendizaje}
+    \framesubtitle{$[RA7-RA9]$}
+    \begin{itemize}
+        \item \textbf{RA7}: Desarrolla servicios web reutilizables y accesibles mediante protocolos web, verificando su funcionamiento.
+        \item \textbf{RA8}: Genera páginas web dinámicas analizando y utilizando tecnologías y frameworks del servidor web que añadan código al lenguaje de marcas.
+        \item \textbf{RA9}: Desarrolla aplicaciones web híbridas seleccionando y utilizando tecnologías, frameworks servidor y repositorios heterogéneos de información.
+    \end{itemize}
+\end{frame}
+
+\section{Unidades de trabajo}
+
+\begin{frame}{Secuenciación}
+    \begin{tabular}{|l|l|l|}
+        \hline
+        \textbf{Unidad} & \textbf{Nombre} & \textbf{Trimestre}\\
+        \hline
+        UT1 & Introducción a la programación web & \textcolor{purple}{T1}\\
+        \hline
+        UT2 & Django básico & \textcolor{purple}{T1}\\
+        \hline
+        UT3 & Django intermedio & \textcolor{purple}{T1}\\
+        \hline
+        \hline
+        UT4 & Django avanzado & \textcolor{teal}{T2}\\
+        \hline
+        UT5 & Django especializado & \textcolor{teal}{T2}\\
+        \hline
+    \end{tabular}
+\end{frame}
+
+\begin{frame}{Relación UT/RA}
+    \begin{tabular}{|l|l|l|l|l|l|l|l|l|}
+        \hline
+            & UT1  & UT2   & UT3  & UT4   & UT5\\
+        \hline
+        RA1 & 90\% & 10\%  &      &       &\\
+        \hline
+        RA2 &      & 100\% &      &       &\\
+        \hline
+        RA3 &      & 20\%  & 30\% & 40\%  & 10\%\\
+        \hline
+        RA4 &      &       & 30\% & 40\%  & 30\%\\
+        \hline
+        RA5 &      &       & 40\% & 40\%  & 20\%\\
+        \hline
+        RA6 &      & 15\%  & 25\% & 30\%  & 30\%\\
+        \hline
+        RA7 &      &       &      &       & 100\%\\
+        \hline
+        RA8 &      &       &      & 100\% &\\
+        \hline
+        RA9 &      &       &      &       & 100\%\\
+        \hline
+    \end{tabular}
+\end{frame}
+
+\begin{frame}{Entregables}
+    \begin{tabular}{|l|l|l|l|l|}
+        \hline
+            & POT       & POP      & TEE       & TEP\\
+        \hline
+        UT1 & \ding{51} &          &           &\\
+        \hline
+        UT2 & \ding{51} &\ding{51} &           & \ding{51}\\
+        \hline
+        UT3 & \ding{51} &\ding{51} & \ding{51} & \ding{51}\\
+        \hline
+        UT4 & \ding{51} &\ding{51} & \ding{51} & \ding{51}\\
+        \hline
+        UT5 & \ding{51} &\ding{51} &           & \ding{51}\\
+        \hline
+    \end{tabular}
+\end{frame}
+
+\section{Otros aspectos}
+
+\begin{frame}{Material}
+    \begin{columns}
+        \begin{column}[t]{0.5\textwidth}
+            \begin{block}{Material obligatorio}
+                \begin{itemize}
+                    \item Cuaderno.
+                    \item Bolígrafo.
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}[t]{0.5\textwidth}
+            \begin{block}{Material recomendado}
+                \begin{itemize}
+                    \item Disco duro externo USB.
+                \end{itemize}
+            \end{block}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Horario}
+    \begin{tabular}{|l|l|l|l|l|l|}
+        \hline
+         & Lunes & Martes & Miércoles & Jueves & Viernes\\
+        \hline        
+        14:30 - 15:25 & \textcolor{purple}{DSW} & \textcolor{purple}{DSW}& & &\textcolor{purple}{DSW}\\
+        \hline
+        15:25 - 16:20 &\textcolor{purple}{DSW} &\textcolor{purple}{DSW} & & &\textcolor{purple}{DSW}\\
+        \hline
+        16:20 - 17:15 & & & & &\\
+        \hline
+        17:15 - 17:45 & {\tiny Recreo} & {\tiny Recreo} & {\tiny Recreo} & {\tiny Recreo} & {\tiny Recreo}\\
+        \hline
+        17:45 - 18:40 & & &\textcolor{purple}{DSW} & &\\
+        \hline
+        18:40 - 19:35 & & & & &\\
+        \hline
+        19:35 - 20:30 & & & & &\\
+        \hline
+    \end{tabular}
+\end{frame}
+
+\begin{frame}{IA}
+
+    {\Huge IA significa Inteligencia Artificial}\\[1em]
+    \centering
+    \includegraphics[width=0.3\textwidth]{images/robot.png}
+
+\end{frame}
+
+\begin{frame}{Algo sobre ti}
+    \begin{enumerate}
+        \item ¿Cómo te llamas? ¿Cómo quieres que te llamen?
+        \item ¿Qué lenguajes de programación has manejado?
+        \item ¿Dónde te ves al acabar el ciclo?
+        \item ¿Cuál es tu hobby?
+        \item ¿Cuál es tu artista/grupo favorito de música?
+    \end{enumerate}
+\end{frame}
+
+\end{document}

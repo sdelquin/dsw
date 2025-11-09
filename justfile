@@ -1,15 +1,17 @@
-# Presentación del módulo
-# https://github.com/maaslalani/slides
-# CTRL-E para ejecutar el trozo de código
-@intro:
-    truncate -s 0 ut0/intro_done.dat
-    cd ut0 && slides intro.md
+# Abrir las diapositivas de presentación del módulo
+intro:
+    open ./ut0/intro/slides.pdf
+
+# Limpiar archivos auxiliares generados por LaTeX
+[working-directory('ut0/intro')]
+clean-intro:
+    rm -f *.aux *.fdb_latexmk *.fls *.log *.nav *.out *.snm *.synctex.gz *.toc *.pdf
 
 # Limpiar todas las pruebas de git
 [confirm('¿Limpiar todas las pruebas de git? [y/n]')]
 clear:
     #!/usr/bin/env bash
-    for dir in ./ut*/pop* ./ut*/tep* ./ut*/tei* ./ut*/tne*; do
+    for dir in ./ut*/pop* ./ut*/tep* ./ut*/tee*; do
       if [ -d "$dir" ]; then
         git rm -r --cached "$dir"
       fi
