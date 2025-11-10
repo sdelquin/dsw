@@ -50,6 +50,7 @@ Si eliminas la parte de artículos, y te quedas sólo con `pages`, ya tienes un 
 ## Entrega
 
 - Construir el proyecto final y comprimirlo (.zip) para entregarlo en el aula virtual CAMPUS.
+- El tamaño del archivo comprimido **no debe superar los 10MB**. Si pesa más, es bastante probable que sea debido a las imágenes añadidas (traten de comprimirlas y/o redimensionarlas).
 - Sólo es necesario que una persona del grupo suba la tarea.
 
 ## Evaluación
