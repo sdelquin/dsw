@@ -8,10 +8,10 @@
 .Rhistory
 sandbox
 final-de-curso.md
-ut0/intro/*
-!ut0/intro/images
-!ut0/intro/slides.tex
-!ut0/intro/slides.pdf
+intro/*
+!intro/images
+!intro/slides.tex
+!intro/slides.pdf
 ut*/pop*/*
 ut*/tep*/*
 ut*/tei*/*

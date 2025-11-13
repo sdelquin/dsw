@@ -1,14 +1,14 @@
 # Abrir las diapositivas de presentación del módulo
 intro:
-    open ./ut0/intro/slides.pdf
+    open ./intro/slides.pdf
 
 # Limpiar archivos auxiliares generados por LaTeX
-[working-directory('ut0/intro')]
+[working-directory('intro')]
 clean-intro:
     rm -f *.aux *.fdb_latexmk *.fls *.log *.nav *.out *.snm *.synctex.gz *.toc *.pdf
 
 # Compilar las diapositivas de presentación del módulo
-[working-directory('ut0/intro')]
+[working-directory('intro')]
 build-intro: clean-intro
     pdflatex -interaction=nonstopmode slides.tex
     pdflatex -interaction=nonstopmode slides.tex
