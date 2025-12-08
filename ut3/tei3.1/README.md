@@ -1,3 +1,5 @@
+<!-- TODO: pypas get tribu-hub -->
+
 # TEI3.1: Generadores estáticos
 
 ### TAREA EVALUABLE INVESTIGACIÓN
