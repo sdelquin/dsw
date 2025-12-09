@@ -23,10 +23,11 @@ ut*/notes.txt
 !ut3/tei3.1/images
 !ut3/tep3.1/*.md
 !ut3/pop3.1/*.md
-# !ut4/tep4.1/*.md
+!ut4/tep4.1/*.md
+!ut4/tei4.1/*.md
+!ut4/tei4.1/images
 # !ut4/pop4.1/*.md
 # !ut4/pop4.2/*.md
-# !ut4/tei4.1/*.md
 # !ut5/tep5.1/*.md
 # !ut5/pop5.1/*.md
 # !ut5/pop5.2/*.md
