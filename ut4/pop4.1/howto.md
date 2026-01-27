@@ -32,6 +32,10 @@ code .
 - Utiliza únicamente recursos que hayamos visto en clase hasta el momento.
 - Puedes mostrar la descripción del ejercicio con `pypas doc`
 - Puedes comprobar tu ejercicio contra los casos de prueba con `pypas test`
+- Puedes parar tras el primer test fallido con `pypas text -x`
+- Puedes lanzar tests cuyo nombre sea un patrón con `pypas test -k nombre_patron_test`
+- Puedes lanzar un test en concreto con `pypas test tests/test_ejemplo.py::test_base_proyecto`
+- Puedes conocer tu score final con `just score`
 
 ## Al finalizar
 
