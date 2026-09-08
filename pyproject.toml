@@ -1,0 +1,13 @@
+[project]
+name = "dsw"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "jinja2>=3.1.6",
+]
+
+[dependency-groups]
+dev = [
+    "ipython>=9.2.0",
+    "pytest>=8.3.5",
+]
