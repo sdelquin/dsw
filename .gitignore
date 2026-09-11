@@ -13,22 +13,24 @@ intro/*
 !intro/images
 !intro/slides.tex
 !intro/slides.pdf
+ut*/tne*/*
 ut*/pop*/*
 ut*/tep*/*
 ut*/tei*/*
 ut*/notes.txt
 # Para resetear borrar de aquí para abajo
-# !ut2/tep2.1/*.md
-# !ut2/pop2.1/*.md
-# !ut3/tei3.1/*.md
-# !ut3/tei3.1/images
-# !ut3/tep3.1/*.md
-# !ut3/pop3.1/*.md
-# !ut4/tep4.1/*.md
-# !ut4/tei4.1/*.md
-# !ut4/tei4.1/images
-# !ut4/pop4.1/*.md
-# !ut5/tep5.1/*.md
-# !ut4/pop4.2/*.md
-# !ut5/pop5.1/*.md
-# !ut5/pop5.2/*.md
+# !ut1/tne1/*.md
+# !ut2/tep2/*.md
+# !ut2/pop2/*.md
+# !ut3/tei3/*.md
+# !ut3/tei3/images
+# !ut3/tep3/*.md
+# !ut3/pop3/*.md
+# !ut4/tep4/*.md
+# !ut4/tei4/*.md
+# !ut4/tei4/images
+# !ut4/pop4/*.md
+# !ut5/tep5/*.md
+# !ut4/popr4/*.md
+# !ut5/pop5/*.md
+# !ut5/popr5/*.md
