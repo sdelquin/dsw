@@ -17,7 +17,7 @@ build-intro: clean-intro
 [confirm('¿Limpiar todas las pruebas de git? [y/n]')]
 clear:
     #!/usr/bin/env bash
-    for dir in ./ut*/pop* ./ut*/tep* ./ut*/tee*; do
+    for dir in ./ut*/pop* ./ut*/tep* ./ut*/tei* ./ut*/tne*; do
       if [ -d "$dir" ]; then
         git rm -r --cached "$dir"
       fi

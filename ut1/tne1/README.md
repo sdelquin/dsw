@@ -1,4 +1,4 @@
-# TNE1.1: Desengrasando Python
+# TNE1: Desengrasando Python
 
 ### TAREA NO EVALUABLE
 
