@@ -15,8 +15,7 @@ intro/*
 !intro/slides.pdf
 ut*/tne*/*
 ut*/pop*/*
-ut*/tep*/*
-ut*/tei*/*
+ut*/te*/*
 ut*/notes.txt
 # Para resetear borrar de aquí para abajo
 # !ut1/tne1/*.md
@@ -30,7 +29,7 @@ ut*/notes.txt
 # !ut4/tei4/*.md
 # !ut4/tei4/images
 # !ut4/pop4/*.md
-# !ut5/tep5/*.md
 # !ut4/popr4/*.md
+# !ut5/tep5/*.md
 # !ut5/pop5/*.md
 # !ut5/popr5/*.md
