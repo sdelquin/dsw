@@ -17,7 +17,7 @@ ut*/pop*/*
 ut*/te*/*
 ut*/notes.txt
 # Para resetear borrar de aquí para abajo
-# !ut1/tne1/*.md
+!ut1/tne1/*.md
 # !ut2/tep2/*.md
 # !ut2/pop2/*.md
 # !ut3/tei3/*.md
