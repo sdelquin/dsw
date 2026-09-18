@@ -2,6 +2,17 @@
 
 ### TAREA NO EVALUABLE
 
+Con esta **tarea grupal** se pretende recuperar los conocimientos de Python del curso pasado.
+
+## Carpeta de trabajo
+
+Una vez en tu máquina virtual, realiza los siguientes pasos:
+
+```console
+$ cd ~/dsw/ut1
+$ take tne1
+```
+
 ## Ejercicios
 
 - `pypas get max-product`
@@ -10,4 +21,4 @@
 ## Entrega
 
 - Comprueba el estado cada ejercicio con: `pypas test`.
-- Envía cada ejercicio con: `pypas put`.
+- **Solo una persona del grupo** enviará cada ejercicio con: `pypas put`.
