@@ -15,5 +15,6 @@
 
 ## Evaluación
 
+- Este proyecto **no tiene tests**.
 - Los proyectos de cada grupo se subirán para que estén accesibles online.
 - Se llevará a cabo una coevaluación por parte del propio alumnado de clase que valorará el proyecto teniendo en cuenta los aspectos anteriormente indicados.
